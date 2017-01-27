@@ -8,7 +8,6 @@ app.use(express.static(__dirname + '/public'));
 db.on('error', function (err) {
     console.log('database error', err)
 });
-
 db.on('connect', function () {
     console.log('database connected')
 });
