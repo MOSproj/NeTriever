@@ -15,7 +15,7 @@ db.on('connect', function () {
 
 app.get('/posts', function (req, res) {
     db.posts.find({}, function (err, docs) {
-        console.log(docs)
+        console.log(docs);
         res.json(docs);
     });
 });
