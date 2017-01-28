@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -17,27 +17,44 @@
     <!-- Load Bootstrap RTL theme from RawGit -->
     <link rel="stylesheet" href="//cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css">
 </head>
-<body>
-<div class="container" ng-controller="AppCtrl">
+<body ng-app="myApp">
+<div class="container">
     <h1>
         הדגמה
     </h1>
     <h3>
         תיאור הדגמה
     </h3>
-    <div class="post" ng-repeat="post in posts.data">
 
-        <p>{{post.id}}</p>
+    <div ng-controller="categoriesCtrl">
+        <select ng-model="category">
+            <option value="asd">בחר קטגוריה</option>
+            <option ng-repeat="category in categories" value="{{category.name}}">{{category.name}}</option>
+        </select>
 
+        {{category}}
 
-        <div ng-repeat="specification in post.specifications">
-            <div class="col-md-3"><p>{{specification.name}}</p></div>
-            <div class="col-md-9"><p>{{specification.value}}</p></div>
+        <div ng-controller="postsCtrl">
+            <div ng-repeat="post in posts">
+
+                <p>{{post.id}}</p>
+
+                <div ng-repeat="specification in post.specifications">
+                    <div class="col-md-3"><p>{{specification.name}}</p></div>
+                    <div class="col-md-9"><p>{{specification.value}}</p></div>
+                </div>
+            </div>
         </div>
     </div>
 
 
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
 <script src="controllers/controller.js"></script>
