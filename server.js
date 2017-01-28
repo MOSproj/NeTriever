@@ -23,27 +23,19 @@ app.get('/categories', function (req, res) {
     });
 });
 
-/*app.get('/posts', function (req, res) {
+app.get('/posts', function (req, res) {
     db.posts.find({}, function (err, docs) {
         console.log(docs);
         res.json(docs);
     });
-});*/
+});
 
-app.get('/posts', function (req, res) {
-    var category = req.query.category;
-    console.log(category);
-    console.log(category);
-    if(category == "") {
-        db.posts.find({}, function (err, docs) {
-            console.log(docs);
-            res.json(docs);
-        });
-    } else {
-        db.groups.find({'category': category}, function (err, docs) {
-            console.log(docs);
-        });
-    }
+app.get('/posts/:category', function (req, res) {
+    var category = req.params.category;
+    console.log(category + " category");
+    db.groups.find({'category': category}, function (err, docs) {
+        console.log(docs);
+    });
 });
 
 app.listen(3000);

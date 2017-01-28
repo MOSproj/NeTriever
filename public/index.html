@@ -27,8 +27,8 @@
     </h3>
 
     <div ng-controller="categoriesCtrl">
-        <select ng-model="category">
-            <option value="asd">בחר קטגוריה</option>
+        <select ng-model="category" ng-change="updatePosts()">
+            <option value="">בחר קטגוריה</option>
             <option ng-repeat="category in categories" value="{{category.name}}">{{category.name}}</option>
         </select>
 
