@@ -1,5 +1,3 @@
-var myApp = angular.module('myApp', []);
-
 myApp.controller('categoriesCtrl', ['$scope', '$http', function ($scope, $http) {
     $scope.category = "";
     $http.get('/categories').then(function (response) {
