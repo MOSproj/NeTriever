@@ -3,64 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+    
     <!-- Load Bootstrap RTL theme from RawGit -->
     <link rel="stylesheet" href="//cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css">
+    
+    <link rel="stylesheet" href="css/bootstrap-tweaks.css">
+
 </head>
 <body ng-app="myApp">
-    <div class="container">
-        <h1>
-            הדגמה
-        </h1>
-        <h4>
-            הדגמת שליפת הנתונים מ MongoDB
-        </h4>
-
-        <div ng-controller="categoriesCtrl">
-            <select ng-model="category" ng-change="updatePosts()">
-                <option value="">בחר קטגוריה</option>
-                <option ng-repeat="category in categories" value="{{category.name}}">{{category.name}}</option>
-            </select>
-
-            {{category}}
-
-            <div ng-controller="postsCtrl">
-                <div ng-repeat="post in posts">
-
-                    <p>{{post.id}}</p>
-
-                    <div ng-repeat="specification in post.specifications">
-                        <div class="col-md-3"><p>{{specification.name}}</p></div>
-                        <div class="col-md-9"><p>{{specification.value}}</p></div>
-                    </div>
-                </div>
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
             </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group input-group">
+                        <input type="text" class="form-control" placeholder="חפש">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-default">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+                <ul class="navbar-options-mini nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            
+            </div><!--/.navbar-collapse -->
         </div>
-
-
+    </nav>
+    <div style="height: 50px"></div>
+    <div class="navbar navbar-default navbar-options-max">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </div>
-
+    
+    <div class="container">
+        <div class="cat-title">
+            <h1>
+                רכב
+            </h1>
+        </div>
+    </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-
+    
     <!-- Modules -->
     <script src="js/app.js"></script>
-
+    
     <!-- Controllers -->
     <script src="js/controllers/controller.js"></script>
 
