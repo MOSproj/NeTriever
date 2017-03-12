@@ -1,0 +1,9 @@
+.idea
+node_modules
+
+less/*.css
+less/mixins/*.css
+
+# config files
+python/config.ini
+config.js

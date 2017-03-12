@@ -47,4 +47,3 @@ try:
     db.posts.insert(post)
 except pymongo.errors.DuplicateKeyError, e:
     print e
-
