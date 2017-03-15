@@ -3,14 +3,12 @@ var app = express();
 var mongojs = require('mongojs');
 var config = require('./config');
 
-// TODO create and use user with restrictions
 var dbFullPath = '';
 if(config.username != '')
-    dbFullPath = config.username + ':' + config.password + '@';
+    dbFullPath += config.username + ':' + config.password + '@';
 if(config.dbPath != '')
-    dbFullPath = dbFullPath + config.dbPath + '/';
-dbFullPath = dbFullPath + config.dbName;
-console.log(config.dbName);
+    dbFullPath += config.dbPath + '/';
+dbFullPath += config.dbName;
 
 var db = mongojs(dbFullPath, ['categories', 'groups', 'posts']);
 var bodyParser = require('body-parser');

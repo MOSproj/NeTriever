@@ -1,2 +1,8 @@
+[db]
+dbPath =
+dbName =
+username =
+password =
+
 [facebook]
 access_token =

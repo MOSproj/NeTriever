@@ -1,9 +1,24 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import pymongo
-from pymongo import MongoClient
 import pprint
-connection = MongoClient('localhost:27017')
+from ConfigParser import SafeConfigParser
+
+config = SafeConfigParser()
+config.read('./config.ini')
+
+dbFullPath = 'mongodb://'
+if config.has_option('db', 'username'):
+    dbFullPath += config.get('db', 'username') + ':' + config.get('db', 'password') + '@'
+if config.has_option('db', 'dbPath'):
+    dbFullPath += config.get('db', 'dbPath')
+else:
+    dbFullPath += 'localhost:27017'
+if config.has_option('db', 'dbName'):
+    dbFullPath += '/' + config.get('db', 'dbName')
+
+connection = pymongo.MongoClient(dbFullPath)
+db = connection[config.get('db', 'dbName')]
 
 post = {
     "id": "134704043320127_623147004475826",
@@ -40,8 +55,6 @@ post = {
         }
     ]
 }
-
-db = connection.test
 
 try:
     db.posts.insert(post)
