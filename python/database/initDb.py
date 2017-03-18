@@ -1,5 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import pymongo
 from bson.dbref import DBRef
+import dbConnection
 
 
 def init_categories(db, categories=[]):
@@ -14,7 +17,7 @@ def init_categories(db, categories=[]):
         try:
             db.categories.insert(category)
         except pymongo.errors.DuplicateKeyError:
-            print "pymongo.errors.DuplicateKeyError: " + category["name"] + "category"
+            print "pymongo.errors.DuplicateKeyError: " + category["name"] + " category"
             pass
 
 
@@ -52,3 +55,40 @@ def init_posts(db, posts=[]):
         except pymongo.errors.DuplicateKeyError:
             print "pymongo.errors.DuplicateKeyError: " + post["id"]
             pass
+
+
+def main():
+    categories = [{
+        "name": "רכב"
+    }, {
+        "name": "סלולר"
+    }, {
+        "name": "נדלן"
+    }]
+
+    groups = [{
+        "id": 34704043320127,
+        "facebook_name": "pishpeshuk.cars",
+        "name": "פשפשוק רכב",
+        "category": "רכב"
+    }, {
+        "id": 1555004694768144,
+        "name": "פשפשוק סלולר",
+        "category": "סלולר"
+    }, {
+
+        "id": 303803599700653,
+        "facebook_name": "pishpeshuk.Nadlan",
+        "name": "פשפשוק נדלן",
+        "category": "נדלן"
+    }]
+
+    db = dbConnection.get_db()
+
+    init_categories(db, categories)
+    init_groups(db, groups)
+    init_posts(db)
+
+
+if __name__ == '__main__':
+    main()

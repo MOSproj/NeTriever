@@ -1,4 +1,4 @@
-myApp.controller('categoriesCtrl', ['$scope', '$http', function ($scope, $http) {
+angular.module('myApp').controller('categoriesCtrl', ['$scope', '$http', function ($scope, $http) {
     $scope.category = "";
     $http.get('/categories').then(function (response) {
         console.log(response);
@@ -10,7 +10,7 @@ myApp.controller('categoriesCtrl', ['$scope', '$http', function ($scope, $http) 
     }
 }]);
 
-myApp.controller('postsCtrl', ['$scope', '$http', function ($scope, $http) {
+angular.module('myApp').controller('postsCtrl', ['$scope', '$http', function ($scope, $http) {
     if ($scope.category == "") {
         $http.get('/posts').then(function (response) {
             console.log(response);
