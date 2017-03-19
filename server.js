@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var mongojs = require('mongojs');
 var config = require('./config');
+var bodyParser = require('body-parser');
 
 var dbFullPath = '';
 if(config.username != '')
@@ -11,7 +12,6 @@ if(config.dbPath != '')
 dbFullPath += config.dbName;
 
 var db = mongojs(dbFullPath, ['categories', 'groups', 'posts']);
-var bodyParser = require('body-parser');
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
@@ -23,6 +23,8 @@ db.on('error', function (err) {
 db.on('connect', function () {
     console.log('database connected')
 });
+
+app.use('/scripts', express.static(__dirname + '/node_modules/'));
 
 app.get('/categories', function (req, res) {
     db.categories.find({}, function (err, docs) {

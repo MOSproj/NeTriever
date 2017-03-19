@@ -67,7 +67,7 @@ def main():
     }]
 
     groups = [{
-        "id": 34704043320127,
+        "id": 134704043320127,
         "facebook_name": "pishpeshuk.cars",
         "name": "פשפשוק רכב",
         "category": "רכב"

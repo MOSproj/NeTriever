@@ -1,2 +1,2 @@
-facebook-sdk
-pymongo
+facebook-sdk>=2.0.0
+pymongo>=3.4.0
