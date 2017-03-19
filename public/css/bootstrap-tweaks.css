@@ -2,6 +2,9 @@ nav .row {
   margin-right: 0;
   margin-left: 0;
 }
+.navbar {
+  border: inherit;
+}
 .navbar-options-max {
   display: none;
 }
