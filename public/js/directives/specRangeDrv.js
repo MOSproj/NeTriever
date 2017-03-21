@@ -1,11 +1,11 @@
 (function () {
-    angular.module('myApp').directive('navbar', function() {
+    angular.module('myApp').directive('specRange', function() {
         return {
             restrict: 'E',
             scope: {
                 info: '='
             },
-            templateUrl:'/js/directives/navbar.html'
+            templateUrl:'js/directives/specRangeDrv.html'
         };
     });
 })();

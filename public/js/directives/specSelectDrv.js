@@ -5,7 +5,7 @@
             scope: {
                 info: '='
             },
-            templateUrl:'/js/directives/specSelect.html',
+            templateUrl:'/js/directives/specSelectDrv.html',
             link: function($scope, $el) {
                 $('.selectpicker').selectpicker();
             }

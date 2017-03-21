@@ -1,19 +1,23 @@
 (function(){
-    "use strict"
+    "use strict";
 
-    /*angular.module('myApp').config(function($routeProvider) {
+    angular.module('myApp').config(['$routeProvider', '$locationProvider', routing]);
+
+    function routing($routeProvider, $locationProvider) {
         $routeProvider
         .when("/", {
-            templateUrl : "main.htm"
+            templateUrl : "/views/home.html"
         })
-        .when("/red", {
-            templateUrl : "red.htm"
+        .when("/categories/:category", {
+            controller: 'postsCtrl',
+            controllerAs:"category",
+            templateUrl : "/views/categories.html"
         })
-        .when("/green", {
-            templateUrl : "green.htm"
-        })
-        .when("/blue", {
-            templateUrl : "blue.htm"
+        .otherwise({
+          redirectTo: '/'
         });
-    });*/
+
+        $locationProvider.hashPrefix('');
+        $locationProvider.html5Mode(true);
+    }
 })();

@@ -1,12 +1,16 @@
 (function(){
     "use strict";
 
-    angular.module('myApp').controller('categoriesCtrl', ["$scope", "categoriesServices", categoriesCtrl]);
+    angular.module('myApp').controller('categoriesCtrl', ["$scope", "$location", "categoriesSrv", categoriesCtrl]);
 
-    function categoriesCtrl ($scope, categoriesServices) {
-        categoriesServices.getCategories().then(function (response) {
+    function categoriesCtrl ($scope, $location, categoriesSrv) {
+        var self = this;
+        self.isActive = function (viewLocation) {
+            return viewLocation === $location.path();
+        };
+        categoriesSrv.getCategories().then(function (response) {
             console.log(response);
-            $scope.categories = response.data;
+            self.categories = response.data;
         });
     }
 })();

@@ -1,16 +1,16 @@
 (function(){
     "use strict";
 
-    angular.module('myApp').factory("postsServices", ["$http", "$log" , postsServices]);
+    angular.module('myApp').factory("postsSrv", ["$http", "$log" , postsSrv]);
 
-    function postsServices($http,$log){
+    function postsSrv($http,$log){
         var cache = null;
 
         if (cache == null)
             return {
-                /*getCategories : function(){
-                    return $http.get('/categories');
-                }*/
+                getPosts : function(category){
+                    return $http.get('/get-posts/' + category);
+                }
             };
         else return cache;
     }

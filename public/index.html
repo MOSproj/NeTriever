@@ -6,47 +6,29 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
     <!-- Load Bootstrap RTL theme from RawGit -->
     <link rel="stylesheet" href="//cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css">
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-</head>
-<body>
-    <navbar></navbar>
-
-    <div class="container">
-        <div class="cat-title">
-            <h1>
-                רכב
-            </h1>
-        </div>
-    </div>
-
-    <div class="container white-container">
-        <div class="row">
-            <div class="col-sm-3">
-                ng-repeat="spec in specs"
-                <spec-select></spec-select>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-9">
-                <button type="button" class="btn btn-link">אפשרויות נוספות</button>
-            </div>
-            <div class="col-xs-3">
-                <button class="btn btn-default" style="float: left">חפש</button>
-            </div>
-        </div>
-    </div>
-
-
 
     <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
+
+    <link data-turbolinks-track="false" debug="false" href="https://fonts.googleapis.com/earlyaccess/opensanshebrew.css" media="all" rel="stylesheet">
+
+    <base href="/">
+</head>
+<body>
+    <navbar></navbar>
+
+    <div ng-view></div>
+
+
+
 
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
@@ -62,12 +44,13 @@
     <script src="/js/services/postsSrv.js"></script>
 
     <!-- Controllers -->
-    <script src="/js/controllers/controller.js"></script>
     <script src="/js/controllers/categoriesCtrl.js"></script>
+    <script src="/js/controllers/postsCtrl.js"></script>
 
     <!-- Directives -->
-    <script src="/js/directives/navbar.js"></script>
-    <script src="/js/directives/specSelect.js"></script>
+    <script src="/js/directives/navbarDrv.js"></script>
+    <script src="/js/directives/specSelectDrv.js"></script>
+    <script src="/js/directives/specRangeDrv.js"></script>
 
     <script src="/js/boots.js"></script>
 </body>

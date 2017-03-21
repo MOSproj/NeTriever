@@ -4,6 +4,7 @@
 
 ###  Install requirements ###
 run ` pip install -r python\requirements.txt ` to install python requirements.
+
 run ` npm install ` to install node requirements.
 
 ###  Run server ###
