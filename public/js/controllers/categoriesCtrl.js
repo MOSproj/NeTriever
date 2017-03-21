@@ -1,10 +1,10 @@
 (function(){
     "use strict";
 
-    angular.module('myApp').controller('categoriesCtrl', ["$scope", "postsServices", categoriesCtrl]);
+    angular.module('myApp').controller('categoriesCtrl', ["$scope", "categoriesServices", categoriesCtrl]);
 
-    function categoriesCtrl ($scope, postsServices) {
-        postsServices.getCategories().then(function (response) {
+    function categoriesCtrl ($scope, categoriesServices) {
+        categoriesServices.getCategories().then(function (response) {
             console.log(response);
             $scope.categories = response.data;
         });

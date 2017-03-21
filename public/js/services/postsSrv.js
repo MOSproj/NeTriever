@@ -8,9 +8,9 @@
 
         if (cache == null)
             return {
-                getCategories : function(){
+                /*getCategories : function(){
                     return $http.get('/categories');
-                }
+                }*/
             };
         else return cache;
     }

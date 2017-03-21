@@ -10,7 +10,8 @@
     <!-- Load Bootstrap RTL theme from RawGit -->
     <link rel="stylesheet" href="//cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css">
 
-    <link rel="stylesheet" href="css/bootstrap-tweaks.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
     <navbar></navbar>
@@ -23,9 +24,25 @@
         </div>
     </div>
 
+    <div class="container white-container">
+        <div class="row">
+            <div class="col-sm-3">
+                ng-repeat="spec in specs"
+                <spec-select></spec-select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-9">
+                <button type="button" class="btn btn-link">אפשרויות נוספות</button>
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-default" style="float: left">חפש</button>
+            </div>
+        </div>
+    </div>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
     <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
@@ -34,12 +51,14 @@
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
     <script src="/scripts/angular-route/angular-route.js"></script>
+    <script src="/js/bootstrap/bootstrap-select.js"></script>
 
     <!-- Modules -->
     <script src="/js/app.js"></script>
     <script src="/js/route.js"></script>
 
     <!-- Services -->
+    <script src="/js/services/categoriesSrv.js"></script>
     <script src="/js/services/postsSrv.js"></script>
 
     <!-- Controllers -->
@@ -48,6 +67,7 @@
 
     <!-- Directives -->
     <script src="/js/directives/navbar.js"></script>
+    <script src="/js/directives/specSelect.js"></script>
 
     <script src="/js/boots.js"></script>
 </body>

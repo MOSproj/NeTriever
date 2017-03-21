@@ -12,8 +12,6 @@ nav .row {
   .navbar-options-mini {
     display: none;
   }
-}
-@media (min-width: 768px) {
   .navbar-options-max {
     display: inherit;
   }
@@ -26,4 +24,7 @@ h2,
 h3 {
   margin-top: 0;
   margin-bottom: 0;
+}
+.white-container {
+  background: white;
 }
