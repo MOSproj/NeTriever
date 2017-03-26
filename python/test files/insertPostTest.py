@@ -4,9 +4,10 @@ from python.database.dbConnection import *
 import datetime
 from bson.dbref import DBRef
 import python.database
+import python.Database
 
 
-def main():
+def main(database):
     post = {
         "id": 623147004475826,
         "group": DBRef(collection="groups", id="group id.."),
@@ -36,12 +37,8 @@ def main():
         }
     }
 
-    db = python.database.get_db()
-
-    try:
-        db.posts.insert(post)
-    except pymongo.errors.DuplicateKeyError, e:
-        print e
+    database.insert_post(post)
 
 if __name__ == '__main__':
-    main()
+    database = python.Database.Database()
+    main(database)

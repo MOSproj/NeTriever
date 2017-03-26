@@ -1,16 +1,18 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import database
-import fb
+import Database
+import Facebook
 
 
 def main():
+    database = Database.Database()
+    facebook = Facebook.Facebook()
     groups = database.get_groups()
     for group in groups:
-        feed = fb.get_posts(group['id'])
-        for post in feed['data']:
+        feed = facebook.get_feed(group['id'])
+        for post in feed:
             post_to_insert = dict()
-            if not post['is_expired'] and not post['is_hidden'] and not database.if_exists(long(post['id'].split("_")[1])):
+            if not post['is_expired'] and not post['is_hidden'] and not database.post_id_exists(long(post['id'].split("_")[1])):
                 post_to_insert['id'] = long(post['id'].split("_")[1])
                 post_to_insert['group_id'] = long(post['id'].split("_")[0])
                 post_to_insert['from'] = {

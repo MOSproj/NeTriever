@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import pymongo
 from bson.dbref import DBRef
-import dbConnection
+import python.Database
 
 
 def init_categories(db, categories=[]):
@@ -57,7 +57,7 @@ def init_posts(db, posts=[]):
             pass
 
 
-def main():
+def main(database):
     categories = [{
         "name": "רכב",
         "specs": {
@@ -102,7 +102,7 @@ def main():
         "category": "נדלן"
     }]
 
-    db = dbConnection.get_db()
+    db = database.get_db()
 
     init_categories(db, categories)
     init_groups(db, groups)
@@ -110,4 +110,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    database = python.Database.Database()
+    main(database)
