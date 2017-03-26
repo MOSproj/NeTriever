@@ -10,7 +10,7 @@ if(config.dbPath !== '')
     dbFullPath += config.dbPath + '/';
 dbFullPath += config.dbName;
 
-var db = mongojs(dbFullPath, ['categories', 'groups', 'posts']);
+var db = mongojs(dbFullPath, ['categories', 'groups', 'posts2']);
 db.on('error', function (err) {
     console.log('database error', err)
 });
@@ -41,7 +41,7 @@ var getPostsByGroups = function (groups, res) {
     groups.forEach(function(group) {
         groupsIds.push(group.id);
     });
-    db.posts.find({'group_id': {'$in': groupsIds}}, function (err, docs) {
+    db.posts2.find({'group_id': {'$in': groupsIds}}, function (err, docs) {
         res(docs);
     });
 };

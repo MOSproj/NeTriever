@@ -1,0 +1,4787 @@
+{
+  "feed": {
+    "data": [
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/663548870435639",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/663548870435639",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:49:29+0000",
+              "from": {
+                "id": "817583834954766",
+                "name": "אבו סמא"
+              },
+              "id": "669575193166340",
+              "like_count": 0,
+              "message": "ו",
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjMU1Ua3pNVFkyTXpRd09qRTBPRGswTURVM05qaz0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjMU1Ua3pNVFkyTXpRd09qRTBPRGswTURVM05qaz0ZD"
+            }
+          }
+        },
+        "created_time": "2017-03-06T09:45:52+0000",
+        "from": {
+          "id": "817583834954766",
+          "name": "אבו סמא"
+        },
+        "icon": "https://www.facebook.com/images/icons/photo.gif",
+        "id": "134704043320127_663548870435639",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "10203269053235687",
+              "name": "Yossi Aruch"
+            },
+            {
+              "id": "119463021725990",
+              "name": "טארק פריגאת אלפריגאת"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "MTE5NDYzMDIxNzI1OTkw",
+              "before": "MTAyMDMyNjkwNTMyMzU2ODcZD"
+            }
+          }
+        },
+        "link": "https://www.facebook.com/photo.php?fbid=1346690485377429&set=gm.663548870435639&type=3",
+        "message": "קורולה gli\n₪20 - Haifa, Israel\n\nשנת 2005 יד 2 פרטית קמ 170 דגם gli שמור מאוד ויפה נקי מתאונות מחיר 20 ללא החלפה",
+        "name": "Photos from ‎אבו סמא‎'s post",
+        "object_id": "1346690485377429",
+        "picture": "https://fb-s-a-a.akamaihd.net/h-ak-xal1/v/t1.0-0/s130x130/17155433_1346690485377429_2532376367600724447_n.jpg?oh=49de868ccd803b01a54f0870d5db94b8&oe=5929A091&__gda__=1499373972_b849677963c0c060e365a8fadec1f231",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "status_type": "added_photos",
+        "type": "photo",
+        "updated_time": "2017-03-13T11:49:31+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669561076501085",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669561076501085",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:49:23+0000",
+              "from": {
+                "id": "855500601133859",
+                "name": "Oriya Rubin"
+              },
+              "id": "669575176499675",
+              "like_count": 0,
+              "message": "מחיר???",
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjMU1UYzJORGs1TmpjMU9qRTBPRGswTURVM05qUT0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjMU1UYzJORGs1TmpjMU9qRTBPRGswTURVM05qUT0ZD"
+            }
+          }
+        },
+        "created_time": "2017-03-13T11:29:02+0000",
+        "from": {
+          "id": "893891883967709",
+          "name": "Carmel V Omri Mugrabi"
+        },
+        "id": "134704043320127_669561076501085",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "543435835766730",
+              "name": "Mor Yosifof"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "NTQzNDM1ODM1NzY2NzMw",
+              "before": "NTQzNDM1ODM1NzY2NzMw"
+            }
+          }
+        },
+        "message": "***למכירה בלבד ולרציניים בלבד .\nיונדאי i 10 שנת 2010 , אוטומט . \nהרכב עשה 104,000 ק״מ בלבד ! \nלפרטים נוספים - 0504208860",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "type": "status",
+        "updated_time": "2017-03-13T11:49:27+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669541773169682",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669541773169682",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:11:16+0000",
+              "from": {
+                "id": "750084841701946",
+                "name": "Almog Sahrai"
+              },
+              "id": "669545159836010",
+              "like_count": 0,
+              "message": "מעוניין בהחלפה?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:12:24+0000",
+              "from": {
+                "id": "876107102418114",
+                "name": "Gor Paronian"
+              },
+              "id": "669545859835940",
+              "like_count": 0,
+              "message": "לא",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:14:17+0000",
+              "from": {
+                "id": "366340556857958",
+                "name": "עמית אברהם"
+              },
+              "id": "669546809835845",
+              "like_count": 0,
+              "message": "אביב אניסימוב",
+              "message_tags": [
+                {
+                  "id": "816355748387145",
+                  "length": 13,
+                  "name": "אביב אניסימוב",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:16:56+0000",
+              "from": {
+                "id": "10204208192597202",
+                "name": "Jenia Vertigo"
+              },
+              "id": "669549306502262",
+              "like_count": 0,
+              "message": "חבר אתה חיי בסרט !!",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:20:33+0000",
+              "from": {
+                "id": "876107102418114",
+                "name": "Gor Paronian"
+              },
+              "id": "669554406501752",
+              "like_count": 2,
+              "message": "סרט טוב",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:30:10+0000",
+              "from": {
+                "id": "1023048687709174",
+                "name": "Moran Orlian Doron"
+              },
+              "id": "669561596501033",
+              "like_count": 0,
+              "message": "אני מוכן לבוא לקחת היום ב17",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:35:16+0000",
+              "from": {
+                "id": "876107102418114",
+                "name": "Gor Paronian"
+              },
+              "id": "669565156500677",
+              "like_count": 0,
+              "message": "בוא",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:47:42+0000",
+              "from": {
+                "id": "881700901856859",
+                "name": "Ronel Dahan"
+              },
+              "id": "669574203166439",
+              "like_count": 0,
+              "message": "טלפון",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:49:23+0000",
+              "from": {
+                "id": "829168060465923",
+                "name": "Orel Vaizman"
+              },
+              "id": "669575163166343",
+              "like_count": 0,
+              "message": "18",
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjMU1UWXpNVFkyTXpRek9qRTBPRGswTURVM05qTT0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRRMU1UVTVPRE0yTURFd09qRTBPRGswTURNME56az0ZD"
+            }
+          }
+        },
+        "created_time": "2017-03-13T11:07:59+0000",
+        "from": {
+          "id": "876107102418114",
+          "name": "Gor Paronian"
+        },
+        "icon": "https://www.facebook.com/images/icons/photo.gif",
+        "id": "134704043320127_669541773169682",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "10204597124838904",
+              "name": "Yuri Pivovar"
+            },
+            {
+              "id": "277650062403902",
+              "name": "Levi Belhamou"
+            },
+            {
+              "id": "968450799855415",
+              "name": "Matanel Mozes"
+            },
+            {
+              "id": "715158448577604",
+              "name": "אבירם שושני"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "NzE1MTU4NDQ4NTc3NjA0",
+              "before": "MTAyMDQ1OTcxMjQ4Mzg5MDQZD"
+            }
+          }
+        },
+        "link": "https://www.facebook.com/photo.php?fbid=1719479878080828&set=gm.669541773169682&type=3",
+        "message": "הונדה אקורד עם סאנרוף ....!\n₪22,000 - ‎ראשון לציון‎\n\nהונדה אקורד 2003 דגם אקזיוקיטיב המפואר ביותר \nכולל סאנרוף נדיר למנוע 2.0\nרכב יפייפה צבע כסף \nמנוע 2.0 155כס אוטומט \nיד 01 עברה מאמא לבן \nברשיון עשתה.200k\nשמורה ומטופל עברה יד במשפחה נהג יחיד \nשמורה כחדשה הכל תקין ברכב \nמזגם חימום 0תקלות \nהרכב עבר תאונת פח בחזית  בשנת 2003 ללא יריד ערך ללא שילדה \nטסט נגמר בסוף.החודש הנוכחי 31/03\nהמחיר גמיש מאוד לרייצינים ולא לקשקשנים \nניתן לראות.את.הרכב בתיאום מראש \nמצנצל מראש שאני לא זמין הרבה \nמחירון הרכב לדגם הנוכחי 24950 שקל \nזהו הכל רשום עכשיו בבקשה רק לרציניים.!\n\nמציאה.\nגור 0548141946\nגמיש ....",
+        "name": "Photos from Gor Paronian's post",
+        "object_id": "1719479878080828",
+        "picture": "https://fb-s-a-a.akamaihd.net/h-ak-xpt1/v/t1.0-0/s130x130/17203186_1719479878080828_3000325886876853546_n.jpg?oh=bd934dad4f7e90eadcf77274ed4eafea&oe=596173A3&__gda__=1496566184_7bab17b2492eb44ad5e837efd5e591dd",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "shares": {
+          "count": 1
+        },
+        "status_type": "added_photos",
+        "type": "photo",
+        "updated_time": "2017-03-13T11:49:24+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669470229843503",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669470229843503",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:31:25+0000",
+              "from": {
+                "id": "1027686130596852",
+                "name": "ג'וני ג'וני"
+              },
+              "id": "669562513167608",
+              "like_count": 0,
+              "message": "כמה זמן אין טסט ?",
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRZAeU5URXpNVFkzTmpBNE9qRTBPRGswTURRMk9EWT0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRZAeU5URXpNVFkzTmpBNE9qRTBPRGswTURRMk9EWT0ZD"
+            }
+          }
+        },
+        "created_time": "2017-03-13T09:39:36+0000",
+        "from": {
+          "id": "346132288892731",
+          "name": "אודי ממן"
+        },
+        "icon": "https://www.facebook.com/images/icons/photo.gif",
+        "id": "134704043320127_669470229843503",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "994820387202256",
+              "name": "Amran Roba Kabha"
+            },
+            {
+              "id": "1523932644526735",
+              "name": "רני ממן"
+            },
+            {
+              "id": "832964456725629",
+              "name": "Or Tardio"
+            },
+            {
+              "id": "632589836820150",
+              "name": "פדהצור כהן"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "NjMyNTg5ODM2ODIwMTUw",
+              "before": "OTk0ODIwMzg3MjAyMjU2"
+            }
+          }
+        },
+        "link": "https://www.facebook.com/photo.php?fbid=659132117592745&set=gm.669470229843503&type=3",
+        "message": "הונדה סיויק 2005 EX\n₪25,000 - ‎צפת‎\n\nהדגם הכי מפואר בדגם, יד 01 פרטית , 215,000 ק״מ אחרי טיפול במוסך הונדה מורשה , התחייבות בבדיקה , רכב חזק מאוד וחסכוני , טסט עד סוף חודש הבא ,אפשרות להעביר אותה טסט עכשיו ויהיה טסט לשנה וחודש בתוספת מחיר סמלי",
+        "name": "Photos from ‎אודי ממן‎'s post",
+        "object_id": "659132117592745",
+        "picture": "https://fb-s-b-a.akamaihd.net/h-ak-xpl1/v/t1.0-0/q83/s130x130/17202984_659132117592745_5465774242460175064_n.jpg?oh=29c2a6f3a7c31e5aa008c7d920f4e5a2&oe=596C0C1F&__gda__=1496053682_383b094e88e9c7681d45f75b4510a882",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "status_type": "added_photos",
+        "type": "photo",
+        "updated_time": "2017-03-13T11:49:18+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669566229833903",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669566229833903",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:38:41+0000",
+              "from": {
+                "id": "950254171670779",
+                "name": "Dor Dahan"
+              },
+              "id": "669567676500425",
+              "like_count": 0,
+              "message": "",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:38:59+0000",
+              "from": {
+                "id": "10202953443316157",
+                "name": "Barak Yefet"
+              },
+              "id": "669567856500407",
+              "like_count": 0,
+              "message": "2004 \nיד 2\nקמ 180500",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:43:22+0000",
+              "from": {
+                "id": "145943849094142",
+                "name": "אברהים אלהושלה"
+              },
+              "id": "669571543166705",
+              "like_count": 1,
+              "message": "",
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjeE5UUXpNVFkyTnpBMU9qRTBPRGswTURVME1ETT0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRZAM05qYzJOVEF3TkRJMU9qRTBPRGswTURVeE1qST0ZD"
+            }
+          }
+        },
+        "created_time": "2017-03-13T11:36:36+0000",
+        "from": {
+          "id": "10205508871104375",
+          "name": "Asaf Hevroni"
+        },
+        "id": "134704043320127_669566229833903",
+        "is_expired": false,
+        "is_hidden": false,
+        "message": "מחפש רכב\n₪15,000 - ‎נס ציונה‎\n\nשלום לכולם אני מחפש רכב חסכוני אמין קמ כמה שיותר נמוך עד 15000 עדיף רכב קטן",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "type": "status",
+        "updated_time": "2017-03-13T11:49:17+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669397826517410",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669397826517410",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T07:53:51+0000",
+              "from": {
+                "id": "821059827917053",
+                "name": "Ameer Zoubi"
+              },
+              "id": "669398433184016",
+              "like_count": 1,
+              "message": "חמודי זועבי זועבי",
+              "message_tags": [
+                {
+                  "id": "10152710996258509",
+                  "length": 17,
+                  "name": "חמודי זועבי זועבי",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T07:58:22+0000",
+              "from": {
+                "id": "1621662584749328",
+                "name": "אלון כהן"
+              },
+              "id": "669400876517105",
+              "like_count": 1,
+              "message": "Generishen Idan Cohen",
+              "message_tags": [
+                {
+                  "id": "10152671827395890",
+                  "length": 10,
+                  "name": "Idan Cohen",
+                  "offset": 11,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T07:58:28+0000",
+              "from": {
+                "id": "753179934770216",
+                "name": "לירז בן ציון"
+              },
+              "id": "669400959850430",
+              "like_count": 1,
+              "message": "🔝",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T07:59:05+0000",
+              "from": {
+                "id": "10152582283860750",
+                "name": "Yaakov Gililov"
+              },
+              "id": "669401563183703",
+              "like_count": 0,
+              "message": "רוצה 12 נסוגר",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:00:54+0000",
+              "from": {
+                "id": "929012817110803",
+                "name": "LeRi Khukhashvili"
+              },
+              "id": "669403213183538",
+              "like_count": 0,
+              "message": "שלום אחלפה אם תוספת",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:01:20+0000",
+              "from": {
+                "id": "10206184827119908",
+                "name": "Moanes Yakop"
+              },
+              "id": "669403459850180",
+              "like_count": 2,
+              "message": "Enas Einas Yakop",
+              "message_tags": [
+                {
+                  "id": "1430457307267465",
+                  "length": 11,
+                  "name": "Einas Yakop",
+                  "offset": 5,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:04:17+0000",
+              "from": {
+                "id": "652017188245065",
+                "name": "אושר ישראלי"
+              },
+              "id": "669405336516659",
+              "like_count": 1,
+              "message": "אופק ישראלי",
+              "message_tags": [
+                {
+                  "id": "1133017323379682",
+                  "length": 11,
+                  "name": "אופק ישראלי",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:05:34+0000",
+              "from": {
+                "id": "10152915272698206",
+                "name": "Jameel Fraitekh"
+              },
+              "id": "669406016516591",
+              "like_count": 1,
+              "message": "יש לי גולף v5 אם מישהו מעוניין",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:06:19+0000",
+              "from": {
+                "id": "996476090379137",
+                "name": "Roi Aroussi"
+              },
+              "id": "669406293183230",
+              "like_count": 2,
+              "message": "Yaron Ohayon",
+              "message_tags": [
+                {
+                  "id": "347968262058887",
+                  "length": 12,
+                  "name": "Yaron Ohayon",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:07:39+0000",
+              "from": {
+                "id": "869971896365620",
+                "name": "Matan Bell"
+              },
+              "id": "669407239849802",
+              "like_count": 1,
+              "message": "Idan Musli",
+              "message_tags": [
+                {
+                  "id": "10201874660694950",
+                  "length": 10,
+                  "name": "Idan Musli",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:07:49+0000",
+              "from": {
+                "id": "10205756225045341",
+                "name": "Rami Jabr Gosh"
+              },
+              "id": "669407353183124",
+              "like_count": 0,
+              "message": "12 אני מוכן",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:07:50+0000",
+              "from": {
+                "id": "10204224577469484",
+                "name": "Adi Khoury"
+              },
+              "id": "669407356516457",
+              "like_count": 2,
+              "message": "Hani Elouti",
+              "message_tags": [
+                {
+                  "id": "165871247080852",
+                  "length": 11,
+                  "name": "Hani Elouti",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:08:59+0000",
+              "from": {
+                "id": "10200194244814651",
+                "name": "Netanel Dana Dayan"
+              },
+              "id": "669408473183012",
+              "like_count": 0,
+              "message": "Nir Jorji",
+              "message_tags": [
+                {
+                  "id": "10202372455178097",
+                  "length": 9,
+                  "name": "Nir Jorji",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:09:39+0000",
+              "from": {
+                "id": "875688712474201",
+                "name": "Tamar Levy"
+              },
+              "id": "669409309849595",
+              "like_count": 0,
+              "message": "מתי טסט",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:10:29+0000",
+              "from": {
+                "id": "155962488104101",
+                "name": "Ron Ezra"
+              },
+              "id": "669410253182834",
+              "like_count": 0,
+              "message": "דיזל?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:11:07+0000",
+              "from": {
+                "id": "10203567805891538",
+                "name": "Daniella Shor"
+              },
+              "id": "669411046516088",
+              "like_count": 0,
+              "message": "Ohad Roa",
+              "message_tags": [
+                {
+                  "id": "10201504438051306",
+                  "length": 8,
+                  "name": "Ohad Roa",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:11:20+0000",
+              "from": {
+                "id": "1446590428972257",
+                "name": "ניר חסבאווי"
+              },
+              "id": "669411276516065",
+              "like_count": 0,
+              "message": "אופק נבטי",
+              "message_tags": [
+                {
+                  "id": "1036751316342523",
+                  "length": 9,
+                  "name": "אופק נבטי",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:12:04+0000",
+              "from": {
+                "id": "10202643393299475",
+                "name": "Shlomi Netanel"
+              },
+              "id": "669412146515978",
+              "like_count": 1,
+              "message": "Matan Sidi",
+              "message_tags": [
+                {
+                  "id": "954322621262773",
+                  "length": 10,
+                  "name": "Matan Sidi",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:12:55+0000",
+              "from": {
+                "id": "10205028023677688",
+                "name": "Ariel Atias"
+              },
+              "id": "669413026515890",
+              "like_count": 1,
+              "message": "ינון אטיאס",
+              "message_tags": [
+                {
+                  "id": "644174385635651",
+                  "length": 10,
+                  "name": "ינון אטיאס",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:15:48+0000",
+              "from": {
+                "id": "10152385892509800",
+                "name": "Dudū Levy"
+              },
+              "id": "669415026515690",
+              "like_count": 1,
+              "message": "Assaf Pushtarok",
+              "message_tags": [
+                {
+                  "id": "10204782777909296",
+                  "length": 15,
+                  "name": "Assaf Pushtarok",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:18:54+0000",
+              "from": {
+                "id": "1376593552658022",
+                "name": "Iluxa Lvov"
+              },
+              "id": "669416649848861",
+              "like_count": 1,
+              "message": "Leon Lolik Shinder",
+              "message_tags": [
+                {
+                  "id": "843196682358525",
+                  "length": 18,
+                  "name": "Leon Lolik Shinder",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:19:01+0000",
+              "from": {
+                "id": "971113799577129",
+                "name": "יעקב אהרונוב"
+              },
+              "id": "669416726515520",
+              "like_count": 1,
+              "message": "ניסים קולונדרוב",
+              "message_tags": [
+                {
+                  "id": "430244233767087",
+                  "length": 15,
+                  "name": "ניסים קולונדרוב",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:19:16+0000",
+              "from": {
+                "id": "10202821676941514",
+                "name": "Adi Amos"
+              },
+              "id": "669416909848835",
+              "like_count": 2,
+              "message": "הראל עמוס",
+              "message_tags": [
+                {
+                  "id": "1003918829623429",
+                  "length": 9,
+                  "name": "הראל עמוס",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:19:44+0000",
+              "from": {
+                "id": "10152679960882236",
+                "name": "Ben Cohen"
+              },
+              "id": "669417226515470",
+              "like_count": 0,
+              "message": "כמה אוכלת?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:19:59+0000",
+              "from": {
+                "id": "881050088589159",
+                "name": "Lidor Dostar"
+              },
+              "id": "669417373182122",
+              "like_count": 1,
+              "message": "Refael Shem-Tov",
+              "message_tags": [
+                {
+                  "id": "891757367519501",
+                  "length": 15,
+                  "name": "Refael Shem-Tov",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TkRFM016Y3pNVGd5TVRJeU9qRTBPRGt6T1RNeU1EQT0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TXprNE5ETXpNVGcwTURFMk9qRTBPRGt6T1RFMk16RT0ZD"
+            },
+            "next": "https://graph.facebook.com/v2.2/134704043320127_669397826517410/comments?access_token=EAACEdEose0cBAD0GyRewSYRkPcKahN5m4PZA6XmZCLK3SsXawwIvutZBEb7MvMfv5FdVLZCPhZBzELb46ZAaGVWRLd3xHeoZBP35TlbCl1Be63Edv7dwVpWsZAKPkxHZAxaz5tQQZAkceeInNzTahKpZBERPvo6xIb5pS0eVjx1RFRaat6wsgVMa34z4vEkk6ZCOaf0ZD&limit=25&after=WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TkRFM016Y3pNVGd5TVRJeU9qRTBPRGt6T1RNeU1EQT0ZD"
+          }
+        },
+        "created_time": "2017-03-13T07:53:09+0000",
+        "from": {
+          "id": "302177026606150",
+          "name": "Mordechai Sheli Kotigaro"
+        },
+        "icon": "https://www.facebook.com/images/icons/photo.gif",
+        "id": "134704043320127_669397826517410",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "884784451547130",
+              "name": "Moshe Sapir"
+            },
+            {
+              "id": "374070636085105",
+              "name": "גמעה אבן ברי"
+            },
+            {
+              "id": "834409046590261",
+              "name": "עדן צקוב"
+            },
+            {
+              "id": "354152764762667",
+              "name": "Muhammad Elyan"
+            },
+            {
+              "id": "1425489271058517",
+              "name": "Dudi Du"
+            },
+            {
+              "id": "976920862334996",
+              "name": "Uri Elhazov"
+            },
+            {
+              "id": "359332737578599",
+              "name": "David Cohen"
+            },
+            {
+              "id": "1379480779021030",
+              "name": "Yarin Malul New"
+            },
+            {
+              "id": "641159952627296",
+              "name": "עוז באבא"
+            },
+            {
+              "id": "633624516757672",
+              "name": "Anan Alseed"
+            },
+            {
+              "id": "345769635548108",
+              "name": "Ameer Gnaeem"
+            },
+            {
+              "id": "1573325869591336",
+              "name": "Alla Ribak"
+            },
+            {
+              "id": "818338361536201",
+              "name": "Anton Afrimzon"
+            },
+            {
+              "id": "277650062403902",
+              "name": "Levi Belhamou"
+            },
+            {
+              "id": "829280737090567",
+              "name": "Max Riabuha"
+            },
+            {
+              "id": "1417545685229497",
+              "name": "רונה אלקובי"
+            },
+            {
+              "id": "715158448577604",
+              "name": "אבירם שושני"
+            },
+            {
+              "id": "10204574544797850",
+              "name": "Liad Cohen"
+            },
+            {
+              "id": "832771733439868",
+              "name": "מעתמר סולטאן"
+            },
+            {
+              "id": "908731792503986",
+              "name": "Chen Oded"
+            },
+            {
+              "id": "949722965056766",
+              "name": "ישראל וקנין"
+            },
+            {
+              "id": "753593248008636",
+              "name": "Hagai Ragonis"
+            },
+            {
+              "id": "1621783678086071",
+              "name": "אביב ושיר סגל"
+            },
+            {
+              "id": "142786852865914",
+              "name": "מוסטפא איוב"
+            },
+            {
+              "id": "10203246779712573",
+              "name": "אביאל חורש"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "MTAyMDMyNDY3Nzk3MTI1NzMZD",
+              "before": "ODg0Nzg0NDUxNTQ3MTMw"
+            },
+            "next": "https://graph.facebook.com/v2.2/134704043320127_669397826517410/likes?access_token=EAACEdEose0cBAD0GyRewSYRkPcKahN5m4PZA6XmZCLK3SsXawwIvutZBEb7MvMfv5FdVLZCPhZBzELb46ZAaGVWRLd3xHeoZBP35TlbCl1Be63Edv7dwVpWsZAKPkxHZAxaz5tQQZAkceeInNzTahKpZBERPvo6xIb5pS0eVjx1RFRaat6wsgVMa34z4vEkk6ZCOaf0ZD&limit=25&after=MTAyMDMyNDY3Nzk3MTI1NzMZD"
+          }
+        },
+        "link": "https://www.facebook.com/photo.php?fbid=769547646535750&set=gm.669397826517410&type=3",
+        "message": "למכירה !!\n₪15,000 - Herzliya, Israel\n\nנמכר עקב קבלת אוטו מהעבודה \nלמכירה במחיר מציאה!!\n פולקסווגן גולף  שחורה שנת 2004\nאוטומט\nיד 01 ברשיון\nנפח מנוע 1600\nטסט עד חודש מאי 17\n134 אלף ק״מ\nצבע שחור עם סנרוף , מגזניום מקורי,מערכת סאב ומגבר\nהאוטו שמור ללא תאונות\n15,000 ש״ח מחיר אחרון !!! לבוא ולקחת !!\nפרטים בפרטי או במספר 0546692707 מור",
+        "name": "Photos from Mordechai Sheli Kotigaro's post",
+        "object_id": "769547646535750",
+        "picture": "https://fb-s-b-a.akamaihd.net/h-ak-xpf1/v/t1.0-0/s130x130/17264832_769547646535750_5483979412004751404_n.jpg?oh=20f942ae897baf52653b6b85e0ca2a5b&oe=5927B2D0&__gda__=1499997271_2817f92755a419135af3f78a15e4a7b0",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "shares": {
+          "count": 8
+        },
+        "status_type": "added_photos",
+        "type": "photo",
+        "updated_time": "2017-03-13T11:49:13+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669540279836498",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669540279836498",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:09:47+0000",
+              "from": {
+                "id": "754302157962941",
+                "name": "Gaddy Egk Motors Kyle"
+              },
+              "id": "669543993169460",
+              "like_count": 2,
+              "message": "9 אלף גמיש 0532850014 ק\"מ נמוך ..טסט. מטופלת בחברה שנת 2001 מנוע 1.4 אוטומט מזגן צמיגים חדש!!!",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:32:18+0000",
+              "from": {
+                "id": "10201065231353090",
+                "name": "Shani Mizrahi"
+              },
+              "id": "669563056500887",
+              "like_count": 0,
+              "message": "כתבתי לך בפרטי",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:43:19+0000",
+              "from": {
+                "id": "635529536528527",
+                "name": "קארין לוגסי"
+              },
+              "id": "669571516500041",
+              "like_count": 0,
+              "message": "2001 אוטומט רכב מעולה ושמור עשה רק 210 ק\"מ הכל תקין ומקורי רכב מאוד חסכוני ואמין מתאים בול לחיילת . גם גרים מאוד קרוב אלייכם",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:49:09+0000",
+              "from": {
+                "id": "1508631606068433",
+                "name": "Aviv Gal"
+              },
+              "id": "669575043166355",
+              "like_count": 0,
+              "message": "מאזה לנטיס 2001 \nיד 4 \n210 אלף ק\"מ \nצבע לבן \nטסט עד חודש אוקטובר \nמחיר 4500",
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjMU1EUXpNVFkyTXpVMU9qRTBPRGswTURVM05Eaz0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRRek9Ua3pNVFk1TkRZAd09qRTBPRGswTURNek9EZAz0ZD"
+            }
+          }
+        },
+        "created_time": "2017-03-13T11:06:40+0000",
+        "from": {
+          "id": "321660124652628",
+          "name": "לימור פיאמי"
+        },
+        "id": "134704043320127_669540279836498",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "860601150629716",
+              "name": "Artyom Zilko"
+            },
+            {
+              "id": "271830883012746",
+              "name": "Serjik Avdalyan"
+            },
+            {
+              "id": "140888569726426",
+              "name": "Jinya Dwahde"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "MTQwODg4NTY5NzI2NDI2",
+              "before": "ODYwNjAxMTUwNjI5NzE2"
+            }
+          }
+        },
+        "message": "מחפשת רכב לחיילת עד 5 אלף באזור רמלה והמרכז אוטומט",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "type": "status",
+        "updated_time": "2017-03-13T11:49:12+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/665597940230732",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/665597940230732",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-08T15:56:02+0000",
+              "from": {
+                "id": "136374826723809",
+                "name": "שרון זינגרמן"
+              },
+              "id": "665638860226640",
+              "like_count": 0,
+              "message": "איזה יד וכמה קילומטר????",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-08T15:56:05+0000",
+              "from": {
+                "id": "136374826723809",
+                "name": "שרון זינגרמן"
+              },
+              "id": "665638940226632",
+              "like_count": 0,
+              "message": "???",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-08T15:57:11+0000",
+              "from": {
+                "id": "817583834954766",
+                "name": "אבו סמא"
+              },
+              "id": "665640043559855",
+              "like_count": 0,
+              "message": "מנוע יבוא היום הוחלף יש קבלות בסקאלה רשום 230 יד 3",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-08T15:57:35+0000",
+              "from": {
+                "id": "817583834954766",
+                "name": "אבו סמא"
+              },
+              "id": "665640333559826",
+              "like_count": 0,
+              "message": "אין שמור ממנו הכל עובד חימום קירור סאן רוף הכל",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-08T18:33:29+0000",
+              "from": {
+                "id": "786212181444107",
+                "name": "David Esquivel"
+              },
+              "id": "665745853549274",
+              "like_count": 0,
+              "message": "שלח מספר",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-08T21:08:02+0000",
+              "from": {
+                "id": "817583834954766",
+                "name": "אבו סמא"
+              },
+              "id": "665857260204800",
+              "like_count": 0,
+              "message": "0545308729",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-08T21:21:24+0000",
+              "from": {
+                "id": "10201938802710146",
+                "name": "Rammal Anan"
+              },
+              "id": "665865606870632",
+              "like_count": 0,
+              "message": "מה הפרטים",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T05:27:04+0000",
+              "from": {
+                "id": "870418252979787",
+                "name": "Joul Ismael"
+              },
+              "id": "666087876848405",
+              "like_count": 0,
+              "message": "אתה עובד בכלל",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-10T21:54:43+0000",
+              "from": {
+                "id": "1422406754743788",
+                "name": "ליאור דידי"
+              },
+              "id": "667479753375884",
+              "like_count": 0,
+              "message": "כמה מחיר אחרון",
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalkzTkRjNU56VXpNemMxT0RnME9qRTBPRGt4T0RJNE9ETT0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalkxTmpNNE9EWXdNakkyTmpRd09qRTBPRGc1T0RnMU5qST0ZD"
+            }
+          }
+        },
+        "created_time": "2017-03-08T14:57:27+0000",
+        "from": {
+          "id": "817583834954766",
+          "name": "אבו סמא"
+        },
+        "icon": "https://www.facebook.com/images/icons/photo.gif",
+        "id": "134704043320127_665597940230732",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "366050966934927",
+              "name": "عبد الرحيم محمد الزعبي"
+            },
+            {
+              "id": "573099449478907",
+              "name": "שטיפת רכב יוסף מיעארי"
+            },
+            {
+              "id": "10205229891690661",
+              "name": "Amjad Younes"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "MTAyMDUyMjk4OTE2OTA2NjEZD",
+              "before": "MzY2MDUwOTY2OTM0OTI3"
+            }
+          }
+        },
+        "link": "https://www.facebook.com/photo.php?fbid=1348687341844410&set=gm.665597940230732&type=3",
+        "message": "סיאט איביזה\n₪10 - Haifa, Israel\n\nשנת 2003 אוטומט מנוע 1400 עם 100 כ״ס טסט לחודש 7 הכל עובד עם גג גאנטים ללא שריטה מחיר 10 לא להציע החלפות",
+        "name": "Photos from ‎אבו סמא‎'s post",
+        "object_id": "1348687341844410",
+        "picture": "https://fb-s-c-a.akamaihd.net/h-ak-xal1/v/t1.0-0/s130x130/17021678_1348687341844410_2620105993716353737_n.jpg?oh=328298d2a21649faed8c02da32e90356&oe=5931C4E5&__gda__=1499576032_03f8d33050ed4b2515421c479e95eed8",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "status_type": "added_photos",
+        "type": "photo",
+        "updated_time": "2017-03-13T11:49:10+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/662416697215523",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/662416697215523",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-05T05:44:22+0000",
+              "from": {
+                "id": "10200147524247065",
+                "name": "Tzahi Atiya"
+              },
+              "id": "662419137215279",
+              "like_count": 0,
+              "message": "",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-05T05:44:56+0000",
+              "from": {
+                "id": "10200147524247065",
+                "name": "Tzahi Atiya"
+              },
+              "id": "662419607215232",
+              "like_count": 0,
+              "message": "",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-05T05:45:23+0000",
+              "from": {
+                "id": "10200147524247065",
+                "name": "Tzahi Atiya"
+              },
+              "id": "662420143881845",
+              "like_count": 0,
+              "message": "",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-05T05:57:45+0000",
+              "from": {
+                "id": "10201084766841430",
+                "name": "Gil Birok"
+              },
+              "id": "662425873881272",
+              "like_count": 0,
+              "message": "Itay Birok",
+              "message_tags": [
+                {
+                  "id": "10204317811566993",
+                  "length": 10,
+                  "name": "Itay Birok",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-06T12:00:08+0000",
+              "from": {
+                "id": "10200147524247065",
+                "name": "Tzahi Atiya"
+              },
+              "id": "663648880425638",
+              "like_count": 0,
+              "message": "Up",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-06T13:19:16+0000",
+              "from": {
+                "id": "10202952151339253",
+                "name": "Moshe Parienti"
+              },
+              "id": "663708720419654",
+              "like_count": 1,
+              "message": "Avi Mesilati",
+              "message_tags": [
+                {
+                  "id": "732516376837971",
+                  "length": 12,
+                  "name": "Avi Mesilati",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:49:00+0000",
+              "from": {
+                "id": "10200147524247065",
+                "name": "Tzahi Atiya"
+              },
+              "id": "669574973166362",
+              "like_count": 0,
+              "message": "1",
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjME9UY3pNVFkyTXpZAeU9qRTBPRGswTURVM05ERT0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOall5TkRFNU1UTTNNakUxTWpjNU9qRTBPRGcyT1RJMk5qTT0ZD"
+            }
+          }
+        },
+        "created_time": "2017-03-05T05:40:34+0000",
+        "from": {
+          "id": "10200147524247065",
+          "name": "Tzahi Atiya"
+        },
+        "id": "134704043320127_662416697215523",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "814895091886414",
+              "name": "בן עטיה"
+            },
+            {
+              "id": "359346064218228",
+              "name": "Oz Pai"
+            },
+            {
+              "id": "120213671673485",
+              "name": "Maher Atamni"
+            },
+            {
+              "id": "181395892316642",
+              "name": "דודו אלקס"
+            },
+            {
+              "id": "403597763178791",
+              "name": "צרלי לוי"
+            },
+            {
+              "id": "594762450619830",
+              "name": "אבי תשאבי"
+            },
+            {
+              "id": "1007254572623313",
+              "name": "יוסי פריאנטי"
+            },
+            {
+              "id": "10202952151339253",
+              "name": "Moshe Parienti"
+            },
+            {
+              "id": "10200147524247065",
+              "name": "Tzahi Atiya"
+            },
+            {
+              "id": "140933063016476",
+              "name": "עתמאן בן גאמע"
+            },
+            {
+              "id": "10204843649752036",
+              "name": "Ben Sitbon"
+            },
+            {
+              "id": "814592211892786",
+              "name": "יניב רוזנבוים"
+            },
+            {
+              "id": "756771287697835",
+              "name": "Zahi Bar"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "NzU2NzcxMjg3Njk3ODM1",
+              "before": "ODE0ODk1MDkxODg2NDE0"
+            }
+          }
+        },
+        "message": "טיוטה קורולה 2005\n₪22,000 - ‎לוד‎\n\nטיוטה קורולה יפן\nשנת יצור 2005\nדגם מפואר gli \nגנטים, ספוילר, שליטה ההגה. \nמטופל שמור מאוד\nצבע אפור מטאלי\nיד שלישית \nטסט עד חודש 9\n170.000 קמ\nצמיגים חדשים\n0523128331 צחי",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "shares": {
+          "count": 2
+        },
+        "type": "status",
+        "updated_time": "2017-03-13T11:49:04+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669574916499701",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669574916499701",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "created_time": "2017-03-13T11:48:56+0000",
+        "from": {
+          "id": "785120741558522",
+          "name": "Igor Abramov"
+        },
+        "icon": "https://www.facebook.com/images/icons/photo.gif",
+        "id": "134704043320127_669574916499701",
+        "is_expired": false,
+        "is_hidden": false,
+        "link": "https://www.facebook.com/photo.php?fbid=1431082746962315&set=gm.669574916499701&type=3",
+        "message": "סקודה\n₪5 - ‎אשקלון‎\n\nסקודה ראפיד שנת 2014 1400 Tsi  יד שניה האוטו במצב מכני  מצוין מעולה ללא תאונות גיר שילדה מנוע הכול תקין חלונות שחורים פנסי ערפל חיישני רוורס וכו כול הקודם זוכה  המחיר בפרטי גמיש",
+        "name": "Photos from Igor Abramov's post",
+        "object_id": "1431082746962315",
+        "picture": "https://fb-s-b-a.akamaihd.net/h-ak-xpl1/v/t1.0-0/s130x130/17202904_1431082746962315_2480927561456968336_n.jpg?oh=69acf9da74d41f25189c482f47f4d1cc&oe=5963B655&__gda__=1500006135_d1316977b42474462f419be970331499",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "status_type": "added_photos",
+        "type": "photo",
+        "updated_time": "2017-03-13T11:48:57+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/665625616894631",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/665625616894631",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "created_time": "2017-03-08T15:36:54+0000",
+        "from": {
+          "id": "817583834954766",
+          "name": "אבו סמא"
+        },
+        "icon": "https://www.facebook.com/images/icons/photo.gif",
+        "id": "134704043320127_665625616894631",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "10203239026071778",
+              "name": "אלימור יצחק"
+            },
+            {
+              "id": "119463021725990",
+              "name": "טארק פריגאת אלפריגאת"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "MTE5NDYzMDIxNzI1OTkw",
+              "before": "MTAyMDMyMzkwMjYwNzE3NzgZD"
+            }
+          }
+        },
+        "link": "https://www.facebook.com/photo.php?fbid=1348715285174949&set=gm.665625616894631&type=3",
+        "message": "מזדה 323\n₪11 - Haifa, Israel\n\nשנת 2004 יד 4 פרטי קמ 300 מנוע יבוא לפני שנה טסט היום עבר לשנה מצב טוב החלפתי ארבעה צמיגים חדשים לפני חצי שנה טיפול עשיתי כולל משאיבת מים נעילה מרכזית רדיו דיסק פיוניר ורמקולים פיוניר בשווי 1000 שח באחריות מנוע גיר תקין לגבי הבודי לפי התמונות מתחייב!!! מחיר 11 מחיפה",
+        "name": "Photos from ‎אבו סמא‎'s post",
+        "object_id": "1348715285174949",
+        "picture": "https://fb-s-a-a.akamaihd.net/h-ak-xat1/v/t1.0-0/s130x130/17155477_1348715285174949_2031929471038198021_n.jpg?oh=74b3c5689362b1e331f2ac53e574464f&oe=595DF4D1&__gda__=1496469373_5e967dbdd3833763e356edfded321204",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "status_type": "added_photos",
+        "type": "photo",
+        "updated_time": "2017-03-13T11:48:52+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669570416500151",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669570416500151",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:48:39+0000",
+              "from": {
+                "id": "10203757148640505",
+                "name": "Sali Shitrit"
+              },
+              "id": "669574679833058",
+              "like_count": 0,
+              "message": "מור כהן",
+              "message_tags": [
+                {
+                  "id": "311713289017355",
+                  "length": 7,
+                  "name": "מור כהן",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjME5qYzVPRE16TURVNE9qRTBPRGswTURVM01Uaz0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjME5qYzVPRE16TURVNE9qRTBPRGswTURVM01Uaz0ZD"
+            }
+          }
+        },
+        "created_time": "2017-03-13T11:42:15+0000",
+        "from": {
+          "id": "844544365595944",
+          "name": "Daizy Ovadia"
+        },
+        "icon": "https://www.facebook.com/images/icons/photo.gif",
+        "id": "134704043320127_669570416500151",
+        "is_expired": false,
+        "is_hidden": false,
+        "link": "https://www.facebook.com/photo.php?fbid=1393193060731069&set=gm.669570416500151&type=3",
+        "message": "אביזרים\n₪50 - Azur, Tel Aviv, Israel\n\nמחזיק מפתחות של מרצדס- 50 שח\nמכונית מרצדס קטנה - 70 שח\nנתנו לי מתנה אך אין לי שימוש בהם. בטוחה שיש כאן מי שיהנה מהם יותר ממני :)",
+        "name": "Photos from Daizy Ovadia's post",
+        "object_id": "1393193060731069",
+        "picture": "https://fb-s-d-a.akamaihd.net/h-ak-xpt1/v/t1.0-0/s130x130/17155464_1393193060731069_559700148539092965_n.jpg?oh=6f305b7837164326b9eeca30dbb9e150&oe=593370AF&__gda__=1496544435_db844a6faf803f0302c01be8aa977ddb",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "status_type": "added_photos",
+        "type": "photo",
+        "updated_time": "2017-03-13T11:48:43+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/668763193247540",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/668763193247540",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:48:40+0000",
+              "from": {
+                "id": "901229399896866",
+                "name": "יניר אוחיון"
+              },
+              "id": "669574699833056",
+              "like_count": 0,
+              "message": "אפ",
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjME5qazVPRE16TURVMk9qRTBPRGswTURVM01qQT0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjME5qazVPRE16TURVMk9qRTBPRGswTURVM01qQT0ZD"
+            }
+          }
+        },
+        "created_time": "2017-03-12T12:54:00+0000",
+        "from": {
+          "id": "901229399896866",
+          "name": "יניר אוחיון"
+        },
+        "id": "134704043320127_668763193247540",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "554746997991878",
+              "name": "Sharon Benshlomo"
+            },
+            {
+              "id": "862177727139726",
+              "name": "Nir Zarad"
+            },
+            {
+              "id": "704981599558600",
+              "name": "בן ביטון"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "NzA0OTgxNTk5NTU4NjAw",
+              "before": "NTU0NzQ2OTk3OTkxODc4"
+            }
+          }
+        },
+        "message": "מחפש!!\n₪1 - ‎יבנה Yavne‎\n\nמחפש סקודה סופרב שנת 2011 עד 2014 \nצבעים שחור או לבן בלבד\nחלון גג (רצוי מאוד)\nק\"מ נמוך כמה שיותר\n(160) כוח סוס",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "type": "status",
+        "updated_time": "2017-03-13T11:48:42+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669062639884262",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669062639884262",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-12T20:46:52+0000",
+              "from": {
+                "id": "10203746845221066",
+                "name": "תומר ירמיה"
+              },
+              "id": "669073566549836",
+              "like_count": 0,
+              "message": "Ami Yermia",
+              "message_tags": [
+                {
+                  "id": "1423851764607302",
+                  "length": 10,
+                  "name": "Ami Yermia",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-12T20:49:58+0000",
+              "from": {
+                "id": "134745233620825",
+                "name": "יגאל חיון"
+              },
+              "id": "669075753216284",
+              "like_count": 0,
+              "message": "החלפה על סקודה רפיד 2013 ותוספת ממני",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-12T20:54:10+0000",
+              "from": {
+                "id": "657131667668745",
+                "name": "Yaniv Sulimanov"
+              },
+              "id": "669078839882642",
+              "like_count": 1,
+              "message": "ברוך מיכאלוב",
+              "message_tags": [
+                {
+                  "id": "734006346621867",
+                  "length": 12,
+                  "name": "ברוך מיכאלוב",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-12T20:59:46+0000",
+              "from": {
+                "id": "824319997612139",
+                "name": "IlaNail Vyborg"
+              },
+              "id": "669082483215611",
+              "like_count": 0,
+              "message": "אפשר טלפון?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-12T21:09:36+0000",
+              "from": {
+                "id": "129391517497910",
+                "name": "אברהם לוי"
+              },
+              "id": "669092589881267",
+              "like_count": 0,
+              "message": "Michal Levi תראי לאמא",
+              "message_tags": [
+                {
+                  "id": "777544518953469",
+                  "length": 11,
+                  "name": "Michal Levi",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-12T21:12:09+0000",
+              "from": {
+                "id": "704509379665414",
+                "name": "בנימיני מוטי"
+              },
+              "id": "669094513214408",
+              "like_count": 0,
+              "message": "יובל מימון",
+              "message_tags": [
+                {
+                  "id": "1398723383758838",
+                  "length": 10,
+                  "name": "יובל מימון",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-12T21:17:41+0000",
+              "from": {
+                "id": "921571717937682",
+                "name": "ווילי אסור"
+              },
+              "id": "669097649880761",
+              "like_count": 0,
+              "message": "תשלח פרטים",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-12T21:23:34+0000",
+              "from": {
+                "id": "1398723383758838",
+                "name": "יובל מימון"
+              },
+              "id": "669101539880372",
+              "like_count": 0,
+              "message": "יפה מוטי",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-12T21:47:40+0000",
+              "from": {
+                "id": "10204791650585407",
+                "name": "Ibrahim Abo Hamdieh"
+              },
+              "id": "669116743212185",
+              "like_count": 0,
+              "message": "Hijazi Maswadeh",
+              "message_tags": [
+                {
+                  "id": "860210657354324",
+                  "length": 15,
+                  "name": "Hijazi Maswadeh",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-12T21:49:18+0000",
+              "from": {
+                "id": "10205217938801056",
+                "name": "Tamer KHaleel"
+              },
+              "id": "669118223212037",
+              "like_count": 0,
+              "message": "",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-12T22:42:18+0000",
+              "from": {
+                "id": "998917836787585",
+                "name": "נדב שטרית"
+              },
+              "id": "669148213209038",
+              "like_count": 1,
+              "message": "מה הטלפון",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T01:38:58+0000",
+              "from": {
+                "id": "502756536529548",
+                "name": "Omri Mak"
+              },
+              "id": "669225983201261",
+              "like_count": 1,
+              "message": "Avi Yair",
+              "message_tags": [
+                {
+                  "id": "875243655831574",
+                  "length": 8,
+                  "name": "Avi Yair",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T07:15:55+0000",
+              "from": {
+                "id": "904493089565988",
+                "name": "משה ויפית בוקובזה"
+              },
+              "id": "669375326519660",
+              "like_count": 0,
+              "message": "שלח לי טלפון מגיע אליך עכשיו",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T07:16:04+0000",
+              "from": {
+                "id": "904493089565988",
+                "name": "משה ויפית בוקובזה"
+              },
+              "id": "669375466519646",
+              "like_count": 0,
+              "message": "מאיפה אתה",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:23:49+0000",
+              "from": {
+                "id": "10152528064644928",
+                "name": "Alexey Prokopenko"
+              },
+              "id": "669419156515277",
+              "like_count": 1,
+              "message": "Viki Mentyukov Prokopenko",
+              "message_tags": [
+                {
+                  "id": "762553533755052",
+                  "length": 25,
+                  "name": "Viki Mentyukov Prokopenko",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:51:14+0000",
+              "from": {
+                "id": "891358007547721",
+                "name": "Ron Sofer"
+              },
+              "id": "669435289846997",
+              "like_count": 0,
+              "message": "מספר ?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T09:24:04+0000",
+              "from": {
+                "id": "10203220679463119",
+                "name": "Zeev Pinkinsky"
+              },
+              "id": "669460849844441",
+              "like_count": 0,
+              "message": "החלפה מעוניין?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T10:13:35+0000",
+              "from": {
+                "id": "858616680857901",
+                "name": "Yaniv Avital"
+              },
+              "id": "669497183174141",
+              "like_count": 0,
+              "message": "מעוניין בהחלפה מודל 2005",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T10:54:10+0000",
+              "from": {
+                "id": "897657616919320",
+                "name": "Daniel Grin"
+              },
+              "id": "669531749837351",
+              "like_count": 0,
+              "message": "מחיר בבקשה",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:26:59+0000",
+              "from": {
+                "id": "10200518471200596",
+                "name": "Shirelle Marcus"
+              },
+              "id": "669559706501222",
+              "like_count": 0,
+              "message": "מחיר?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:45:23+0000",
+              "from": {
+                "id": "498742626949458",
+                "name": "Ilan Dejavsarov"
+              },
+              "id": "669572859833240",
+              "like_count": 0,
+              "message": "שלח מספר",
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjeU9EVTVPRE16TWpRd09qRTBPRGswTURVMU1qUT0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TURjek5UWTJOVFE1T0RNMk9qRTBPRGt6TlRFMk1UST0ZD"
+            }
+          }
+        },
+        "created_time": "2017-03-12T20:33:55+0000",
+        "from": {
+          "id": "10205217938801056",
+          "name": "Tamer KHaleel"
+        },
+        "id": "134704043320127_669062639884262",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "498742626949458",
+              "name": "Ilan Dejavsarov"
+            },
+            {
+              "id": "847524565269366",
+              "name": "Elidor Baad"
+            },
+            {
+              "id": "836518456416860",
+              "name": "חנן בניסטי"
+            },
+            {
+              "id": "796605153710128",
+              "name": "עבד אבו אלחסן"
+            },
+            {
+              "id": "10202643393299475",
+              "name": "Shlomi Netanel"
+            },
+            {
+              "id": "4631003510312",
+              "name": "Idan Talker"
+            },
+            {
+              "id": "844878475560803",
+              "name": "אוראל בן עמרם"
+            },
+            {
+              "id": "535393009940558",
+              "name": "Yair Yoffe"
+            },
+            {
+              "id": "630100360446601",
+              "name": "Sasha Badalov"
+            },
+            {
+              "id": "732869890114539",
+              "name": "Eden Palatin"
+            },
+            {
+              "id": "622956234515357",
+              "name": "Shlomi Harush"
+            },
+            {
+              "id": "341150402902428",
+              "name": "שי לוזון"
+            },
+            {
+              "id": "1025951527420161",
+              "name": "Yaniv Aflalo"
+            },
+            {
+              "id": "843948805628636",
+              "name": "אבו רביע"
+            },
+            {
+              "id": "262463447545613",
+              "name": "אבי לוגסי"
+            },
+            {
+              "id": "1080365551975155",
+              "name": "Ariel Peretz"
+            },
+            {
+              "id": "1106100722753303",
+              "name": "Lior Kugman"
+            },
+            {
+              "id": "761271523948236",
+              "name": "עודד אברה"
+            },
+            {
+              "id": "10202850715136692",
+              "name": "Kobi Peer"
+            },
+            {
+              "id": "837381929654159",
+              "name": "Maxim Pishchik"
+            },
+            {
+              "id": "846297072067780",
+              "name": "Veronica Kokorev"
+            },
+            {
+              "id": "10205669596889941",
+              "name": "Nader Obead"
+            },
+            {
+              "id": "854473947937091",
+              "name": "בר ג'רבי"
+            },
+            {
+              "id": "832836520081772",
+              "name": "Tomer Dayan"
+            },
+            {
+              "id": "592176204244363",
+              "name": "Alex Roziev"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "NTkyMTc2MjA0MjQ0MzYz",
+              "before": "NDk4NzQyNjI2OTQ5NDU4"
+            },
+            "next": "https://graph.facebook.com/v2.2/134704043320127_669062639884262/likes?access_token=EAACEdEose0cBAD0GyRewSYRkPcKahN5m4PZA6XmZCLK3SsXawwIvutZBEb7MvMfv5FdVLZCPhZBzELb46ZAaGVWRLd3xHeoZBP35TlbCl1Be63Edv7dwVpWsZAKPkxHZAxaz5tQQZAkceeInNzTahKpZBERPvo6xIb5pS0eVjx1RFRaat6wsgVMa34z4vEkk6ZCOaf0ZD&limit=25&after=NTkyMTc2MjA0MjQ0MzYz"
+          }
+        },
+        "message": "במוו סדרה 320 2008 130אלף ק\"מ\n₪75\n\nבמצב חדש הכי יפה  בארץ מתחייב על כל בורג **ללא תיקון צבע**  חיישני רוורס מקוריים , מסך נתונים של במוו עם גוייסטיק מקורי, ו אנגיל אייס של 2016 4 ג'נטים 19 ללא שריטה ועוד המון תוספות",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "shares": {
+          "count": 1
+        },
+        "type": "status",
+        "updated_time": "2017-03-13T11:48:39+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669533549837171",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669533549837171",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:44:07+0000",
+              "from": {
+                "id": "145943849094142",
+                "name": "אברהים אלהושלה"
+              },
+              "id": "669572056499987",
+              "like_count": 0,
+              "message": "اي لونه",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:44:57+0000",
+              "from": {
+                "id": "757239467634238",
+                "name": "Violette Malshey"
+              },
+              "id": "669572569833269",
+              "like_count": 0,
+              "message": "ابيض",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:48:33+0000",
+              "from": {
+                "id": "10202858805105470",
+                "name": "Hananel Ayash"
+              },
+              "id": "669574609833065",
+              "like_count": 0,
+              "message": "5500",
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjME5qQTVPRE16TURZAMU9qRTBPRGswTURVM01UTT0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjeU1EVTJORGs1T1RnM09qRTBPRGswTURVME5EZAz0ZD"
+            }
+          }
+        },
+        "created_time": "2017-03-13T10:57:00+0000",
+        "from": {
+          "id": "757239467634238",
+          "name": "Violette Malshey"
+        },
+        "icon": "https://www.facebook.com/images/icons/photo.gif",
+        "id": "134704043320127_669533549837171",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "145943849094142",
+              "name": "אברהים אלהושלה"
+            },
+            {
+              "id": "319606741569941",
+              "name": "ولہٰيٰفہٰ الہٰذيٰآبٰٰهہ"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "MzE5NjA2NzQxNTY5OTQx",
+              "before": "MTQ1OTQzODQ5MDk0MTQy"
+            }
+          }
+        },
+        "link": "https://www.facebook.com/photo.php?fbid=1454207074604137&set=gm.669533549837171&type=3",
+        "message": "יונדאי גטס 2006 יד שנייה \n₪7,000 - Haifa, Israel\n\nיונדאי גטס - מנוע 1400 (יד שנייה)\nשנה 2006 , מטופלת טוב מאוד היא אצלי כבר 5 שנים \nמנוע חדש , 4 צמיגים חדשים , מערכת חדשה + AUX \nצבע לבן\nק\"מ 274 - טסט עד 2018\nלרציניים בלבד , לפנות אלי בפרטי (:",
+        "object_id": "1454207074604137",
+        "picture": "https://fb-s-a-a.akamaihd.net/h-ak-xat1/v/t1.0-0/s130x130/17191074_1454207074604137_1641931294749955868_n.jpg?oh=7f0c03ad0c789812e5457910a165ab88&oe=592F8AED&__gda__=1500304449_c73f717444194327d1bba4113d1ca483",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "status_type": "added_photos",
+        "type": "photo",
+        "updated_time": "2017-03-13T11:48:36+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/666498690140657",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/666498690140657",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:42:05+0000",
+              "from": {
+                "id": "10204889396213617",
+                "name": "Gorege Mazzwe"
+              },
+              "id": "666501010140425",
+              "like_count": 0,
+              "message": "Nabeel Amal Hissen-Hayek",
+              "message_tags": [
+                {
+                  "id": "545211412291011",
+                  "length": 24,
+                  "name": "Nabeel Amal Hissen-Hayek",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T15:39:35+0000",
+              "from": {
+                "id": "916628398363991",
+                "name": "Michael Abramov"
+              },
+              "id": "666547540135772",
+              "like_count": 0,
+              "message": "Tamir Pinhasov",
+              "message_tags": [
+                {
+                  "id": "179318125734528",
+                  "length": 14,
+                  "name": "Tamir Pinhasov",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalkyTlRRM05UUXdNVE0xTnpjeU9qRTBPRGt3TnpNNU56WT0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalkyTlRBeE1ERXdNVFF3TkRJMU9qRTBPRGt3TnpBMU1qVT0ZD"
+            }
+          }
+        },
+        "created_time": "2017-03-09T14:39:29+0000",
+        "from": {
+          "id": "817583834954766",
+          "name": "אבו סמא"
+        },
+        "icon": "https://www.facebook.com/images/icons/photo.gif",
+        "id": "134704043320127_666498690140657",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "299911193538438",
+              "name": "סלמון מחאריק"
+            },
+            {
+              "id": "573099449478907",
+              "name": "שטיפת רכב יוסף מיעארי"
+            },
+            {
+              "id": "609970712432277",
+              "name": "עופר שומי"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "NjA5OTcwNzEyNDMyMjc3",
+              "before": "Mjk5OTExMTkzNTM4NDM4"
+            }
+          }
+        },
+        "link": "https://www.facebook.com/photo.php?fbid=1349750055071472&set=gm.666498690140657&type=3",
+        "message": "קורולה gli\n₪25 - Haifa, Israel\n\nשנת 2007 יד 2 פרטי קמ 180 טסט שנה שמור מאוד ללא תאונה דגם gli מתחייב!!!",
+        "name": "Photos from ‎אבו סמא‎'s post",
+        "object_id": "1349750055071472",
+        "picture": "https://fb-s-d-a.akamaihd.net/h-ak-xlt1/v/t1.0-0/s130x130/17191075_1349750055071472_740827379476476624_n.jpg?oh=d2ec20cfe0091f8194f7766ac5a603e9&oe=592D6ECE&__gda__=1495885288_3ddf9ab983093dd05b8ef78f3eaf3058",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "status_type": "added_photos",
+        "type": "photo",
+        "updated_time": "2017-03-13T11:48:25+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669438446513348",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669438446513348",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T09:02:01+0000",
+              "from": {
+                "id": "981904841826895",
+                "name": "Tal Oren"
+              },
+              "id": "669444813179378",
+              "like_count": 0,
+              "message": "מחיר",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T09:20:26+0000",
+              "from": {
+                "id": "979675135400531",
+                "name": "May Iluz"
+              },
+              "id": "669458779844648",
+              "like_count": 0,
+              "message": "מחיר",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T10:43:27+0000",
+              "from": {
+                "id": "10205180675863243",
+                "name": "Hagai Gubber"
+              },
+              "id": "669522446504948",
+              "like_count": 0,
+              "message": "מחיר?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:48:16+0000",
+              "from": {
+                "id": "628700110571692",
+                "name": "משה בוריה"
+              },
+              "id": "669574479833078",
+              "like_count": 0,
+              "message": "מחיר",
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjME5EYzVPRE16TURjNE9qRTBPRGswTURVMk9UYz0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TkRRME9ERXpNVGM1TXpjNE9qRTBPRGt6T1RVM01qST0ZD"
+            }
+          }
+        },
+        "created_time": "2017-03-13T08:55:34+0000",
+        "from": {
+          "id": "10203372841427207",
+          "name": "Roni Assulin"
+        },
+        "id": "134704043320127_669438446513348",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "4566998708733",
+              "name": "Alon Biton"
+            },
+            {
+              "id": "162695657396253",
+              "name": "פרג פרג אלעש"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "MTYyNjk1NjU3Mzk2MjUz",
+              "before": "NDU2Njk5ODcwODczMwZDZD"
+            }
+          }
+        },
+        "message": "יונדאי i10\nFREE - ‎ירושלים‎\n\nיונדאי i10 בצבע שחור שמורה כחדשה \nשנת 2012    ,  75,000 ק\"מ\nיד שנייה רק מפרטי במצב מעולה. נהגת יחידה.\nתיבת הילוכים ידנית\nמטופלת רק במורשה.\nללא תאונות\nרכב קטן וחסכוני מאוד , מנוע 1086 .",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "type": "status",
+        "updated_time": "2017-03-13T11:48:19+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/663964717060721",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/663964717060721",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-06T18:58:48+0000",
+              "from": {
+                "id": "609709085773108",
+                "name": "Olya Bocharnicova"
+              },
+              "id": "663966180393908",
+              "like_count": 0,
+              "message": "Marina Marinochka",
+              "message_tags": [
+                {
+                  "id": "10206919554770530",
+                  "length": 17,
+                  "name": "Marina Marinochka",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-06T19:09:43+0000",
+              "from": {
+                "id": "274638526044704",
+                "name": "Vika Nisanov"
+              },
+              "id": "663973017059891",
+              "like_count": 0,
+              "message": "כמה?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-06T19:12:06+0000",
+              "from": {
+                "id": "936311303052890",
+                "name": "Sasha Smirnov"
+              },
+              "id": "663974583726401",
+              "like_count": 0,
+              "message": "AvitalManok מחיר",
+              "message_tags": [
+                {
+                  "id": "919236738087427",
+                  "length": 6,
+                  "name": "Avital Manok",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-06T19:56:42+0000",
+              "from": {
+                "id": "597192673707271",
+                "name": "עדן ולנטינה לוי"
+              },
+              "id": "664005340389992",
+              "like_count": 0,
+              "message": "מחיר",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-06T20:40:21+0000",
+              "from": {
+                "id": "1535821546675046",
+                "name": "אילנה סמאי אינגידאו"
+              },
+              "id": "664036430386883",
+              "like_count": 0,
+              "message": "מחיר?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-06T20:42:01+0000",
+              "from": {
+                "id": "4862719343908",
+                "name": "Orpaz V Elior Bracha"
+              },
+              "id": "664037563720103",
+              "like_count": 0,
+              "message": "רשמתי לך בפרטי",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-06T21:06:49+0000",
+              "from": {
+                "id": "10200832570616768",
+                "name": "Perach Afuta"
+              },
+              "id": "664056180384908",
+              "like_count": 0,
+              "message": "מחיר?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-06T21:08:24+0000",
+              "from": {
+                "id": "4862719343908",
+                "name": "Orpaz V Elior Bracha"
+              },
+              "id": "664057030384823",
+              "like_count": 0,
+              "message": "רשמתי לך בפרטי",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-06T22:08:23+0000",
+              "from": {
+                "id": "830747526937586",
+                "name": "Lital Hadad"
+              },
+              "id": "664096707047522",
+              "like_count": 0,
+              "message": "מחיר?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-06T22:52:32+0000",
+              "from": {
+                "id": "871136022929246",
+                "name": "תמר אברוסקין"
+              },
+              "id": "664123977044795",
+              "like_count": 0,
+              "message": "מה המחיר?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-07T00:00:57+0000",
+              "from": {
+                "id": "766421916734176",
+                "name": "שני מסיקה"
+              },
+              "id": "664149080375618",
+              "like_count": 0,
+              "message": "כמה?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-07T04:22:39+0000",
+              "from": {
+                "id": "4862719343908",
+                "name": "Orpaz V Elior Bracha"
+              },
+              "id": "664238627033330",
+              "like_count": 0,
+              "message": "רשמתי לך בפרטי",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-07T04:46:50+0000",
+              "from": {
+                "id": "830259620322419",
+                "name": "Liel Zino"
+              },
+              "id": "664249837032209",
+              "like_count": 0,
+              "message": "Sarit Zino",
+              "message_tags": [
+                {
+                  "id": "929120750450211",
+                  "length": 10,
+                  "name": "Sarit Zino",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-07T05:23:35+0000",
+              "from": {
+                "id": "869773406381908",
+                "name": "Gila Dayan"
+              },
+              "id": "664271250363401",
+              "like_count": 0,
+              "message": "Sapir Sap",
+              "message_tags": [
+                {
+                  "id": "10203947181106906",
+                  "length": 9,
+                  "name": "Sapir Sap",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-07T05:33:05+0000",
+              "from": {
+                "id": "1332850993447385",
+                "name": "רחלת סמת"
+              },
+              "id": "664278370362689",
+              "like_count": 0,
+              "message": "מחיר?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-07T05:55:46+0000",
+              "from": {
+                "id": "10203512136339029",
+                "name": "Sharon Buzaglo Shimonov"
+              },
+              "id": "664293837027809",
+              "like_count": 0,
+              "message": "כמה?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-07T06:45:10+0000",
+              "from": {
+                "id": "10205258910862777",
+                "name": "Roni Rensburg"
+              },
+              "id": "664319413691918",
+              "like_count": 0,
+              "message": "מה המחיר ומה הנפח מנוע ?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-07T07:44:28+0000",
+              "from": {
+                "id": "916227835096219",
+                "name": "Bar Yona"
+              },
+              "id": "664350607022132",
+              "like_count": 0,
+              "message": "מחיר?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-07T08:13:19+0000",
+              "from": {
+                "id": "784384758283977",
+                "name": "Adir Gil"
+              },
+              "id": "664369800353546",
+              "like_count": 0,
+              "message": "מחיר ?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-07T08:36:25+0000",
+              "from": {
+                "id": "920255811339749",
+                "name": "Sigal Mocha"
+              },
+              "id": "664382483685611",
+              "like_count": 0,
+              "message": "מחיר?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-07T08:46:34+0000",
+              "from": {
+                "id": "10204608157076818",
+                "name": "Aviv Alekseenko"
+              },
+              "id": "664388953684964",
+              "like_count": 0,
+              "message": "אפשר מחיר ?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-07T09:06:00+0000",
+              "from": {
+                "id": "743401975730051",
+                "name": "Tomer Cohen"
+              },
+              "id": "664401017017091",
+              "like_count": 0,
+              "message": "מחיר ?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-07T09:06:07+0000",
+              "from": {
+                "id": "1009284225751916",
+                "name": "ישראל ועדן גבאי"
+              },
+              "id": "664401080350418",
+              "like_count": 0,
+              "message": "מחיר",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-07T09:07:55+0000",
+              "from": {
+                "id": "757949210908880",
+                "name": "סיון זבורוב"
+              },
+              "id": "664402060350320",
+              "like_count": 0,
+              "message": "Markiel Miki Gavrielov",
+              "message_tags": [
+                {
+                  "id": "876435932379478",
+                  "length": 22,
+                  "name": "Markiel Miki Gavrielov",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-07T09:20:09+0000",
+              "from": {
+                "id": "10204149458397764",
+                "name": "Or Amira"
+              },
+              "id": "664410903682769",
+              "like_count": 0,
+              "message": "מחיר?",
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalkwTkRFd09UQXpOamd5TnpZANU9qRTBPRGc0TnpnME1Eaz0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOall6T1RZAMk1UZA3dNemt6T1RBNE9qRTBPRGc0TWpZAM01qZAz0ZD"
+            },
+            "next": "https://graph.facebook.com/v2.2/134704043320127_663964717060721/comments?access_token=EAACEdEose0cBAD0GyRewSYRkPcKahN5m4PZA6XmZCLK3SsXawwIvutZBEb7MvMfv5FdVLZCPhZBzELb46ZAaGVWRLd3xHeoZBP35TlbCl1Be63Edv7dwVpWsZAKPkxHZAxaz5tQQZAkceeInNzTahKpZBERPvo6xIb5pS0eVjx1RFRaat6wsgVMa34z4vEkk6ZCOaf0ZD&limit=25&after=WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalkwTkRFd09UQXpOamd5TnpZANU9qRTBPRGc0TnpnME1Eaz0ZD"
+          }
+        },
+        "created_time": "2017-03-06T18:56:35+0000",
+        "from": {
+          "id": "4862719343908",
+          "name": "Orpaz V Elior Bracha"
+        },
+        "id": "134704043320127_663964717060721",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "10203454476302769",
+              "name": "Sagi Nahmani"
+            },
+            {
+              "id": "917837271594309",
+              "name": "בן זארד"
+            },
+            {
+              "id": "10205180948306357",
+              "name": "Hadas Shemesh"
+            },
+            {
+              "id": "10202079044097147",
+              "name": "Aviran Tal"
+            },
+            {
+              "id": "1378859605742268",
+              "name": "Samara Awad"
+            },
+            {
+              "id": "583905295065882",
+              "name": "Liat Ben Gigi"
+            },
+            {
+              "id": "120213671673485",
+              "name": "Maher Atamni"
+            },
+            {
+              "id": "10201613090247702",
+              "name": "Nataly Cohen"
+            },
+            {
+              "id": "752418544834888",
+              "name": "Mariana Saiegh"
+            },
+            {
+              "id": "932455670133014",
+              "name": "אורטל קנדה"
+            },
+            {
+              "id": "10202371451762553",
+              "name": "Ohad Elcaslasi"
+            },
+            {
+              "id": "1453705137988949",
+              "name": "Noy Zada"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "MTQ1MzcwNTEzNzk4ODk0OQZDZD",
+              "before": "MTAyMDM0NTQ0NzYzMDI3NjkZD"
+            }
+          }
+        },
+        "message": "רכב\n₪1 - ‎שדרות‎\n\nהחלפה מכירה סוזוקי ספלאש מדהימה!\nשמורה ביותר תוספות:דיבורית בלוטוס,חיישני רוורס\nשנת 2012\nאוטומט \nיד 2 \n114 קמ\nטסט לשנה \nרכב בבעלות מכונאי  \nאליאור 054-6630505",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "shares": {
+          "count": 1
+        },
+        "type": "status",
+        "updated_time": "2017-03-13T11:48:18+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/668739223249937",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/668739223249937",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-12T13:21:06+0000",
+              "from": {
+                "id": "10201886692487727",
+                "name": "Itzik Liberti"
+              },
+              "id": "668778606579332",
+              "like_count": 1,
+              "message": "מה מצב הגיר?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-12T13:33:41+0000",
+              "from": {
+                "id": "834870813245020",
+                "name": "צחי יצחק אלהרר"
+              },
+              "id": "668785603245299",
+              "like_count": 0,
+              "message": "מצויין!!",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-12T13:33:55+0000",
+              "from": {
+                "id": "834870813245020",
+                "name": "צחי יצחק אלהרר"
+              },
+              "id": "668785806578612",
+              "like_count": 0,
+              "message": "רכב חדשש הצגה!",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:48:14+0000",
+              "from": {
+                "id": "1425489271058517",
+                "name": "Dudi Du"
+              },
+              "id": "669574459833080",
+              "like_count": 0,
+              "message": "החלפהbmw 525",
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjME5EVTVPRE16TURnd09qRTBPRGswTURVMk9UVT0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk0TnpjNE5qQTJOVGM1TXpNeU9qRTBPRGt6TWpRNE5qWT0ZD"
+            }
+          }
+        },
+        "created_time": "2017-03-12T12:16:43+0000",
+        "from": {
+          "id": "834870813245020",
+          "name": "צחי יצחק אלהרר"
+        },
+        "id": "134704043320127_668739223249937",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "1425489271058517",
+              "name": "Dudi Du"
+            },
+            {
+              "id": "1506930012898821",
+              "name": "אמיר פרינס"
+            },
+            {
+              "id": "1041849919165210",
+              "name": "Liron Lazarian"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "MTA0MTg0OTkxOTE2NTIxMAZDZD",
+              "before": "MTQyNTQ4OTI3MTA1ODUxNwZDZD"
+            }
+          }
+        },
+        "message": "הנסיכה למכירה ! ביואיק לה קרוס 2006 , 150000 ק\"מ שמורה בקנאות ומטופלת ברמה גבוהה. חלונות כהים כל הפינוקים מגנזיום מבריקים אורגינליים . נמכר בעצב מסיבות אישיות . מחיר: 25000 נייד: 0537257576",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "type": "status",
+        "updated_time": "2017-03-13T11:48:17+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/666464506810742",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/666464506810742",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T13:59:56+0000",
+              "from": {
+                "id": "1023851530974221",
+                "name": "מקסים לוקשין"
+              },
+              "id": "666465410143985",
+              "like_count": 0,
+              "message": "מחיר?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:00:30+0000",
+              "from": {
+                "id": "675202062553346",
+                "name": "Ohad Levi"
+              },
+              "id": "666465943477265",
+              "like_count": 0,
+              "message": "500 שנהם יחד",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:00:43+0000",
+              "from": {
+                "id": "675202062553346",
+                "name": "Ohad Levi"
+              },
+              "id": "666466186810574",
+              "like_count": 0,
+              "message": "אין אלהם סריטה",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:01:41+0000",
+              "from": {
+                "id": "10203492389012375",
+                "name": "Hanan Levi"
+              },
+              "id": "666467026810490",
+              "like_count": 0,
+              "message": "אוהד",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:03:03+0000",
+              "from": {
+                "id": "797152420325575",
+                "name": "צחי לסרי"
+              },
+              "id": "666468180143708",
+              "like_count": 0,
+              "message": "של מה הסאב",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:03:24+0000",
+              "from": {
+                "id": "675202062553346",
+                "name": "Ohad Levi"
+              },
+              "id": "666468466810346",
+              "like_count": 0,
+              "message": "פאיונר",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:04:17+0000",
+              "from": {
+                "id": "802539749770508",
+                "name": "Mor Smadja Hair Drsigner"
+              },
+              "id": "666469100143616",
+              "like_count": 0,
+              "message": "Avishai Shushan",
+              "message_tags": [
+                {
+                  "id": "866183856741267",
+                  "length": 15,
+                  "name": "Avishai Shushan",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:05:14+0000",
+              "from": {
+                "id": "761280323893644",
+                "name": "Ron Gozlan"
+              },
+              "id": "666469833476876",
+              "like_count": 0,
+              "message": "כמה רק הסאב",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:06:02+0000",
+              "from": {
+                "id": "10203096374445172",
+                "name": "גל שלו"
+              },
+              "id": "666470803476779",
+              "like_count": 0,
+              "message": "יוסף דדון",
+              "message_tags": [
+                {
+                  "id": "731215606947299",
+                  "length": 9,
+                  "name": "יוסף דדון",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:07:57+0000",
+              "from": {
+                "id": "1503413696613355",
+                "name": "סראיעה פארס"
+              },
+              "id": "666473206809872",
+              "like_count": 1,
+              "message": "שאהר בן סעיד",
+              "message_tags": [
+                {
+                  "id": "871471009583031",
+                  "length": 12,
+                  "name": "שאהר בן סעיד",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:10:29+0000",
+              "from": {
+                "id": "966927110001351",
+                "name": "Ahron Pinto"
+              },
+              "id": "666475306809662",
+              "like_count": 0,
+              "message": "מאיפה אתה",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:11:46+0000",
+              "from": {
+                "id": "1376593552658022",
+                "name": "Iluxa Lvov"
+              },
+              "id": "666476166809576",
+              "like_count": 0,
+              "message": "עלאא ברכאת",
+              "message_tags": [
+                {
+                  "id": "146647472362057",
+                  "length": 10,
+                  "name": "עלאא ברכאת",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:12:40+0000",
+              "from": {
+                "id": "675202062553346",
+                "name": "Ohad Levi"
+              },
+              "id": "666477003476159",
+              "like_count": 0,
+              "message": "זה המספר שלי 0544213080",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:13:10+0000",
+              "from": {
+                "id": "4753829819986",
+                "name": "אבירם כהן"
+              },
+              "id": "666477706809422",
+              "like_count": 1,
+              "message": "מאיפה",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:13:46+0000",
+              "from": {
+                "id": "4753829819986",
+                "name": "אבירם כהן"
+              },
+              "id": "666478133476046",
+              "like_count": 0,
+              "message": "YaromCohenמה אומר",
+              "message_tags": [
+                {
+                  "id": "10200618325096609",
+                  "length": 5,
+                  "name": "Yarom Cohen",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:15:37+0000",
+              "from": {
+                "id": "895294183828308",
+                "name": "Younayev Eliran"
+              },
+              "id": "666479656809227",
+              "like_count": 0,
+              "message": "כמה רק מגבר?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:16:17+0000",
+              "from": {
+                "id": "675202062553346",
+                "name": "Ohad Levi"
+              },
+              "id": "666480096809183",
+              "like_count": 0,
+              "message": "נמכרים יחד אחי",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:33:24+0000",
+              "from": {
+                "id": "175359309532559",
+                "name": "איתמר אליהו"
+              },
+              "id": "666494176807775",
+              "like_count": 0,
+              "message": "ישראל לוגסי",
+              "message_tags": [
+                {
+                  "id": "296508067226560",
+                  "length": 11,
+                  "name": "ישראל לוגסי",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:51:27+0000",
+              "from": {
+                "id": "10203733563008152",
+                "name": "Tomer Oz'alvo"
+              },
+              "id": "666508760139650",
+              "like_count": 0,
+              "message": "מחיר",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:51:33+0000",
+              "from": {
+                "id": "1417846265179354",
+                "name": "Dana Zukerfain"
+              },
+              "id": "666508843472975",
+              "like_count": 0,
+              "message": "כמה ? ומאיפה אתה?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T14:53:56+0000",
+              "from": {
+                "id": "10204166267529760",
+                "name": "Ferno Liraz Hason"
+              },
+              "id": "666511253472734",
+              "like_count": 0,
+              "message": "מגיע לקריות? אם כן דבר איתי אני לוקח",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T15:02:22+0000",
+              "from": {
+                "id": "675202062553346",
+                "name": "Ohad Levi"
+              },
+              "id": "666518956805297",
+              "like_count": 0,
+              "message": "500 וממגדל העמק",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T16:12:22+0000",
+              "from": {
+                "id": "926745717355683",
+                "name": "Roei Nisan"
+              },
+              "id": "666572076799985",
+              "like_count": 0,
+              "message": "Ron Isakov",
+              "message_tags": [
+                {
+                  "id": "1059217037425245",
+                  "length": 10,
+                  "name": "Ron Isakov",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T17:02:43+0000",
+              "from": {
+                "id": "10203410901254023",
+                "name": "David Zuk"
+              },
+              "id": "666612443462615",
+              "like_count": 1,
+              "message": "כמה רק הסאב?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-09T17:03:11+0000",
+              "from": {
+                "id": "675202062553346",
+                "name": "Ohad Levi"
+              },
+              "id": "666612810129245",
+              "like_count": 0,
+              "message": "500",
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalkyTmpFeU9ERXdNVEk1TWpRMU9qRTBPRGt3TnpnNU9URT0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalkyTkRZAMU5ERXdNVFF6T1RnMU9qRTBPRGt3TmpjNU9UYz0ZD"
+            },
+            "next": "https://graph.facebook.com/v2.2/134704043320127_666464506810742/comments?access_token=EAACEdEose0cBAD0GyRewSYRkPcKahN5m4PZA6XmZCLK3SsXawwIvutZBEb7MvMfv5FdVLZCPhZBzELb46ZAaGVWRLd3xHeoZBP35TlbCl1Be63Edv7dwVpWsZAKPkxHZAxaz5tQQZAkceeInNzTahKpZBERPvo6xIb5pS0eVjx1RFRaat6wsgVMa34z4vEkk6ZCOaf0ZD&limit=25&after=WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalkyTmpFeU9ERXdNVEk1TWpRMU9qRTBPRGt3TnpnNU9URT0ZD"
+          }
+        },
+        "created_time": "2017-03-09T13:59:08+0000",
+        "from": {
+          "id": "675202062553346",
+          "name": "Ohad Levi"
+        },
+        "icon": "https://www.facebook.com/images/icons/photo.gif",
+        "id": "134704043320127_666464506810742",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "346232795555590",
+              "name": "סלאח חמודה"
+            },
+            {
+              "id": "1039802192712945",
+              "name": "Yehiam Hila Vaknin"
+            },
+            {
+              "id": "175254249612032",
+              "name": "Fares Fares"
+            },
+            {
+              "id": "299622013580371",
+              "name": "Soltan Abo Shanab"
+            },
+            {
+              "id": "1471025739834275",
+              "name": "יוני פשאפשה"
+            },
+            {
+              "id": "834578946591266",
+              "name": "ישראל בן חמו"
+            },
+            {
+              "id": "962130443817222",
+              "name": "Doodik Atia"
+            },
+            {
+              "id": "829425093739060",
+              "name": "Noy Ohana"
+            },
+            {
+              "id": "730050507073544",
+              "name": "Kohav Mesilaty"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "NzMwMDUwNTA3MDczNTQ0",
+              "before": "MzQ2MjMyNzk1NTU1NTkw"
+            }
+          }
+        },
+        "link": "https://www.facebook.com/photo.php?fbid=1419287081478170&set=gm.666464506810742&type=3",
+        "message": "למכירה מחיר ברצפה מצב חדש",
+        "name": "Photos from Ohad Levi's post",
+        "object_id": "1419287081478170",
+        "picture": "https://fb-s-d-a.akamaihd.net/h-ak-xpl1/v/t1.0-0/s130x130/17202891_1419287081478170_4904757525242320519_n.jpg?oh=e63c9fd55dd91acac510afb89da2823f&oe=596DA16F&__gda__=1499608013_22cc01df5235eacaf837ac51ca958a00",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "status_type": "added_photos",
+        "type": "photo",
+        "updated_time": "2017-03-13T11:48:12+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669331593190700",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669331593190700",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T06:43:38+0000",
+              "from": {
+                "id": "896340677050410",
+                "name": "Menashe Hinga"
+              },
+              "id": "669354416521751",
+              "like_count": 0,
+              "message": "Adi Cohen בדיוק בתקציב",
+              "message_tags": [
+                {
+                  "id": "10201717648932388",
+                  "length": 9,
+                  "name": "Adi Cohen",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T07:45:17+0000",
+              "from": {
+                "id": "10202888550407300",
+                "name": "Shilo Shaibi"
+              },
+              "id": "669393576517835",
+              "like_count": 0,
+              "message": "Asaf Edan Malihi",
+              "message_tags": [
+                {
+                  "id": "10202006701870419",
+                  "length": 16,
+                  "name": "Asaf Edan Malihi",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:48:07+0000",
+              "from": {
+                "id": "10202899970682237",
+                "name": "Idan Mikdash"
+              },
+              "id": "669574403166419",
+              "like_count": 0,
+              "message": "\"שלום בקשה\" Joey Zohar",
+              "message_tags": [
+                {
+                  "id": "849078785113322",
+                  "length": 10,
+                  "name": "Joey Zohar",
+                  "offset": 12,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjME5EQXpNVFkyTkRFNU9qRTBPRGswTURVMk9EZAz0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TXpVME5ERTJOVEl4TnpVeE9qRTBPRGt6T0RjME1Uaz0ZD"
+            }
+          }
+        },
+        "created_time": "2017-03-13T06:11:32+0000",
+        "from": {
+          "id": "887707394623044",
+          "name": "מישל קריכלי"
+        },
+        "icon": "https://www.facebook.com/images/icons/photo.gif",
+        "id": "134704043320127_669331593190700",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "10154066940810790",
+              "name": "Tabasco Aviv"
+            },
+            {
+              "id": "1399601133703077",
+              "name": "Lihi Koren"
+            },
+            {
+              "id": "786310724720605",
+              "name": "Yahav Vaknin"
+            },
+            {
+              "id": "10202871787008530",
+              "name": "Maor Avraham"
+            },
+            {
+              "id": "902342313128399",
+              "name": "AAdel Boresh"
+            },
+            {
+              "id": "967786189915486",
+              "name": "Yanik Yosopov"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "OTY3Nzg2MTg5OTE1NDg2",
+              "before": "MTAxNTQwNjY5NDA4MTA3OTAZD"
+            }
+          }
+        },
+        "link": "https://www.facebook.com/photo.php?fbid=1355525781174534&set=gm.669331593190700&type=3",
+        "message": "אודיA3\n₪100,000 - ‎אשדוד‎\n\nאודיA3 במצב מצויין ..\nשנת 2013\nיד01 \n40 אלף ק״מ\nמנוע 1400 טורבו  בנזין\nגיר אוטומט \nמתחייב על מנוע גיר שילדה\nטל :0528411701מישל",
+        "name": "Photos from ‎מישל קריכלי‎'s post",
+        "object_id": "1355525781174534",
+        "picture": "https://fb-s-a-a.akamaihd.net/h-ak-xla1/v/t1.0-0/s130x130/10462558_1355525781174534_7278888812267857173_n.jpg?oh=667805f98fba3bb04e2b8039cd646c1b&oe=5924F0E3&__gda__=1499481926_db5baf52c29c828d7630ee9261301aa5",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "shares": {
+          "count": 4
+        },
+        "status_type": "added_photos",
+        "type": "photo",
+        "updated_time": "2017-03-13T11:48:10+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669429973180862",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669429973180862",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:48:47+0000",
+              "from": {
+                "id": "364155103755716",
+                "name": "Dor Alal"
+              },
+              "id": "669432303180629",
+              "like_count": 2,
+              "message": "Amit Edri בוא נעשה יחידת דיור כמו בעספור",
+              "message_tags": [
+                {
+                  "id": "10200373516696234",
+                  "length": 9,
+                  "name": "Amit Edri",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:53:42+0000",
+              "from": {
+                "id": "767914293220862",
+                "name": "Shir Assor Levin"
+              },
+              "id": "669436403180219",
+              "like_count": 0,
+              "message": "מהיכן אתה?",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:56:34+0000",
+              "from": {
+                "id": "517730678331858",
+                "name": "מייקי בן ישי"
+              },
+              "id": "669440923179767",
+              "like_count": 1,
+              "message": "Snir Tshuva Amir Hayat בואו נקנה נעשה מסיבות",
+              "message_tags": [
+                {
+                  "id": "944901538856599",
+                  "length": 11,
+                  "name": "Snir Tshuva",
+                  "offset": 0,
+                  "type": "user"
+                },
+                {
+                  "id": "856975024330763",
+                  "length": 10,
+                  "name": "Amir Hayat",
+                  "offset": 12,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T08:59:45+0000",
+              "from": {
+                "id": "600431056751822",
+                "name": "Shalev Sitbon"
+              },
+              "id": "669443383179521",
+              "like_count": 1,
+              "message": "איתן בן אבי  כל אחד 4 וחצי ??",
+              "message_tags": [
+                {
+                  "id": "894058717281389",
+                  "length": 11,
+                  "name": "איתן בן אבי",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T09:00:29+0000",
+              "from": {
+                "id": "315023172029517",
+                "name": "עמי דנילוב"
+              },
+              "id": "669443833179476",
+              "like_count": 0,
+              "message": "Yohai Cohen",
+              "message_tags": [
+                {
+                  "id": "783237331711555",
+                  "length": 11,
+                  "name": "Yohai Cohen",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T09:11:30+0000",
+              "from": {
+                "id": "751081514925536",
+                "name": "Dor Skera"
+              },
+              "id": "669452946511898",
+              "like_count": 0,
+              "message": "Tomer Mizrahi עספור",
+              "message_tags": [
+                {
+                  "id": "932919880053781",
+                  "length": 13,
+                  "name": "Tomer Mizrahi",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T09:17:01+0000",
+              "from": {
+                "id": "874850672527709",
+                "name": "Ofir Chootman"
+              },
+              "id": "669456509844875",
+              "like_count": 1,
+              "message": "Gadi Bar",
+              "message_tags": [
+                {
+                  "id": "737583156272993",
+                  "length": 8,
+                  "name": "Gadi Bar",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T09:21:14+0000",
+              "from": {
+                "id": "890357917645859",
+                "name": "Oria Malul"
+              },
+              "id": "669459106511282",
+              "like_count": 2,
+              "message": "Rafi Maimon בוא נפתח משהו סתם לכיף",
+              "message_tags": [
+                {
+                  "id": "916870558337470",
+                  "length": 11,
+                  "name": "Rafi Maimon",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T09:24:23+0000",
+              "from": {
+                "id": "652711431465366",
+                "name": "אביתר סגל"
+              },
+              "id": "669460999844426",
+              "like_count": 2,
+              "message": "Guy Itzhak Liel Ofek Nadav Mizrahi מאור וקנין  עספור?",
+              "message_tags": [
+                {
+                  "id": "109902962747677",
+                  "length": 10,
+                  "name": "Guy Itzhak",
+                  "offset": 0,
+                  "type": "user"
+                },
+                {
+                  "id": "674114906010908",
+                  "length": 9,
+                  "name": "Liel Ofek",
+                  "offset": 11,
+                  "type": "user"
+                },
+                {
+                  "id": "764422920311147",
+                  "length": 13,
+                  "name": "Nadav Mizrahi",
+                  "offset": 21,
+                  "type": "user"
+                },
+                {
+                  "id": "614861428644032",
+                  "length": 10,
+                  "name": "מאור וקנין",
+                  "offset": 35,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T09:24:45+0000",
+              "from": {
+                "id": "963701100324881",
+                "name": "כפיר תשובה"
+              },
+              "id": "669461243177735",
+              "like_count": 0,
+              "message": "מחיר אחרון",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T09:25:18+0000",
+              "from": {
+                "id": "839626349393197",
+                "name": "Shimon Cohen"
+              },
+              "id": "669461716511021",
+              "like_count": 0,
+              "message": "דניאל כהן בוא נביא אותו",
+              "message_tags": [
+                {
+                  "id": "842079312481480",
+                  "length": 9,
+                  "name": "דניאל כהן",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T09:30:33+0000",
+              "from": {
+                "id": "810066789036664",
+                "name": "Nir Chen"
+              },
+              "id": "669465523177307",
+              "like_count": 0,
+              "message": "Hillel Levitan Yossi Gavriel מצאתי לך דירה אחי",
+              "message_tags": [
+                {
+                  "id": "10205395710795301",
+                  "length": 13,
+                  "name": "Yossi Gavriel",
+                  "offset": 15,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T09:30:54+0000",
+              "from": {
+                "id": "10205854082375567",
+                "name": "Matan Assor"
+              },
+              "id": "669465669843959",
+              "like_count": 0,
+              "message": "Oshrat Zeichner אין על זה ארנונה",
+              "message_tags": [
+                {
+                  "id": "10154865887965262",
+                  "length": 15,
+                  "name": "Oshrat Zeichner",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T09:43:35+0000",
+              "from": {
+                "id": "958974340783791",
+                "name": "MoGahed Abu Zarka"
+              },
+              "id": "669472176509975",
+              "like_count": 1,
+              "message": "Omar Fanadka",
+              "message_tags": [
+                {
+                  "id": "129017864106808",
+                  "length": 12,
+                  "name": "Omar Fanadka",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T09:46:19+0000",
+              "from": {
+                "id": "10202637755345309",
+                "name": "Yarin Asulin"
+              },
+              "id": "669473636509829",
+              "like_count": 0,
+              "message": "שחר משה",
+              "message_tags": [
+                {
+                  "id": "305763326253887",
+                  "length": 7,
+                  "name": "שחר משה",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T09:49:53+0000",
+              "from": {
+                "id": "766684073355769",
+                "name": "Avi Belhassen"
+              },
+              "id": "669476006509592",
+              "like_count": 1,
+              "message": "Sapir van der Hoeven שוקל לקנות ברצינות",
+              "message_tags": [
+                {
+                  "id": "10202717338569010",
+                  "length": 20,
+                  "name": "Sapir van der Hoeven",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T09:51:39+0000",
+              "from": {
+                "id": "10200622404359215",
+                "name": "Eldar Tzabari"
+              },
+              "id": "669477216509471",
+              "like_count": 1,
+              "message": "Hilel Hamawi\nDorin V Hen\nAlex Durvich\nLidor Mantzor\nBen Nesher\nדקל תורג'מן\nLior Eliyahu\nבוא נכין לנו איזה קנטה",
+              "message_tags": [
+                {
+                  "id": "1016783991666808",
+                  "length": 12,
+                  "name": "Hilel Hamawi",
+                  "offset": 0,
+                  "type": "user"
+                },
+                {
+                  "id": "334385100050546",
+                  "length": 11,
+                  "name": "Dorin V Hen",
+                  "offset": 13,
+                  "type": "user"
+                },
+                {
+                  "id": "849726215042518",
+                  "length": 12,
+                  "name": "Alex Durvich",
+                  "offset": 25,
+                  "type": "user"
+                },
+                {
+                  "id": "1015082191839331",
+                  "length": 13,
+                  "name": "Lidor Mantzor",
+                  "offset": 38,
+                  "type": "user"
+                },
+                {
+                  "id": "959203017432293",
+                  "length": 10,
+                  "name": "Ben Nesher",
+                  "offset": 52,
+                  "type": "user"
+                },
+                {
+                  "id": "790677620998828",
+                  "length": 11,
+                  "name": "דקל תורג'מן",
+                  "offset": 63,
+                  "type": "user"
+                },
+                {
+                  "id": "10206003964847777",
+                  "length": 12,
+                  "name": "Lior Eliyahu",
+                  "offset": 75,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T09:58:42+0000",
+              "from": {
+                "id": "860076437357177",
+                "name": "Aviel Swisa"
+              },
+              "id": "669482183175641",
+              "like_count": 2,
+              "message": "מה אתם אומרים? נעשה כמו בעספור ירין לוי Orel Daniel Moriel Avraham",
+              "message_tags": [
+                {
+                  "id": "1654628778102794",
+                  "length": 8,
+                  "name": "ירין לוי",
+                  "offset": 31,
+                  "type": "user"
+                },
+                {
+                  "id": "866569253374436",
+                  "length": 11,
+                  "name": "Orel Daniel",
+                  "offset": 40,
+                  "type": "user"
+                },
+                {
+                  "id": "989591497768737",
+                  "length": 14,
+                  "name": "Moriel Avraham",
+                  "offset": 52,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T10:02:21+0000",
+              "from": {
+                "id": "10152485338748340",
+                "name": "Doron Bernstein"
+              },
+              "id": "669486376508555",
+              "like_count": 0,
+              "message": "Aviad Levy",
+              "message_tags": [
+                {
+                  "id": "10204403315937454",
+                  "length": 10,
+                  "name": "Aviad Levy",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T10:06:45+0000",
+              "from": {
+                "id": "1007371902608076",
+                "name": "Sharon Ben Shushan"
+              },
+              "id": "669491003174759",
+              "like_count": 1,
+              "message": "Ran Benin Aviran Shraga",
+              "message_tags": [
+                {
+                  "id": "10152926308133824",
+                  "length": 9,
+                  "name": "Ran Benin",
+                  "offset": 0,
+                  "type": "user"
+                },
+                {
+                  "id": "10203275970392908",
+                  "length": 13,
+                  "name": "Aviran Shraga",
+                  "offset": 10,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T10:09:02+0000",
+              "from": {
+                "id": "634906863262674",
+                "name": "Lidor Elkabets"
+              },
+              "id": "669493269841199",
+              "like_count": 0,
+              "message": "4000 אני בא מחר עם גרר",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T10:10:10+0000",
+              "from": {
+                "id": "161298344270271",
+                "name": "גדי שחר"
+              },
+              "id": "669494156507777",
+              "like_count": 0,
+              "message": "רציני ומיידי רק ב 2 תשלומים !!",
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T10:17:56+0000",
+              "from": {
+                "id": "982298768447438",
+                "name": "Yarden Kazav"
+              },
+              "id": "669502669840259",
+              "like_count": 0,
+              "message": "Dan Cohen יכול לבוא בחשבון?",
+              "message_tags": [
+                {
+                  "id": "830791836957011",
+                  "length": 9,
+                  "name": "Dan Cohen",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T10:25:05+0000",
+              "from": {
+                "id": "1422048904772154",
+                "name": "אליהו אבן זהב"
+              },
+              "id": "669507659839760",
+              "like_count": 0,
+              "message": "אלידור נדלר תראה לאבא שלך",
+              "message_tags": [
+                {
+                  "id": "696018430507605",
+                  "length": 11,
+                  "name": "אלידור נדלר",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T10:25:05+0000",
+              "from": {
+                "id": "10202048515694382",
+                "name": "Sahar Damri"
+              },
+              "id": "669507673173092",
+              "like_count": 0,
+              "message": "Omri Brem Ariel Tarta  בואו נעשה משהו",
+              "message_tags": [
+                {
+                  "id": "10203988887317144",
+                  "length": 9,
+                  "name": "Omri Brem",
+                  "offset": 0,
+                  "type": "user"
+                },
+                {
+                  "id": "10203189566931746",
+                  "length": 11,
+                  "name": "Ariel Tarta",
+                  "offset": 10,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRBM05qY3pNVGN6TURreU9qRTBPRGswTURBM01EWT0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TkRNeU16QXpNVGd3TmpJNU9qRTBPRGt6T1RRNU1qYz0ZD"
+            },
+            "next": "https://graph.facebook.com/v2.2/134704043320127_669429973180862/comments?access_token=EAACEdEose0cBAD0GyRewSYRkPcKahN5m4PZA6XmZCLK3SsXawwIvutZBEb7MvMfv5FdVLZCPhZBzELb46ZAaGVWRLd3xHeoZBP35TlbCl1Be63Edv7dwVpWsZAKPkxHZAxaz5tQQZAkceeInNzTahKpZBERPvo6xIb5pS0eVjx1RFRaat6wsgVMa34z4vEkk6ZCOaf0ZD&limit=25&after=WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRBM05qY3pNVGN6TURreU9qRTBPRGswTURBM01EWT0ZD"
+          }
+        },
+        "created_time": "2017-03-13T08:44:15+0000",
+        "from": {
+          "id": "10202945377226876",
+          "name": "Roy Avital"
+        },
+        "id": "134704043320127_669429973180862",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "847506721968139",
+              "name": "ישראל רביבו"
+            },
+            {
+              "id": "843690549028860",
+              "name": "דאני גדבאן"
+            },
+            {
+              "id": "532166163554862",
+              "name": "Khaled Kalash"
+            },
+            {
+              "id": "732991703428255",
+              "name": "Israel Cohen"
+            },
+            {
+              "id": "948857828458529",
+              "name": "Kobi Braytman"
+            },
+            {
+              "id": "615897585155108",
+              "name": "אסף בן חמו"
+            },
+            {
+              "id": "600338956739139",
+              "name": "Hesham Hesham"
+            },
+            {
+              "id": "161298344270271",
+              "name": "גדי שחר"
+            },
+            {
+              "id": "853778271353940",
+              "name": "רונית גולן חודדה"
+            },
+            {
+              "id": "748941821824113",
+              "name": "Avshi Malka"
+            },
+            {
+              "id": "766684073355769",
+              "name": "Avi Belhassen"
+            },
+            {
+              "id": "10204708980380497",
+              "name": "Ayman Mh"
+            },
+            {
+              "id": "955177994495733",
+              "name": "Haim Yakobi"
+            },
+            {
+              "id": "10200533416134922",
+              "name": "Neria Kahalani"
+            },
+            {
+              "id": "739645402787917",
+              "name": "Beni Gerstel"
+            },
+            {
+              "id": "1425030067812600",
+              "name": "טלובה אלאפינש"
+            },
+            {
+              "id": "1037469719603678",
+              "name": "Elad Ben Ishay"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "MTAzNzQ2OTcxOTYwMzY3OAZDZD",
+              "before": "ODQ3NTA2NzIxOTY4MTM5"
+            }
+          }
+        },
+        "message": "אוטובוס\n₪9,000 - Bene Beraq\n\nלמכירה-\nלאור הכמות הרבה של השאלות בפוסט הקודם אני מעלה פוסט חדש.\nלמכירה אוטובוס ללא מנוע, אין אפשרות לשים מנוע ולהחזיר לכביש. ניתן לגרור!!!\nלמטרת מחסן גזלן או הפיכה לדירת מגורים.\nמחיר -9000\nלא מעוניין בהחלפה.\nפרטים  050-4085317",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "shares": {
+          "count": 1
+        },
+        "type": "status",
+        "updated_time": "2017-03-13T11:48:00+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/666505960139930",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/666505960139930",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "created_time": "2017-03-09T14:48:25+0000",
+        "from": {
+          "id": "817583834954766",
+          "name": "אבו סמא"
+        },
+        "icon": "https://www.facebook.com/images/icons/photo.gif",
+        "id": "134704043320127_666505960139930",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "299911193538438",
+              "name": "סלמון מחאריק"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "Mjk5OTExMTkzNTM4NDM4",
+              "before": "Mjk5OTExMTkzNTM4NDM4"
+            }
+          }
+        },
+        "link": "https://www.facebook.com/photo.php?fbid=1349756871737457&set=gm.666505960139930&type=3",
+        "message": "מיצובישי קינג\nFREE - Haifa, Israel\n\nשנת 2002 אוטומט טסט שנה מנוע 3200 דיזל בלי זיוני מוח אין לי בעיה לבדיקה על מה שתירצו לבוא לבדוק ולדואר!!! בלי החלפות מחיר 40",
+        "name": "Photos from ‎אבו סמא‎'s post",
+        "object_id": "1349756871737457",
+        "picture": "https://fb-s-d-a.akamaihd.net/h-ak-xlp1/v/t1.0-0/s130x130/17203182_1349756871737457_541351880726738867_n.jpg?oh=9f390cc3c2b700a9f20928df600f8dd0&oe=592A7A44&__gda__=1496070976_8250bcf02c89c4355490b31693869b81",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "status_type": "added_photos",
+        "type": "photo",
+        "updated_time": "2017-03-13T11:47:59+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/664808946976298",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/664808946976298",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "comments": {
+          "data": [
+            {
+              "can_remove": false,
+              "created_time": "2017-03-07T19:12:15+0000",
+              "from": {
+                "id": "916918684986009",
+                "name": "Nofar Hayun Hagag"
+              },
+              "id": "664814033642456",
+              "like_count": 0,
+              "message": "Shmulik Hagag",
+              "message_tags": [
+                {
+                  "id": "10204697528615510",
+                  "length": 13,
+                  "name": "Shmulik Hagag",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-07T20:25:49+0000",
+              "from": {
+                "id": "912239088794860",
+                "name": "Lior Sorpin"
+              },
+              "id": "664877616969431",
+              "like_count": 0,
+              "message": "Moran Ysascar",
+              "message_tags": [
+                {
+                  "id": "1212763868749953",
+                  "length": 13,
+                  "name": "Moran Ysascar",
+                  "offset": 0,
+                  "type": "user"
+                }
+              ],
+              "user_likes": false
+            },
+            {
+              "can_remove": false,
+              "created_time": "2017-03-13T11:47:49+0000",
+              "from": {
+                "id": "10205381712041830",
+                "name": "Naor Nalgis"
+              },
+              "id": "669574263166433",
+              "like_count": 0,
+              "message": "בפרטי",
+              "user_likes": false
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalk1TlRjME1qWXpNVFkyTkRNek9qRTBPRGswTURVMk5qaz0ZD",
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZAOalkwT0RFME1ETXpOalF5TkRVMk9qRTBPRGc1TVRNNU16WT0ZD"
+            }
+          }
+        },
+        "created_time": "2017-03-07T19:04:51+0000",
+        "from": {
+          "id": "10155356200110228",
+          "name": "Noy Saban"
+        },
+        "id": "134704043320127_664808946976298",
+        "is_expired": false,
+        "is_hidden": false,
+        "likes": {
+          "data": [
+            {
+              "id": "10205451420909572",
+              "name": "Chemi Saban"
+            }
+          ],
+          "paging": {
+            "cursors": {
+              "after": "MTAyMDU0NTE0MjA5MDk1NzIZD",
+              "before": "MTAyMDU0NTE0MjA5MDk1NzIZD"
+            }
+          }
+        },
+        "message": "סיאט מי\n₪35,000 - Kfar Saba, Israel\n\nסיאט מי 2013 יד ראשונה, שמורה במצב מצויין.\nאוטומט, 5 דלתות.\n55,000 ק״מ ללא תאונות.\nטסט לשנה (עד 3/2018)\n\n054-5518185\n054-3973995",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "shares": {
+          "count": 7
+        },
+        "type": "status",
+        "updated_time": "2017-03-13T11:47:52+0000"
+      },
+      {
+        "actions": [
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669574273166432",
+            "name": "Comment"
+          },
+          {
+            "link": "https://www.facebook.com/134704043320127/posts/669574273166432",
+            "name": "Like"
+          },
+          {
+            "link": "https://www.facebook.com/groups/pishpeshuk.cars/members/",
+            "name": "Report Post to Admin"
+          }
+        ],
+        "created_time": "2017-03-13T11:47:48+0000",
+        "from": {
+          "id": "10152200599253225",
+          "name": "Morin Sitbon"
+        },
+        "id": "134704043320127_669574273166432",
+        "is_expired": false,
+        "is_hidden": false,
+        "message": "מחפשת רכב לנסיעות בתוך העיר בלבד!! אוטומט עם טסט. תקציב של עד 5000 ש\"ח. מעוניינת לסגור עוד היום\n₪5,000 - Netivot",
+        "privacy": {
+          "allow": "",
+          "deny": "",
+          "description": "",
+          "friends": "",
+          "value": ""
+        },
+        "type": "status",
+        "updated_time": "2017-03-13T11:47:49+0000"
+      }
+    ],
+    "paging": {
+      "next": "https://graph.facebook.com/v2.2/134704043320127/feed?access_token=EAACEdEose0cBAD0GyRewSYRkPcKahN5m4PZA6XmZCLK3SsXawwIvutZBEb7MvMfv5FdVLZCPhZBzELb46ZAaGVWRLd3xHeoZBP35TlbCl1Be63Edv7dwVpWsZAKPkxHZAxaz5tQQZAkceeInNzTahKpZBERPvo6xIb5pS0eVjx1RFRaat6wsgVMa34z4vEkk6ZCOaf0ZD&limit=25&until=1489405669&__paging_token=enc_AdDQKuQxvrzqZA6gOBnjEUUGaalYASt163fXjZBHtlZBGzW1KXtjouT9pAwL5oGn8BUDJZAt800N41px0r18dE1crir8JjTtJO7olZCADPZASLWoVqggZDZD",
+      "previous": "https://graph.facebook.com/v2.2/134704043320127/feed?since=1489405771&access_token=EAACEdEose0cBAD0GyRewSYRkPcKahN5m4PZA6XmZCLK3SsXawwIvutZBEb7MvMfv5FdVLZCPhZBzELb46ZAaGVWRLd3xHeoZBP35TlbCl1Be63Edv7dwVpWsZAKPkxHZAxaz5tQQZAkceeInNzTahKpZBERPvo6xIb5pS0eVjx1RFRaat6wsgVMa34z4vEkk6ZCOaf0ZD&limit=25&__paging_token=enc_AdBltrvSkEeLTfNt1KU1fOwhsOpvYVDAU1UdovZBEE8ZB2nqjPCqn2ZBlYlYYzqKjXsqlSG01osBOWD4cZAKc2kGka4Wmuj6WolSus0K3v3dODFNRwZDZD&__previous=1"
+    }
+  },
+  "id": "134704043320127"
+}
+

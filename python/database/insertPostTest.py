@@ -3,7 +3,7 @@
 from python.database.dbConnection import *
 import datetime
 from bson.dbref import DBRef
-import database
+import python.database
 
 
 def main():
@@ -36,7 +36,7 @@ def main():
         }
     }
 
-    db = database.get_db()
+    db = python.database.get_db()
 
     try:
         db.posts.insert(post)

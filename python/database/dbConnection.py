@@ -1,11 +1,15 @@
 #!/usr/bin/env python
+import os.path
 import pymongo
 from ConfigParser import SafeConfigParser
 
 
 def get_db():
     config = SafeConfigParser()
-    config.read('./../config.ini')
+    if os.path.exists('./config.ini'):
+        config.read('./config.ini')
+    else:
+        config.read('./../config.ini')
 
     db_full_path = 'mongodb://'
     if config.has_option('db', 'username'):
