@@ -1,9 +1,21 @@
+#Workspace
 .idea
 node_modules
 
+#LESS compiled files
 less/*.css
 less/mixins/*.css
 
 # config files
 python/config.ini
 config.js
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Windows shortcuts
+*.lnk

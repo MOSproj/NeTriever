@@ -1,0 +1,51 @@
+<div class="container white-container post">
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="price h2">{{ info.price | currency : '₪' : 0}}</div>
+            <p class="h3">מאזדה 3 2011</p>
+            <p class=""><span class="glyphicon glyphicon-map-marker"></span> מיקום</p>
+            <p class=""><span class="glyphicon glyphicon-calendar"></span> תאריך</p>
+            <table class="table borderless">
+                <tr>
+                    <td>
+                        דגם
+                    </td>
+                    <td>
+                        שם דגם
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        דגם
+                    </td>
+                    <td>
+                        שם דגם
+                    </td>
+                </tr>
+            </table>
+
+            <p><button type="button" class="btn btn-link"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                הרחב
+            </button></p>
+
+            <blockquote>
+                המודעה המקורית
+            </blockquote>
+            <div class="row user" style="position: relative">
+                <div class="col-xs-4 user-img">
+                    <img class="img-circle center-block" ng-src="http://graph.facebook.com/{{ info.from.id }}/picture?type=large" />
+                </div>
+                <div class="col-xs-8">
+                    <p class="phone"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        <a ng-href="https://www.facebook.com/{{ info.from.id }}"> {{ info.from.name }}</a>
+                    </p>
+                    <p class="phone"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> {{ info.phone | tel }}</p>
+                </div>
+            </div>
+            <a ng-href="https://www.facebook.com/{{ info.id }}"><button class="btn btn-default to-post">למודעה</button></a>
+        </div>
+        <div class="large-img col-sm-4 hidden-xs">
+            <img alt="picture" class="img-responsive img-rounded img-scaled" src="https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/17424850_10155481606199026_3255166079293746501_n.jpg?oh=59639a034b035cc47e4706ea6d3e0541&oe=5961CBBB" />
+        </div>
+    </div>
+</div>

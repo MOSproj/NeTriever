@@ -21,10 +21,10 @@ def main():
         "created_time": datetime.datetime.utcnow(),
         "updated_time": datetime.datetime.utcnow(),
         "images": [{
-                        "height": 720,
-                        "src": "src..",
-                        "width": 405
-                      }],
+            "height": 720,
+            "src": "src..",
+            "width": 405
+        }],
         "ignore": False,
         "specs": {
             "שנה": 2003,

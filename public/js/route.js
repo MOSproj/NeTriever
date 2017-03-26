@@ -8,10 +8,10 @@
         .when("/", {
             templateUrl : "/views/home.html"
         })
-        .when("/categories/:category", {
+        .when("/category/:category", {
             controller: 'postsCtrl',
             controllerAs:"category",
-            templateUrl : "/views/categories.html"
+            templateUrl : "/views/category.html"
         })
         .otherwise({
           redirectTo: '/'

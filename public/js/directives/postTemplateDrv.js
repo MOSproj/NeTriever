@@ -1,12 +1,11 @@
 (function () {
-    angular.module('myApp').directive('navbar', function() {
+    angular.module('myApp').directive('postTemplate', function() {
         return {
             restrict: 'E',
             scope: {
                 info: '='
             },
-            templateUrl:'/js/directives/navbarDrv.html'
+            templateUrl:'/js/directives/postTemplateDrv.html'
         };
     });
 })();
-    

@@ -10,12 +10,16 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use('/scripts', express.static(__dirname + '/node_modules/'));
 
-app.use('/', dbRoutes);
+app.use('/api/', dbRoutes);
 
 /* Fixing angular routing */
-/* http://stackoverflow.com/questions/29741759/node-js-404-and-angular-url-refresh-conflict */
+/* http://stackoverflow.com/questions/29741759/node-js-404-and-angular-url-refresh-conflict
 app.use('/*', function (req, res) {
    res.sendFile(__dirname + '/public/index.html');
+});*/
+
+app.use('/category/*', function (req, res) {
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 app.use(function(req, res) { //put this at end

@@ -3,15 +3,11 @@
 
     angular.module('myApp').factory("postsSrv", ["$http", "$log" , postsSrv]);
 
-    function postsSrv($http,$log){
-        var cache = null;
-
-        if (cache == null)
-            return {
-                getPosts : function(category){
-                    return $http.get('/get-posts/' + category);
-                }
-            };
-        else return cache;
+    function postsSrv($http, $log){
+        return {
+            getPosts : function(category){
+                return $http.get('/api/posts/' + category);
+            }
+        };
     }
 })();

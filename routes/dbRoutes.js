@@ -4,9 +4,9 @@ var mongojs = require('mongojs');
 var config = require('../config');
 
 var dbFullPath = '';
-if(config.username != '')
+if(config.username !== '')
     dbFullPath += config.username + ':' + config.password + '@';
-if(config.dbPath != '')
+if(config.dbPath !== '')
     dbFullPath += config.dbPath + '/';
 dbFullPath += config.dbName;
 
@@ -46,13 +46,13 @@ var getPostsByGroups = function (groups, res) {
     });
 };
 
-router.get('/get-categories', function (req, res) {
+router.get('/categories-names', function (req, res) {
     getCategoriesName(function (categoriesName) {
         res.json(categoriesName);
     });
 });
 
-router.get('/get-posts/:category', function (req, res) {
+router.get('/posts/:category', function (req, res) {
     var categoryName = req.params.category;
     console.log(categoryName + " category");
     getCategoryByName(categoryName, function (category) {

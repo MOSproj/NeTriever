@@ -1,13 +1,14 @@
 (function(){
     "use strict";
 
-    angular.module('myApp').controller('postsCtrl', ["$scope", "postsSrv","$routeParams", postsCtrl]);
+    angular.module('myApp').controller('postsCtrl', ["$scope", "$routeParams", "$log", "postsSrv", postsCtrl]);
 
-    function postsCtrl ($scope, postsSrv, $routeParams) {
+    function postsCtrl ($scope, $routeParams, $log, postsSrv) {
         var self = this;
-        self.cat = $routeParams.category;
+        self.categoryName = $routeParams.category;
         postsSrv.getPosts($routeParams.category).then(function (response) {
-            console.log(response);
+            $log.debug(response.data);
+
             self.posts = response.data;
         });
     }
