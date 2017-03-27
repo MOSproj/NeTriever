@@ -1,15 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import facebook
-from ConfigParser import SafeConfigParser
 
 
 class Facebook:
 
-    def __init__(self):
-        self.config = SafeConfigParser()
-        self.config.read('./config.ini')
-        self.graph = facebook.GraphAPI(access_token=self.config.get('facebook', 'access_token'), version='2.2')
+    def __init__(self, access_token):
+        self.graph = facebook.GraphAPI(access_token=access_token, version='2.2')
 
     def get_feed(self, group_id):
         group_id = str(group_id)

@@ -12,25 +12,28 @@ dbFullPath += config.dbName;
 
 var db = mongojs(dbFullPath, ['categories', 'groups', 'posts2']);
 db.on('error', function (err) {
-    console.log('database error', err)
+    console.log('database error:', err)
 });
 db.on('connect', function () {
     console.log('database connected')
 });
 
 var getCategoriesName =  function (res) {
+    // TODO: add proxy
     db.categories.find({}, {"name":1,_id:0}, function (err, docs) {
         res(docs);
     });
 };
 
 var getCategoryByName = function (categoryName, res) {
+    // TODO: add proxy
     db.categories.findOne({'name': categoryName}, function (err, docs) {
         res(docs);
     });
 };
 
 var getGroupsByCategory = function (category, res) {
+    // TODO: add proxy
     db.groups.find({'category.$id': category._id}, function (err, docs) {
         res(docs);
     });
