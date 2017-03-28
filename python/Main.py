@@ -15,18 +15,20 @@ class Main:
         self.facebook = Facebook(config.get('facebook', 'access_token'))
         self.db = self.__connect_to_db(config)
 
-        self.date_format = "%Y-%m-%dT%H:%M:%S+%f"
-
     def filter_posts(self, feed):
-        filtered_posts = []
+        new_posts = []
+        updated_posts = []
         for post in feed:
-            post_from_db = self.db.get_post(post['id'])
-            if type(post_from_db) is dict:
-                pass
+            if self.db.if_exists(post['id']):
+                if not post['is_expired'] and not post['is_hidden']:
+                    # TODO: check if the post is updated
+                    updated_posts.append(post)
+                else:
+                    self.db.set_ignore(post['id'])
             else:
                 if not post['is_expired'] and not post['is_hidden']:
-                    filtered_posts.append(post)
-        return filtered_posts
+                    new_posts.append(post)
+        return new_posts, updated_posts
 
 
     def get_data_from_post(self, post):
@@ -37,9 +39,10 @@ class Main:
             'name': post['from']['name'],
             'id': long(post['from']['id'])
         }
-        print datetime.strptime(post['created_time'], self.date_format)
-        post_data['created_time'] = datetime.strptime(post['created_time'], self.date_format)
+        post_data['created_time'] = datetime.strptime(post['created_time'], "%Y-%m-%dT%H:%M:%S+%f")
         post_data['last_updated'] = datetime.utcnow()
+        # TODO insert "NLP" here
+        # TODO add message
         post_data['ignore'] = False
         return post_data
 
