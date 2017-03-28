@@ -18,25 +18,39 @@ db.on('connect', function () {
     console.log('database connected')
 });
 
+var proxy = {};
+
 var getCategoriesName =  function (res) {
-    // TODO: add proxy
-    db.categories.find({}, {"name":1,_id:0}, function (err, docs) {
-        res(docs);
-    });
+    if(proxy.hasOwnProperty('categoriesName'))
+        res(proxy.categoriesName);
+    else
+        db.categories.find({}, {"name":1,_id:0}, function (err, docs) {
+            console.log('getCategoriesName');
+            proxy.categoriesName = docs;
+            res(docs);
+        });
 };
 
 var getCategoryByName = function (categoryName, res) {
-    // TODO: add proxy
-    db.categories.findOne({'name': categoryName}, function (err, docs) {
-        res(docs);
-    });
+    if (proxy.hasOwnProperty('categoryName'))
+        res(proxy.categoryName);
+    else
+        db.categories.findOne({'name': categoryName}, function (err, docs) {
+            console.log('getCategoryByName');
+            proxy.categoryName = docs;
+            res(docs);
+        });
 };
 
 var getGroupsByCategory = function (category, res) {
-    // TODO: add proxy
-    db.groups.find({'category.$id': category._id}, function (err, docs) {
-        res(docs);
-    });
+    if (proxy.hasOwnProperty('groupsByCategory'))
+        res(proxy.groupsByCategory);
+    else
+        db.groups.find({'category.$id': category._id}, function (err, docs) {
+            console.log('getGroupsByCategory');
+            proxy.groupsByCategory = docs;
+            res(docs);
+        });
 };
 
 var getPostsByGroups = function (groups, res) {
