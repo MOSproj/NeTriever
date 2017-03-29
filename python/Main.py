@@ -42,7 +42,8 @@ class Main:
         post_data['created_time'] = datetime.strptime(post['created_time'], "%Y-%m-%dT%H:%M:%S+%f")
         post_data['last_updated'] = datetime.utcnow()
         # TODO: insert "NLP" here
-        post_data['message'] = post['message']
+        if 'message' in post:
+            post_data['message'] = post['message']
         post_data['ignore'] = False
         return post_data
 
