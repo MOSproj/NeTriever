@@ -42,6 +42,11 @@ class Main:
         # TODO: insert "NLP" here
         if 'message' in post:
             post_data['message'] = post['message']
+        if 'attachments' in post:
+            post_data['image'] = []
+            data_array = post['attachments']['data'][0]['subattachments']['data']
+            for data in data_array:
+                post_data['image'].append(data['media']['image'])
         post_data['ignore'] = False
         return post_data
 
