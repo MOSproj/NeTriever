@@ -12,7 +12,8 @@ def main():
         data_new_posts = []
         for post in new_posts:
             data_new_posts.append(main.get_data_from_post(post))
-        main.db.insert_post(data_new_posts)
+        if len(data_new_posts) > 0:
+            main.db.insert_post(data_new_posts)
         for post in updated_posts:
             post_data = main.get_data_from_post(post)
             main.db.update_post(post_data, True)

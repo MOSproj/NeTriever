@@ -22,13 +22,13 @@ class Database:
 
     def insert_post(self, post):
         try:
-            self.db.posts2.insert(post)
+            self.db.posts.insert(post)
         except pymongo.errors.DuplicateKeyError, e:
             print e
 
     def update_post(self, post, update=False):
         try:
-            self.db.posts2.update({'id': post['id']}, post, {'upsert': update})
+            self.db.posts.update({'id': post['id']}, post, update)
         except pymongo.errors, e:
             print e
 
@@ -39,7 +39,7 @@ class Database:
         })
 
     def if_exists(self, post_id):
-        return type(self.get_post(post_id)) is dict
+        return type(self.db.posts.find_one({"id": post_id})) is dict
 
     def __get_connection(self, db_path, db_name, username, password):
         db_full_path = 'mongodb://'

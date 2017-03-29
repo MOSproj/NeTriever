@@ -19,17 +19,15 @@ class Main:
         new_posts = []
         updated_posts = []
         for post in feed:
-            if self.db.if_exists(post['id']):
-                if not post['is_expired'] and not post['is_hidden']:
-                    # TODO: check if the post is updated
+            if not post['is_expired'] and not post['is_hidden']:
+                post_id = long(post['id'].split("_")[1])
+                if self.db.if_exists(post_id):
                     updated_posts.append(post)
                 else:
-                    self.db.set_ignore(post['id'])
-            else:
-                if not post['is_expired'] and not post['is_hidden']:
                     new_posts.append(post)
+            else:
+                self.db.set_ignore(post['id'])
         return new_posts, updated_posts
-
 
     def get_data_from_post(self, post):
         post_data = dict()
@@ -46,6 +44,26 @@ class Main:
             post_data['message'] = post['message']
         post_data['ignore'] = False
         return post_data
+
+    def new_and_updated(self, posts):
+        new_posts = []
+        updated_posts = []
+        for post in posts:
+            post_id = long(post['id'].split("_")[1])
+            if self.db.if_exists(post_id):
+                    updated_posts.append(post)
+                    new_posts.append(post)
+        return new_posts, updated_posts
+
+    def ignore_or_not(self, posts):
+        not_ignore = []
+        ignore = []
+        for post in posts:
+            if not post['is_expired'] and not post['is_hidden']:
+                not_ignore.append(post)
+            else:
+                ignore.append(post)
+        return not_ignore, ignore
 
     def __connect_to_db(self, config):
         if config.has_option('db', 'username'):

@@ -36,18 +36,14 @@ nav .row {
         position: relative;
         color: @brand-success;
     }
-    .borderless tr:first-child td{
-        border: none;
+    table{
+        margin-bottom: 10px;
+        &.borderless tr:first-child td{
+            border: none;
+        }
     }
     blockquote{
         font-size: inherit;
-    }
-    .large-img{
-        img{
-            //TODO: 100% height but minimum of 200px
-             width: 100%;
-             height: 200px;
-         }
     }
     p:last-child {
         margin-bottom: 0;
@@ -68,4 +64,15 @@ nav .row {
         bottom: 0;
         left: 15px;
     }
+    .large-img{
+        img{
+            //TODO: 100% height but minimum of 200px
+            width: 100%;
+            height: 200px;
+        }
+    }
+}
+
+.angular-with-newlines {
+    white-space: pre-wrap;
 }
