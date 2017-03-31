@@ -7,8 +7,8 @@ less/*.css
 less/mixins/*.css
 
 # config files
-python/config.ini
-config.js
+config*.ini
+config*.js
 
 # Windows image file caches
 Thumbs.db

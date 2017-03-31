@@ -42,12 +42,13 @@ class Database:
         return type(self.db.posts.find_one({"id": post_id})) is dict
 
     def __get_connection(self, db_path, db_name, username, password):
-        db_full_path = 'mongodb://'
+        uri = 'mongodb://'
         if len(username) > 0:
-            db_full_path += username + ':' + password + '@'
-        db_full_path += db_path
-        if len(db_name) > 0:
-            db_full_path += '/' + db_name
+            uri += username + ':' + password + '@'
+        if len(db_path) > 0:
+            uri += db_path
+        else:
+            uri += 'localhost:27017'
 
-        connection = pymongo.MongoClient(db_full_path)
+        connection = pymongo.MongoClient(uri)
         return connection[db_name]

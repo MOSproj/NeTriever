@@ -1,5 +1,5 @@
 (function () {
-    angular.module('myApp').directive('postTemplate', function() {
+    angular.module('myApp').directive('postTemplate', [function() {
         return {
             restrict: 'E',
             scope: {
@@ -7,5 +7,5 @@
             },
             templateUrl:'/js/directives/postTemplateDrv.html'
         };
-    });
+    }]);
 })();

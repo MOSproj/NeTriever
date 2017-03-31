@@ -22,6 +22,7 @@ class Main:
             if not post['is_expired'] and not post['is_hidden']:
                 post_id = long(post['id'].split("_")[1])
                 if self.db.if_exists(post_id):
+                    # TODO: check if it need update
                     updated_posts.append(post)
                 else:
                     new_posts.append(post)
@@ -30,24 +31,31 @@ class Main:
         return new_posts, updated_posts
 
     def get_data_from_post(self, post):
-        post_data = dict()
-        post_data['id'] = long(post['id'].split("_")[1])
-        post_data['group_id'] = long(post['id'].split("_")[0])
-        post_data['from'] = {
-            'name': post['from']['name'],
-            'id': long(post['from']['id'])
-        }
-        post_data['created_time'] = datetime.strptime(post['created_time'], "%Y-%m-%dT%H:%M:%S+%f")
-        post_data['last_updated'] = datetime.utcnow()
-        # TODO: insert "NLP" here
+        post_data = dict({
+            'id': long(post['id'].split("_")[1]),
+            'group_id': long(post['id'].split("_")[0]),
+            'from': {
+                'name': post['from']['name'],
+                'id': long(post['from']['id'])
+            },
+            'created_time': datetime.strptime(post['created_time'], "%Y-%m-%dT%H:%M:%S+%f"),
+            'updated_time': datetime.strptime(post['updated_time'], "%Y-%m-%dT%H:%M:%S+%f"),
+            'last_updated': datetime.utcnow(),
+            'ignore': False
+        })
         if 'message' in post:
-            post_data['message'] = post['message']
+            post_data.update({
+                'message': post['message']
+            })
         if 'attachments' in post:
             post_data['image'] = []
-            data_array = post['attachments']['data'][0]['subattachments']['data']
-            for data in data_array:
-                post_data['image'].append(data['media']['image'])
-        post_data['ignore'] = False
+            data_at_place_0 = post['attachments']['data'][0]
+            if 'media' in data_at_place_0:
+                post_data['image'].append(data_at_place_0['media']['image'])
+            elif 'subattachments' in data_at_place_0:
+                for data in data_at_place_0['subattachments']['data']:
+                    post_data['image'].append(data['media']['image'])
+        # TODO: insert "NLP" here
         return post_data
 
     def new_and_updated(self, posts):
@@ -56,8 +64,8 @@ class Main:
         for post in posts:
             post_id = long(post['id'].split("_")[1])
             if self.db.if_exists(post_id):
-                    updated_posts.append(post)
-                    new_posts.append(post)
+                updated_posts.append(post)
+                new_posts.append(post)
         return new_posts, updated_posts
 
     def ignore_or_not(self, posts):
@@ -71,21 +79,10 @@ class Main:
         return not_ignore, ignore
 
     def __connect_to_db(self, config):
-        if config.has_option('db', 'username'):
-            username = config.get('db', 'username')
-            password = config.get('db', 'password')
-        else:
-            username = ''
-            password = ''
 
-        if config.has_option('db', 'dbPath'):
-            db_path = config.get('db', 'dbPath')
-        else:
-            db_path = 'localhost:27017'
-
-        if config.has_option('db', 'dbName'):
-            db_name = config.get('db', 'dbName')
-        else:
-            db_name = ''
+        username = config.get('db', 'username')
+        password = config.get('db', 'password')
+        db_path = config.get('db', 'dbPath')
+        db_name = config.get('db', 'dbName')
 
         return Database(db_path, db_name, username, password)

@@ -3,13 +3,14 @@
 import pymongo
 from bson.dbref import DBRef
 import python.Database
+from python.Database import Database
 
 
 def init_categories(db, categories=[]):
     try:
         db.create_collection("categories")
         db.categories.create_index([("name", pymongo.ASCENDING)], unique=True)
-    except pymongo.errors.CollectionInvalid:
+    except pymongo.errors.CollectionInvalid, e:
         print "pymongo.errors.CollectionInvalid: categories"
         pass
 
@@ -43,6 +44,7 @@ def init_posts(db, posts=[]):
     try:
         db.create_collection("posts")
         db.posts.create_index([("id", pymongo.ASCENDING)], unique=True)
+        db.posts.create_index([("group_id", pymongo.ASCENDING)], unique=True)
     except pymongo.errors.CollectionInvalid:
         print "pymongo.errors.CollectionInvalid: posts"
         pass
@@ -110,5 +112,5 @@ def main(database):
 
 
 if __name__ == '__main__':
-    database = python.Database.Database()
+    database = Database('', 'test1', '', '')
     main(database)
