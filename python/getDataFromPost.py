@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from Main import Main
+import time
 
 
 def main():
@@ -22,3 +23,4 @@ def main():
 if __name__ == '__main__':
     while True:
         main()
+        time.sleep(60)

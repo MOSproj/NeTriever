@@ -6,6 +6,7 @@ import python.Database
 from python.Database import Database
 
 
+# TODO: this file is broken
 def init_categories(db, categories=[]):
     try:
         db.create_collection("categories")
