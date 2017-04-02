@@ -8,6 +8,7 @@
         self.categoryName = $routeParams.category;
         self.pageNum = parseInt($routeParams.page);
         self.postsPerPage = 50;
+
         postsSrv.getPosts(self.categoryName, self.pageNum).then(function (response) {
             $log.debug(response.data);
 
