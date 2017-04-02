@@ -7068,3 +7068,9 @@ h3 {
   width: 100%;
   height: 200px;
 }
+.pagination-div {
+  text-align: center;
+}
+.pagination-div a {
+  width: 150px;
+}

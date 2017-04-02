@@ -3,7 +3,7 @@ var router = express.Router();
 var mongojs = require('mongojs');
 var config = require('../config');
 
-var posts_per_page = 100;
+var postsPerPage = 50;
 
 var uri = '';
 if(config.username !== '')
@@ -45,8 +45,8 @@ var getPostsByGroups = function (groups, pageNum, res) {
     });
     db.posts.find({'group_id': {'$in': groupsIds}})
         .sort({'updated_time': -1})
-        .skip(posts_per_page*(pageNum-1))
-        .limit(posts_per_page, function (err, docs) {
+        .skip(postsPerPage*(pageNum-1))
+        .limit(postsPerPage, function (err, docs) {
         res(docs);
     });
 };
