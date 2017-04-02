@@ -79,7 +79,6 @@ class Main:
         return not_ignore, ignore
 
     def __connect_to_db(self, config):
-
         username = config.get('db', 'username')
         password = config.get('db', 'password')
         db_path = config.get('db', 'dbPath')

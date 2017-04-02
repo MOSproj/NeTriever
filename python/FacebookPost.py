@@ -5,7 +5,7 @@ from datetime import datetime
 
 class FacebookPost:
 
-    facebook_strptime = "%Y-%m-%dT%H:%M:%S+%f"
+    facebook_strptime = '%Y-%m-%dT%H:%M:%S+%f'
 
     def __init__(self, post):
         if post is FacebookPost:
@@ -19,10 +19,10 @@ class FacebookPost:
         return self.post
 
     def get_id(self):
-        return long(self.post['id'].split("_")[1])
+        return long(self.post['id'].split('_')[1])
 
     def get_group_id(self):
-        return long(self.post['id'].split("_")[0])
+        return long(self.post['id'].split('_')[0])
 
     def get_from_name(self):
         return self.post['from']['name']
@@ -40,7 +40,7 @@ class FacebookPost:
         if 'message' in self.post:
             return self.post['message']
         else:
-            raise Exception('There id no message.')
+            raise Exception('There is no message.')
 
     def get_images(self):
         if 'attachments' in self.post:
@@ -53,7 +53,7 @@ class FacebookPost:
                     answer.append(data['media']['image'])
             return answer
         else:
-            raise Exception('There id no images.')
+            raise Exception('There is no images.')
 
     def is_ignored(self):
-        return self.post['is_expired'] or self.post['is_hidden']
+        return self.post['is_expired'] or self.post['is_hidden'] or not 'message' in self.post

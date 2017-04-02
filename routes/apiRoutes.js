@@ -3,6 +3,8 @@ var router = express.Router();
 var mongojs = require('mongojs');
 var config = require('../config');
 
+var posts_per_page = 100;
+
 var uri = '';
 if(config.username !== '')
     uri += config.username + ':' + config.password + '@';
@@ -36,12 +38,15 @@ var getGroupsByCategory = function (category, res) {
     });
 };
 
-var getPostsByGroups = function (groups, res) {
+var getPostsByGroups = function (groups, pageNum, res) {
     var groupsIds = [];
     groups.forEach(function(group) {
         groupsIds.push(group.id);
     });
-    db.posts.find({'group_id': {'$in': groupsIds}}).limit(100, function (err, docs) {
+    db.posts.find({'group_id': {'$in': groupsIds}})
+        .sort({'updated_time': -1})
+        .skip(posts_per_page*(pageNum-1))
+        .limit(posts_per_page, function (err, docs) {
         res(docs);
     });
 };
@@ -52,21 +57,26 @@ router.get('/categories-names', function (req, res) {
     });
 });
 
-router.get('/posts/:category', function (req, res) {
+router.get('/category/:category', function (req, res) {
     var categoryName = req.params.category;
+    res.redirect(categoryName + '/page/1');
+});
+
+router.get('/category/:category/page/:page', function (req, res) {
+    var categoryName = req.params.category;
+    var pageNum = req.params.page;
     console.log(categoryName + " category");
     console.log((new Date).toISOString());
     var then = new Date();
     getCategoryByName(categoryName, function (category) {
         getGroupsByCategory(category, function (groups) {
-            getPostsByGroups(groups, function (posts) {
+            getPostsByGroups(groups, pageNum, function (posts) {
                 res.json(posts);
                 console.log(new Date() - then);
                 console.log((new Date).toISOString());
             });
         });
     });
-
 });
 
 module.exports = router;

@@ -2,7 +2,7 @@ var express = require('express');
 var mongojs = require('mongojs');
 var bodyParser = require('body-parser');
 
-var dbRoutes = require('./routes/dbRoutes');
+var apiRoutes = require('./routes/apiRoutes');
 
 var app = express();
 
@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use('/scripts', express.static(__dirname + '/node_modules/'));
 
-app.use('/api/', dbRoutes);
+app.use('/api/', apiRoutes);
 
 /* Fixing angular routing */
 /* http://stackoverflow.com/questions/29741759/node-js-404-and-angular-url-refresh-conflict

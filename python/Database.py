@@ -33,9 +33,9 @@ class Database:
             print e
 
     def set_ignore(self, post_id):
-        self.db.posts.save({"id": post_id}, {
-            "id": post_id,
-            "ignore": True
+        self.db.posts.save({'id': post_id}, {
+            'id': post_id,
+            'ignore': True
         })
 
     def if_exists(self, post_id):
