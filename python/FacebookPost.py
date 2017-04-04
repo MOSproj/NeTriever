@@ -8,9 +8,9 @@ class FacebookPost:
     facebook_strptime = '%Y-%m-%dT%H:%M:%S+%f'
 
     def __init__(self, post):
-        if post is FacebookPost:
+        if isinstance(post, FacebookPost):
             self.post = post.post
-        elif post is dict:
+        elif isinstance(post, dict):
             self.post = post
         else:
             raise Exception('Unsupported parameter type.')
@@ -56,4 +56,5 @@ class FacebookPost:
             raise Exception('There is no images.')
 
     def is_ignored(self):
-        return self.post['is_expired'] or self.post['is_hidden'] or not 'message' in self.post
+        return ('is_expired' in self.post and self.post['is_expired']) or ('is_hidden' in self.post and self.post['is_hidden']) or 'message' not in self.post
+

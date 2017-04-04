@@ -1,16 +1,20 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from FacebookPost import FacebookPost
+from datetime import datetime
 
 
 class DatabasePost:
 
     def __init__(self, post):
-        if post is dict:
-            self.post = post
-        elif post is DatabasePost:
+        if isinstance(post, dict):
+            if 'ignore' in post:
+                self.post = post
+            else:
+                self.post = self.convert_to_dict(post)
+        elif isinstance(post, DatabasePost):
             self.post = post.post
-        elif post is FacebookPost:
+        elif isinstance(post, FacebookPost):
             self.post = self.convert_to_dict(post)
         else:
             raise Exception('Unsupported parameter type.')
@@ -72,9 +76,9 @@ class DatabasePost:
 
     @staticmethod
     def convert_to_dict(facebook_post):
-        if facebook_post is dict:
+        if isinstance(facebook_post, dict):
             facebook_post = FacebookPost(facebook_post)
-        if facebook_post is not FacebookPost:
+        if not isinstance(facebook_post, FacebookPost):
             raise Exception('Unsupported parameter type.')
 
         if facebook_post.is_ignored():
@@ -92,15 +96,18 @@ class DatabasePost:
             },
             'created_time': facebook_post.get_created_time(),
             'updated_time': facebook_post.get_updated_time(),
+            'last_updated': datetime.utcnow(),
             'ignore': False
         })
         try:
             answer['message'] = facebook_post.get_message()
-        except Exception:
+        except Exception, e:
+            print e
             pass
         try:
             answer['images'] = facebook_post.get_images()
-        except Exception:
+        except Exception, e:
+            print e
             pass
         # TODO: insert NLP here maybe..?
         return answer

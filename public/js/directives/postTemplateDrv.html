@@ -23,14 +23,14 @@
             </p>
         </div>
         <div class="col-sm-5 hidden-xs">
-            <div id="{{ info.id + '_carousel' }}" class="carousel slide" data-interval="false" ng-if="info.hasOwnProperty('image')">
+            <div id="{{ info.id + '_carousel' }}" class="carousel slide" data-interval="false" ng-if="info.hasOwnProperty('images')">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                    <li data-target="{{ '#' + info.id + '_carousel' }}" data-slide-to="{{ $index }}" ng-class="{ active:!$index }" ng-repeat="image in info.image"></li>
+                    <li data-target="{{ '#' + info.id + '_carousel' }}" data-slide-to="{{ $index }}" ng-class="{ active:!$index }" ng-repeat="image in info.images"></li>
                 </ol>
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
-                    <div class="item img-responsive" ng-class="{ active:!$index }" ng-repeat="image in info.image">
+                    <div class="item img-responsive" ng-class="{ active:!$index }" ng-repeat="image in info.images">
                         <img class="img-responsive img-scaled" ng-src="{{ image.src }}">
                     </div>
                 </div>
