@@ -4,6 +4,7 @@ from ConfigParser import SafeConfigParser
 from Facebook import Facebook
 from Database import Database
 from datetime import datetime
+from NLP import Nlp
 
 
 class Main:
@@ -45,7 +46,8 @@ class Main:
         })
         if 'message' in post:
             post_data.update({
-                'message': post['message']
+                'message': post['message'],
+                'specs': Nlp.process_message(post['message'], 'רכב')
             })
         if 'attachments' in post:
             post_data['image'] = []
@@ -55,7 +57,6 @@ class Main:
             elif 'subattachments' in data_at_place_0:
                 for data in data_at_place_0['subattachments']['data']:
                     post_data['image'].append(data['media']['image'])
-        # TODO: insert "NLP" here
         return post_data
 
     def new_and_updated(self, posts):
