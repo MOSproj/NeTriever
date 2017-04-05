@@ -4,6 +4,19 @@
 
 class CarCategoryNLP:
 
+    extract_after_indicator = {
+        u'דגם': ['דגם', 'מסוג'],
+        u'שנה': ['עלה לכביש', 'שנת', 'מודל'],
+        u'יד': ['יד', 'ידיים'],
+        u'מחיר': ['מחיר', 'מחיר:'],
+        u'ק"מ': ['קמ ', 'ק"מ', 'אלף', 'KM', 'עשה', 'ק.מ', 'קילומטראז'],
+        u'טלפון': ['פרטים', 'לפרטים', 'נייד', 'נוספים', 'פלאפון', 'בנייד']
+    }
+
+    extract_before_indicator = {
+        u'ק"מ': ['אלף']
+    }
+
     def __init__(self):
         pass
 
@@ -12,25 +25,49 @@ class CarCategoryNLP:
         specs = dict()
         if category == 'רכב':
             words = message.split()
-            specs['דגם'] = (CarCategoryNLP.__extract_word_after_indicator(words, [u'דגם', u'מסוג']))
-            specs['שנה'] = (CarCategoryNLP.__extract_word_after_indicator(words, [u'עלה לכביש', u'שנת', u'מודל']))
-            specs['יד'] = (CarCategoryNLP.__extract_word_after_indicator(words, [u'יד', u'ידיים']))
-            specs['מחיר'] = (CarCategoryNLP.__extract_word_after_indicator(words, [u'מחיר', u'מחיר:']))
-            specs['ק"מ'] = (CarCategoryNLP.__extract_word_after_indicator(words, [u'קמ ', u'ק"מ', u'אלף', u'KM' , u'ק.מ', u'קילומטראז']))
-            specs['טלפון'] = (CarCategoryNLP.__extract_word_after_indicator(words, [u'פרטים ', u'לפרטים', u'נייד', u'נוספים' , u'פלאפון', u'בנייד']))
+            for key, value in CarCategoryNLP.extract_after_indicator.items():
+                spec_by_value = CarCategoryNLP.__extract_word_after_indicator(words, value)
+                if spec_by_value is not None:
+                    specs[key] = spec_by_value
+            for key, value in CarCategoryNLP.extract_before_indicator.items():
+                spec_by_value = CarCategoryNLP.__extract_word_before_indicator(words, value)
+                if spec_by_value is not None:
+                    specs[key] = spec_by_value
             return specs
         else:
             return dict()
 
     @staticmethod
-    def __extract_word_after_indicator(words, indicator_to_extract = []):
+    def __extract_word_after_indicator(words, indicators_to_extract):
         index = 0
+        match = False
         for word in words:
-            if word == indicator_to_extract:
+            for indicator in indicators_to_extract:
+                if word == indicator:
+                    match = True
+                    break
+            if not match:
+                index += 1
+            else:
                 break
-            index += 1
         if index != len(words):
             return words[index + 1]
+
+    @staticmethod
+    def __extract_word_before_indicator(words, indicators_to_extract):
+        index = 0
+        match = False
+        for word in words:
+            for indicator in indicators_to_extract:
+                if word == indicator:
+                    match = True
+                    break
+            if not match:
+                index += 1
+            else:
+                break
+        if index > 1:
+            return words[index - 1]
 
 
 if __name__ == '__main__':
@@ -57,4 +94,4 @@ if __name__ == '__main__':
 *נמכר ללא ההגה שבתמונה!
 '''
 
-    CarCategoryNLP.process_message_car(str, 'רכב')
+    print CarCategoryNLP.process_message_car(str, 'רכב')

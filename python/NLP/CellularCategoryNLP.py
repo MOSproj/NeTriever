@@ -23,14 +23,17 @@ class CellularCategoryNLP:
             return dict()
 
     @staticmethod
-    def __extract_word_after_indicator(words,indicator_to_extract = []):
+    def __extract_word_after_indicator(words,indicator_to_extract):
         index = 0
         for word in words:
+         #   if word.isdigit() and indicator_to_extract = ???
             if word == indicator_to_extract:
                 break
             index += 1
         if index != len(words):
             return words[index + 1]
+
+
 
 
 if __name__ == '__main__':
