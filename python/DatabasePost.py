@@ -82,12 +82,12 @@ class DatabasePost:
             raise Exception('Unsupported parameter type.')
 
         if facebook_post.is_ignored():
-            return dict({
+            return {
                 'id': facebook_post.get_id(),
                 'ignore': True
-            })
+            }
 
-        answer = dict({
+        answer = {
             'id': facebook_post.get_id(),
             'group_id': facebook_post.get_group_id(),
             'from': {
@@ -98,7 +98,7 @@ class DatabasePost:
             'updated_time': facebook_post.get_updated_time(),
             'last_updated': datetime.utcnow(),
             'ignore': False
-        })
+        }
         try:
             answer['message'] = facebook_post.get_message()
         except Exception, e:
