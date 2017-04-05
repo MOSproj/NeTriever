@@ -93,5 +93,4 @@ if __name__ == '__main__':
 לרציניים בלבד בטלפון 0506454813
 *נמכר ללא ההגה שבתמונה!
 '''
-
     print CarCategoryNLP.process_message_car(str, 'רכב')
