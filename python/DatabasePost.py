@@ -74,6 +74,9 @@ class DatabasePost:
     def is_ignored(self):
         return self.post['ignore']
 
+    def set_specs(self, specs):
+        self.post['specs'] = specs
+
     @staticmethod
     def convert_to_dict(facebook_post):
         if isinstance(facebook_post, dict):

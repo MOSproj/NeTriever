@@ -1,38 +1,65 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+import json
 
 class NadlanCategoryNLP:
 
     def __init__(self):
         pass
 
+    with open('specs_to_find_nadlan') as data_file:
+        self.data = json.load(data_file)
+
+
+
     @staticmethod
-    def process_message_Nadlan(message, category):
+    def process_message_car(message, category):
         specs = dict()
         if category == 'נדלן':
             words = message.split()
-
-            specs['כתובת'] = (NadlanCategoryNLP.__extract_word_after_indicator(words, [u'ברחוב ', u'למכירה ', u'ליד', u'בשכונת', u'במיקום', u'קרוב']))
-            specs['גודל במ"ר'] = (NadlanCategoryNLP.__extract_word_after_indicator(words, [u'מ"ר ', u'מר ', u'מטרים', u'מטר']))
-            specs['מס חדרים'] = (NadlanCategoryNLP.__extract_word_after_indicator(words, [u'מ"ר ', u'מר ', u'מטרים', u'מטר']))
-            specs['מחיר'] = (NadlanCategoryNLP.__extract_word_after_indicator(words, [u'חדרים ', u'דירת ']))
-            specs['מכירה\השכרה'] = (NadlanCategoryNLP.__extract_word_after_indicator(words, [u'מחיר ', u'ש"ח ', u'שח', u'₪ ']))
-            specs['טלפון'] = (NadlanCategoryNLP.__extract_word_after_indicator(words, [u'מכירה ', u'השכרה ']))
-
+            for key, value in NadlanCategoryNLP.extract_after_indicator.items(): # for key, value in NadlanCategoryNLP.specs_to_find_car.items():
+                spec_by_value = NadlanCategoryNLP.__extract_word_after_indicator(words, value)
+                if spec_by_value is not None:
+                    specs[key] = spec_by_value
+            for key, value in NadlanCategoryNLP.extract_before_indicator.items():
+                spec_by_value = NadlanCategoryNLP.__extract_word_before_indicator(words, value)
+                if spec_by_value is not None:
+                    specs[key] = spec_by_value
             return specs
         else:
             return dict()
 
     @staticmethod
-    def __extract_word_after_indicator(words, indicator_to_extract = []):
+    def __extract_word_after_indicator(words, indicators_to_extract):
         index = 0
+        match = False
         for word in words:
-            if word == indicator_to_extract:
+            for indicator in indicators_to_extract:
+                if word == indicator:
+                    match = True
+                    break
+            if not match:
+                index += 1
+            else:
                 break
-            index += 1
         if index != len(words):
             return words[index + 1]
+
+    @staticmethod
+    def __extract_word_before_indicator(words, indicators_to_extract):
+        index = 0
+        match = False
+        for word in words:
+            for indicator in indicators_to_extract:
+                if word == indicator:
+                    match = True
+                    break
+            if not match:
+                index += 1
+            else:
+                break
+        if index > 1:
+            return words[index - 1]
 
 
 if __name__ == '__main__':
@@ -49,4 +76,4 @@ if __name__ == '__main__':
 
 '''
 
-    NadlanCategoryNLP.process_message_Nadlan(str, 'רכב')
+    NadlanCategoryNLP.process_message_Nadlan(str, 'נדלן')

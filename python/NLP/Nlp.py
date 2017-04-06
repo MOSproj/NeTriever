@@ -4,16 +4,14 @@ from CarCategoryNLP import CarCategoryNLP
 from CellularCategoryNLP import CellularCategoryNLP
 from NadlanCategoryNLP import NadlanCategoryNLP
 
+
 class Nlp:
 
-     def nove_to_category(self ,category):
+    def __init__(self, category):
+        if category == 'רכב':
+            self.category_nlp = CarCategoryNLP
+        elif category == 'נדלן':
+            self.category_nlp = NadlanCategoryNLP
+        elif category == 'סלולר':
+            self.category_nlp = CellularCategoryNLP
 
-     if category == 'רכב':
-          CarCategoryNLP.process_message_Car(message, 'רכב')
-
-     elif category == 'נדלן':
-          CellularCategoryNLP.process_message_Nadlan(message, 'נדלן')
-
-     elif category == 'סלולר':
-          NadlanCategoryNLP.process_message_cellular(message, 'סלולר')
-return

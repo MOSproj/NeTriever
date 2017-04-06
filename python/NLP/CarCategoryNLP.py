@@ -1,47 +1,34 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import specs_to_find_car as specs_data
 
 
 class CarCategoryNLP:
 
-    extract_after_indicator = {
-        u'דגם': ['דגם', 'מסוג'],
-        u'שנה': ['עלה לכביש', 'שנת', 'מודל'],
-        u'יד': ['יד', 'ידיים'],
-        u'מחיר': ['מחיר', 'מחיר:'],
-        u'ק"מ': ['קמ ', 'ק"מ', 'אלף', 'KM', 'עשה', 'ק.מ', 'קילומטראז'],
-        u'טלפון': ['פרטים', 'לפרטים', 'נייד', 'נוספים', 'פלאפון', 'בנייד']
-    }
-
-    extract_before_indicator = {
-        u'ק"מ': ['אלף']
-    }
+    specs = specs_data.data
 
     def __init__(self):
         pass
 
     @staticmethod
-    def process_message_car(message, category):
+    def process_message_car(message):
         specs = dict()
-        if category == 'רכב':
-            words = message.split()
-            for key, value in CarCategoryNLP.extract_after_indicator.items():
-                spec_by_value = CarCategoryNLP.__extract_word_after_indicator(words, value)
-                if spec_by_value is not None:
-                    specs[key] = spec_by_value
-            for key, value in CarCategoryNLP.extract_before_indicator.items():
-                spec_by_value = CarCategoryNLP.__extract_word_before_indicator(words, value)
-                if spec_by_value is not None:
-                    specs[key] = spec_by_value
-            return specs
-        else:
-            return dict()
+        split_message = message.split()
+        for key, value in CarCategoryNLP.specs['words_after_indicator'].items():
+            spec_by_value = CarCategoryNLP.__extract_word_after_indicator(split_message, value)
+            if spec_by_value is not None:
+                specs[key] = spec_by_value
+        for key, value in CarCategoryNLP.specs['words_before_indicator'].items():
+            spec_by_value = CarCategoryNLP.__extract_word_before_indicator(split_message, value)
+            if spec_by_value is not None:
+                specs[key] = spec_by_value
+        return specs
 
     @staticmethod
-    def __extract_word_after_indicator(words, indicators_to_extract):
+    def __extract_word_after_indicator(split_message, indicators_to_extract):
         index = 0
         match = False
-        for word in words:
+        for word in split_message:
             for indicator in indicators_to_extract:
                 if word == indicator:
                     match = True
@@ -50,14 +37,14 @@ class CarCategoryNLP:
                 index += 1
             else:
                 break
-        if index != len(words):
-            return words[index + 1]
+        if index != len(split_message):
+            return split_message[index + 1]
 
     @staticmethod
-    def __extract_word_before_indicator(words, indicators_to_extract):
+    def __extract_word_before_indicator(split_message, indicators_to_extract):
         index = 0
         match = False
-        for word in words:
+        for word in split_message:
             for indicator in indicators_to_extract:
                 if word == indicator:
                     match = True
@@ -67,7 +54,7 @@ class CarCategoryNLP:
             else:
                 break
         if index > 1:
-            return words[index - 1]
+            return split_message[index - 1]
 
 
 if __name__ == '__main__':
@@ -93,4 +80,4 @@ if __name__ == '__main__':
 לרציניים בלבד בטלפון 0506454813
 *נמכר ללא ההגה שבתמונה!
 '''
-    print CarCategoryNLP.process_message_car(str, 'רכב')
+    print CarCategoryNLP.process_message_car(str)

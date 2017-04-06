@@ -1,39 +1,65 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+import json
 
 class CellularCategoryNLP:
 
     def __init__(self):
         pass
 
+
+    with open('specs_to_find_cellular') as data_file:
+        data = json.load(data_file)
+
+
     @staticmethod
-    def process_message_cellular(message, category):
+    def process_message_car(message, category):
         specs = dict()
         if category == 'סלולר':
             words = message.split()
-            specs['סוג מכשיר'] = (CellularCategoryNLP.__extract_word_after_indicator(words, [u'דגם']))
-            specs['מחיר'] = (CellularCategoryNLP.__extract_word_after_indicator(words, [u'שח', u'ש"ח', u'₪ ']))
-            specs['אזור'] = (CellularCategoryNLP.__extract_word_after_indicator(words, [u'נמצא ', u'איסוף', u'לקחת']))
-            specs['זיכרון'] = (CellularCategoryNLP.__extract_word_after_indicator(words,[u'זיכרון ', u'GB', u'נפח']))
-            specs['צבע'] = (CellularCategoryNLP.__extract_word_after_indicator(words,[u'צבע ', u'גוון']))
-
+            for key, value in CellularCategoryNLP.extract_after_indicator.items(): # for key, value in CellularCategoryNLP.specs_to_find_car.items():
+                spec_by_value = CellularCategoryNLP.__extract_word_after_indicator(words, value)
+                if spec_by_value is not None:
+                    specs[key] = spec_by_value
+            for key, value in CellularCategoryNLP.extract_before_indicator.items():
+                spec_by_value = CellularCategoryNLP.__extract_word_before_indicator(words, value)
+                if spec_by_value is not None:
+                    specs[key] = spec_by_value
             return specs
         else:
             return dict()
 
     @staticmethod
-    def __extract_word_after_indicator(words,indicator_to_extract):
+    def __extract_word_after_indicator(words, indicators_to_extract):
         index = 0
+        match = False
         for word in words:
-         #   if word.isdigit() and indicator_to_extract = ???
-            if word == indicator_to_extract:
+            for indicator in indicators_to_extract:
+                if word == indicator:
+                    match = True
+                    break
+            if not match:
+                index += 1
+            else:
                 break
-            index += 1
         if index != len(words):
             return words[index + 1]
 
-
+    @staticmethod
+    def __extract_word_before_indicator(words, indicators_to_extract):
+        index = 0
+        match = False
+        for word in words:
+            for indicator in indicators_to_extract:
+                if word == indicator:
+                    match = True
+                    break
+            if not match:
+                index += 1
+            else:
+                break
+        if index > 1:
+            return words[index - 1]
 
 
 if __name__ == '__main__':

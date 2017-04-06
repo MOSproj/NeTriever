@@ -13,10 +13,17 @@ def main():
 
     facebook = Facebook(config.get('facebook', 'access_token'))
     db = connect_to_db(config)
+    categories = list(db.get_categories())
+    groups = list(db.get_groups())
+
+    for group in groups:
+        for category in categories:
+            if group['category']['$id'] == category['id']:
+                group['category_name'] = category['name']
+                break
 
     while True:
         try:
-            groups = db.get_groups()
             for group in groups:
                 print group['name']
                 feed = facebook.get_feed(group['id'])
