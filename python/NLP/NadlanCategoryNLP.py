@@ -7,13 +7,8 @@ class NadlanCategoryNLP:
     def __init__(self):
         pass
 
-    with open('specs_to_find_nadlan') as data_file:
-        self.data = json.load(data_file)
-
-
-
     @staticmethod
-    def process_message_car(message, category):
+    def process_message(message, category):
         specs = dict()
         if category == 'נדלן':
             words = message.split()

@@ -4,6 +4,7 @@ from ConfigParser import SafeConfigParser
 from Database import Database
 from Facebook import Facebook
 from DatabasePost import DatabasePost
+from NLP import NLP
 import time
 
 
@@ -18,7 +19,7 @@ def main():
 
     for group in groups:
         for category in categories:
-            if group['category']['$id'] == category['id']:
+            if group['category'].id == category['_id']:
                 group['category_name'] = category['name']
                 break
 
@@ -37,8 +38,10 @@ def main():
                     if isinstance(post_from_db, dict):
                         post_from_db = DatabasePost(post_from_db)
                         if post.get_updated_time() > post_from_db.get_updated_time():
+                            post.set_specs(NLP.get_specs_from_post(post.get_message(), group['category_name']))
                             posts_to_update.append(post.get_post())
                     else:
+                        post.set_specs(NLP.get_specs_from_post(post.get_message(), group['category_name']))
                         posts_to_insert.append(post.get_post())
 
                 print "inserting posts"

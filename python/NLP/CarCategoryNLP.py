@@ -11,7 +11,7 @@ class CarCategoryNLP:
         pass
 
     @staticmethod
-    def process_message_car(message):
+    def process_message(message):
         specs = dict()
         split_message = message.split()
         for key, value in CarCategoryNLP.specs['words_after_indicator'].items():
@@ -53,7 +53,7 @@ class CarCategoryNLP:
                 index += 1
             else:
                 break
-        if index > 1:
+        if index != len(split_message):
             return split_message[index - 1]
 
 

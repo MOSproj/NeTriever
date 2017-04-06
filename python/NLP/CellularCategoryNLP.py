@@ -7,13 +7,8 @@ class CellularCategoryNLP:
     def __init__(self):
         pass
 
-
-    with open('specs_to_find_cellular') as data_file:
-        data = json.load(data_file)
-
-
     @staticmethod
-    def process_message_car(message, category):
+    def process_message(message, category):
         specs = dict()
         if category == 'סלולר':
             words = message.split()
