@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from . import to_unicode
 
 
 class BagOfWordsAnalysis:
@@ -11,14 +12,13 @@ class BagOfWordsAnalysis:
     def analyse(text, bag_of_words):
         specs = dict()
         split_message = text.split()
-        for key, value in bag_of_words['words_after_indicator'].items():
-            spec = BagOfWordsAnalysis.__extract_word_indicator(split_message, value, "after")
-            if spec is not None:
-                specs[key] = spec
-        for key, value in bag_of_words['words_before_indicator'].items():
-            spec_by_value = BagOfWordsAnalysis.__extract_word_indicator(split_message, value, "before")
-            if spec_by_value is not None:
-                specs[key] = spec_by_value
+        for key, value in bag_of_words.items():
+            spec_val = BagOfWordsAnalysis.__extract_word_indicator(split_message, value['before'], 'before')
+            if spec_val is not None:
+                specs[key] = spec_val
+            spec_val = BagOfWordsAnalysis.__extract_word_indicator(split_message, value['after'], 'after')
+            if spec_val is not None:
+                specs[key] = spec_val
         return specs
 
     @staticmethod
@@ -27,7 +27,7 @@ class BagOfWordsAnalysis:
         match = False
         for word in split_message:
             for indicator in indicators_to_extract:
-                if BagOfWordsAnalysis.to_unicode(word) == BagOfWordsAnalysis.to_unicode(indicator):
+                if to_unicode(word) == to_unicode(indicator):
                     match = True
                     break
             if match:
@@ -41,10 +41,3 @@ class BagOfWordsAnalysis:
                 return split_message[index - 1]
         else:
             return None
-
-    @staticmethod
-    def to_unicode(word):
-        if isinstance(word, str):
-            return unicode(word, "utf-8")
-        else:
-            return word
