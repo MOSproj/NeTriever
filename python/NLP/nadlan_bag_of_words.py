@@ -10,13 +10,13 @@ data = {
         'regular_expression': []
     },
     'גודל במ"ר': {
-        'before': ['מ"ר', 'מר ', 'מטר',],
+        'before': ['מ"ר', 'מר ', 'מטר'],
         'after': ['מ"ר', 'מר ', 'מטרים', 'מטר'],
         'inside': [],
         'regular_expression': []
     },
     'מס חדרים': {
-        'before': ['חדרים', 'דירת'],
+        'before': ['חדרים', 'חדרים', 'חד'],
         'after': ['חדרים'],
         'inside': [],
         'regular_expression': []

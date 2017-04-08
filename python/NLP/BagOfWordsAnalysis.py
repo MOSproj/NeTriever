@@ -35,9 +35,9 @@ class BagOfWordsAnalysis:
             else:
                 index += 1
         if match:
-            if state == 'after' and index != len(split_message):
+            if state == 'before' and index != len(split_message):
                 return split_message[index + 1]
-            elif state == 'before' and index != len(split_message):
+            elif state == 'after' and index != len(split_message):
                 return split_message[index - 1]
         else:
             return None
