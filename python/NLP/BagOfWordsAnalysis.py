@@ -35,9 +35,10 @@ class BagOfWordsAnalysis:
             else:
                 index += 1
         if match:
-            if state == 'after' and index != len(split_message):
+            # TODO: create "find message" func
+            if state == 'after' and index < len(split_message) - 1:
                 return split_message[index + 1]
-            elif state == 'before' and index != len(split_message):
+            elif state == 'before' and index < len(split_message) and index < 0:
                 return split_message[index - 1]
         else:
             return None

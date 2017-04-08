@@ -29,29 +29,31 @@ class DatabasePost:
         if not self.is_ignored():
             return self.post['group_id']
         else:
-            raise Exception('post id ignore and dosen\'t have this data')
+            raise Exception('post is ignore and dosen\'t have group_id')
 
     def get_from_name(self):
         if not self.is_ignored():
             return self.post['from']['name']
         else:
-            raise Exception('post id ignore and dosen\'t have this data')
+            raise Exception('post is ignore and dosen\'t have from_name')
 
     def get_from_id(self):
         if not self.is_ignored():
             return self.post['from']['id']
         else:
-            raise Exception('post id ignore and dosen\'t have this data')
+            raise Exception('post is ignore and dosen\'t have from_id')
 
     def get_created_time(self):
         if not self.is_ignored():
             return self.post['created_time']
         else:
-            raise Exception('post id ignore and dosen\'t have this data')
+            raise Exception('post is ignore and dosen\'t have created_time')
 
     def get_updated_time(self):
         if not self.is_ignored():
             return self.post['updated_time']
+        else:
+            raise Exception('post is ignore and dosen\'t have updated_time')
 
     def get_message(self):
         if not self.is_ignored():
@@ -60,16 +62,16 @@ class DatabasePost:
             else:
                 raise Exception('There id no message.')
         else:
-            raise Exception('post id ignore and dosen\'t have this data')
+            raise Exception('post is ignore and dosen\'t have message')
 
     def get_images(self):
         if not self.is_ignored():
             if 'image' in self.post:
                 return self.post['image']
             else:
-                raise Exception('There id no images.')
+                raise Exception('There is no images.')
         else:
-            raise Exception('post id ignore and dosen\'t have this data')
+            raise Exception('post is ignore and dosen\'t have images')
 
     def is_ignored(self):
         return self.post['ignore']

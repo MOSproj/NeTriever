@@ -9,8 +9,8 @@ data = {
         'regular_expression': []
     },
     'מחיר': {
-        'before':['מחיר', 'ש"ח', 'שח', '₪'],
-        'after':['ש"ח', 'שח', '₪'],
+        'before': ['מחיר', 'ש"ח', 'שח', '₪'],
+        'after': ['ש"ח', 'שח', '₪'],
         'inside': [],
         'regular_expression': []
     },

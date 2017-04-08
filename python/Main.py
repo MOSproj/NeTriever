@@ -34,8 +34,10 @@ def main():
                 for idx, post in enumerate(feed):
                     print idx
                     post = DatabasePost(post)
+                    if post.is_ignored():
+                        pass
                     post_from_db = db.get_post(post.get_id())
-                    if isinstance(post_from_db, dict):
+                    if isinstance(post_from_db, dict) and not post_from_db['ignore']:
                         post_from_db = DatabasePost(post_from_db)
                         if post.get_updated_time() > post_from_db.get_updated_time():
                             post.set_specs(NLP.get_specs_from_post(post.get_message(), group['category_name']))
