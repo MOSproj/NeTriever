@@ -20,3 +20,4 @@ class NLP:
     @staticmethod
     def get_specs_from_post(message, category):
         return BagOfWordsAnalysis.analyse(message, NLP.bag_of_words_files[category])
+

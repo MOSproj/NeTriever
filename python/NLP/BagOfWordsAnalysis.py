@@ -27,9 +27,9 @@ class BagOfWordsAnalysis:
             for re in regular_expression:
                 pass
             if index is not None:
-                if state == 'after' and index + 1 < len(split_message):
+                if state == 'before' and index + 1 < len(split_message):
                     return split_message[index + 1]
-                elif state == 'before' and index - 1 >= 0:
+                elif state == 'after' and index - 1 >= 0:
                     return split_message[index - 1]
         return None
 
