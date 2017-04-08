@@ -41,4 +41,4 @@ class NLP:
     def is_finding_post(post):
         words = ['מחפש', 'מחפשת', 'מחפשים', 'להחליף', 'החלפה', 'מתעניין', 'מתעניינת', 'מעוניין', 'מעוניינת']
         split_message = post.get_message().split()
-        return find_word_index(split_message, words) is not None
+        return find_word_index(split_message, words) is int
