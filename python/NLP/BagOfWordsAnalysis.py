@@ -32,4 +32,4 @@ class BagOfWordsAnalysis:
                     return split_message[index + 1]
                 elif state == 'after' and index - 1 >= 0:
                     return split_message[index - 1]
-        return None
+        return None 

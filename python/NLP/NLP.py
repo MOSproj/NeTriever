@@ -32,7 +32,6 @@ class NLP:
                 del specs['מחיר']
             database_post.set_specs(specs)
 
-
     @staticmethod
     def get_specs_from_post(database_post, category):
         message = database_post.get_message()
@@ -40,6 +39,6 @@ class NLP:
 
     @staticmethod
     def is_finding_post(post):
-        words = ['מחפש']
+        words = ['מחפש', 'מחפשת', 'מחפשים', 'להחליף', 'החלפה', 'מתעניין', 'מתעניינת', 'מעוניין', 'מעוניינת']
         split_message = post.get_message().split()
         return find_word_index(split_message, words) is not None

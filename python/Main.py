@@ -4,7 +4,6 @@ from ConfigParser import SafeConfigParser
 from Database import Database
 from Facebook import Facebook
 from DatabasePost import DatabasePost
-from FacebookPost import FacebookPost
 from NLP import NLP
 import time
 
