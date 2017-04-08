@@ -34,8 +34,6 @@ def main():
                 for idx, post in enumerate(feed):
                     print idx
                     post = DatabasePost(post)
-                    if post.is_ignored():
-                        pass
                     post_from_db = db.get_post(post.get_id())
                     if isinstance(post_from_db, dict) and not post_from_db['ignore']:
                         post_from_db = DatabasePost(post_from_db)
