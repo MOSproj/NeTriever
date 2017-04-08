@@ -4,6 +4,7 @@ from ConfigParser import SafeConfigParser
 from Database import Database
 from Facebook import Facebook
 from DatabasePost import DatabasePost
+from FacebookPost import FacebookPost
 from NLP import NLP
 import time
 
@@ -38,11 +39,11 @@ def main():
                         post_from_db = DatabasePost(post_from_db)
                         if not post_from_db.is_ignored() and post.get_updated_time() > post_from_db.get_updated_time():
                             if not post.is_ignored():
-                                post.set_specs(NLP.get_specs_from_post(post.get_message(), group['category_name']))
+                                NLP.analyse_database_post(post, group['category_name'])
                             posts_to_update.append(post.get_post())
                     else:
                         if not post.is_ignored():
-                            post.set_specs(NLP.get_specs_from_post(post.get_message(), group['category_name']))
+                            NLP.analyse_database_post(post, group['category_name'])
                         posts_to_insert.append(post.get_post())
                 print "inserting posts"
                 if len(posts_to_insert) > 0:

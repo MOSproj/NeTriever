@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from . import find_word_index, to_unicode
 
 
 class BagOfWordsAnalysis:
@@ -23,26 +24,12 @@ class BagOfWordsAnalysis:
     @staticmethod
     def __extract_word_indicator(split_message, indicators_to_extract, regular_expression, state):
         for indicator in indicators_to_extract:
-            index = BagOfWordsAnalysis.__find_word_index(split_message, indicator)
+            index = find_word_index(split_message, indicator)
             for re in regular_expression:
                 pass
             if index is not None:
-                if state == 'after' and index + 1 < len(split_message):
+                if state == 'before' and index + 1 < len(split_message):
                     return split_message[index + 1]
-                elif state == 'before' and index - 1 >= 0:
+                elif state == 'after' and index - 1 >= 0:
                     return split_message[index - 1]
         return None
-
-    @staticmethod
-    def __find_word_index(split_message, word_to_find):
-        try:
-            return split_message.index(BagOfWordsAnalysis.to_unicode(word_to_find))
-        except Exception:
-            return None
-
-    @staticmethod
-    def to_unicode(word):
-        if isinstance(word, str):
-            return unicode(word, "utf-8")
-        else:
-            return word

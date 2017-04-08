@@ -76,6 +76,18 @@ class DatabasePost:
     def is_ignored(self):
         return self.post['ignore']
 
+    def set_phone(self, number):
+        self.post['phone'] = number
+
+    def set_price(self, price):
+        self.post['price'] = price
+
+    def set_ignore(self):
+        self.post = {
+            'id': self.post['id'],
+            'ignore': True
+        }
+
     def set_specs(self, specs):
         self.post['specs'] = specs
 
