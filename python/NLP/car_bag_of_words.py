@@ -15,4 +15,3 @@ data = {
        },
     'regular_expression': ''
 }
-

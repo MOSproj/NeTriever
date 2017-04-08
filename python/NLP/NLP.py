@@ -12,10 +12,9 @@ class NLP:
         u'רכב': car_bag_of_words,
         u'סלולר': cellular_bag_of_words,
         u'נדלן': nadlan_bag_of_words
-
     }
 
-    def __init__(self, category):
+    def __init__(self):
         pass
 
     @staticmethod
