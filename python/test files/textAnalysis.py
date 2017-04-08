@@ -46,6 +46,6 @@ query = str
 stopwords = ['פיאט']
 querywords = query.split()
 
-resultwords  = [word for word in querywords if word not in stopwords]
+resultwords = [word for word in querywords if word not in stopwords]
 result = ' '.join(resultwords)
 print result
