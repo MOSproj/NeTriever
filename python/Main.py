@@ -38,10 +38,12 @@ def main():
                     if isinstance(post_from_db, dict) and not post_from_db['ignore']:
                         post_from_db = DatabasePost(post_from_db)
                         if post.get_updated_time() > post_from_db.get_updated_time():
-                            post.set_specs(NLP.get_specs_from_post(post.get_message(), group['category_name']))
+                            if not post.is_ignored():
+                                post.set_specs(NLP.get_specs_from_post(post.get_message(), group['category_name']))
                             posts_to_update.append(post.get_post())
                     else:
-                        post.set_specs(NLP.get_specs_from_post(post.get_message(), group['category_name']))
+                        if not post.is_ignored():
+                            post.set_specs(NLP.get_specs_from_post(post.get_message(), group['category_name']))
                         posts_to_insert.append(post.get_post())
 
                 print "inserting posts"
