@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+# !/usr/bin/env python
 # -*- coding: utf-8 -*-
 from . import find_word_index, to_unicode
 import bag_of_words_analysis
@@ -30,6 +30,7 @@ def analyse_database_post(database_post, category):
 
 def get_specs_from_post(database_post, category):
     message = database_post.get_message()
+    # TODO: insert self-re as first option
     return bag_of_words_analysis.analyse(message, bag_of_words_files[category])
 
 
