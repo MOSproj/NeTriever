@@ -20,7 +20,7 @@ class NLP:
 
     @staticmethod
     def analyse_database_post(database_post, category):
-        if NLP.is_finding_post(database_post):
+        if NLP.should_be_ignore(database_post, category):
             database_post.set_ignore()
         else:
             specs = NLP.get_specs_from_post(database_post, category)
@@ -38,7 +38,10 @@ class NLP:
         return BagOfWordsAnalysis.analyse(message, NLP.bag_of_words_files[category])
 
     @staticmethod
-    def is_finding_post(post):
+    def should_be_ignore(post, category):
         words = ['מחפש', 'מחפשת', 'מחפשים', 'להחליף', 'החלפה', 'מתעניין', 'מתעניינת', 'מעוניין', 'מעוניינת']
         split_message = post.get_message().split()
-        return find_word_index(split_message, words) is int
+        for word in words:
+            if find_word_index(split_message, word) is not None:
+                return True
+        return False

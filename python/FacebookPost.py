@@ -55,6 +55,6 @@ class FacebookPost:
         else:
             raise Exception('There is no images.')
 
-    def is_ignored(self):
+    def should_be_ignore(self):
         return ('is_expired' in self.post and self.post['is_expired']) or ('is_hidden' in self.post and self.post['is_hidden']) or 'message' not in self.post
 

@@ -98,7 +98,7 @@ class DatabasePost:
         if not isinstance(facebook_post, FacebookPost):
             raise Exception('Unsupported parameter type.')
 
-        if facebook_post.is_ignored():
+        if facebook_post.should_be_ignore():
             return {
                 'id': facebook_post.get_id(),
                 'ignore': True
