@@ -6,44 +6,52 @@ data = {
         'before': ['דגם', 'מסוג'],
         'after': [],
         'inside': [],
-        'regular_expression': []
+        'res': [],
+        'self_res': []
     },
 
     'שנה': {  # לבדוק אם ניתן להסיק על שנה לפי חיפוש בטווח בין 2000 ל2017
         'before': ['עלה לכביש', 'שנת', 'מודל'],
         'after': [],
         'inside': [],
-        'regular_expression': []
+        'res': [],
+        'self_res': []
     },
     'יד': {
         'before': ['יד', 'ידיים'],
         'after': ['ידיים'],
         'inside': [],
-        'regular_expression': []
+        'res': [],
+        'self_res': []
     },
     'מחיר': {
         'before': ['מחיר', 'מבקש'],
         'after': ['ש"ח', 'שח', '₪'],
         'inside': ['ש"ח', 'שח', '₪'],
-        'regular_expression': []
+        'res': [],
+        'self_res': []
     },
     'ק"מ': {
         'before': ['קמ ', 'ק"מ', 'עשה', 'עשתה', 'ק.מ', 'קילומטראז'],
         'after': ['אלף', 'KM', 'קמ', 'ק"מ', 'קילומטר'],
         'inside': [],
-        'regular_expression': []
+        'res': [],
+        'self_res': []
     },
     'נפח מנוע': {
         'before': ['מנוע'],
         'after': [],
         'inside': [],
-        'regular_expression': []
+        'res': [],
+        'self_res': []
     },
     'טלפון': {
-        'before': ['פרטים', 'לפרטים', 'בטלפון', 'נייד', 'נוספים', 'פלאפון', 'בנייד'],
+        'before': [],
+        # ['פרטים', 'לפרטים', 'בטלפון', 'נייד', 'נוספים', 'פלאפון', 'בנייד']
         'after': [],
         'inside': [],
-        'regular_expression': []
+        'res': [r'\d{3}-?\d{3}-?\d{4}'],
+        'self_res': [r'\d{3}-?\d{3}-?\d{4}']
     }
 }
 

@@ -6,37 +6,44 @@ data = {
         'before': ['דגם', 'מסוג'],
         'after': [],
         'inside': [],
-        'regular_expression': []
+        'res': [],
+        'self_res': []
     },
     'מחיר': {
         'before': ['מחיר', 'ש"ח', 'שח', '₪'],
         'after': ['ש"ח', 'שח', '₪'],
         'inside': [],
-        'regular_expression': []
+        'res': [],
+        'self_res': []
     },
     'אזור': {
         'before':  ['לקחת', 'איסוף', 'נמצא'],
         'after': [],
         'inside': [],
-        'regular_expression': []
+        'res': [],
+        'self_res': []
     },
     'זיכרון': {
         'before': ['זיכרון', 'GB', 'נפח'],
         'after': ['זיכרון', 'GB', 'ג\'יגה'],
         'inside': [],
-        'regular_expression': []
+        'res': [],
+        'self_res': []
     },
     'צבע': {
         'before': ['צבע'],
         'after': [],
         'inside': [],
-        'regular_expression': []
+        'res': [],
+        'self_res': []
     },
     'טלפון': {
         'before': [],
-        'after': ['פרטים', 'לפרטים', 'נייד', 'נוספים', 'פלאפון', 'בנייד'],
+        # ['פרטים', 'לפרטים', 'בטלפון', 'נייד', 'נוספים', 'פלאפון', 'בנייד']
+        'after': [],
         'inside': [],
-        'regular_expression': []
+        'res': [r'\d{3}-?\d{3}-?\d{4}'],
+        'self_res': [r'\d{3}-?\d{3}-?\d{4}']
     }
 }
 

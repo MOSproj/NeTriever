@@ -1,2 +1,2 @@
-from NlpFunctions import *
-from NLP import NLP
+from str_functions import *
+import nlp
