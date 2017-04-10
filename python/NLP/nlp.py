@@ -36,8 +36,8 @@ def get_specs_from_post(database_post, category):
 
 def should_be_ignore(post, category):
     words = ['מחפש', 'מחפשת', 'מחפשים', 'להחליף', 'החלפה', 'מתעניין', 'מתעניינת', 'מעוניין', 'מעוניינת']
-    split_message = post.get_message().split()
+    post_message = post.get_message()
     for word in words:
-        if find_word_index(split_message, word) is not None:
+        if to_unicode(word) in post_message:
             return True
     return False
