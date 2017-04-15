@@ -33,7 +33,6 @@ def get_specs_from_post(database_post, category):
     # TODO: insert self-re as first option
     return group_criteria_analysis.analyse(message, bag_of_words_files[category])
 
-
 def should_be_ignore(post, category):
     words = ['מחפש', 'מחפשת', 'מחפשים', 'להחליף', 'החלפה', 'מתעניין', 'מתעניינת', 'מעוניין', 'מעוניינת']
     post_message = post.get_message()
