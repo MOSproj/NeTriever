@@ -1,16 +1,16 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
 from . import find_word_index, to_unicode
-import bag_of_words_analysis
-from car_bag_of_words import data as car_bag_of_words
-from cellular_bag_of_words import data as cellular_bag_of_words
-from nadlan_bag_of_words import data as nadlan_bag_of_words
+import group_criteria_analysis
+from car_text_analysis import data as car_text_analysis
+from cellular_text_analysis import data as cellular_text_analysis
+from nadlan_text_analysis import data as nadlan_text_analysis
 
 
 bag_of_words_files = {
-    u'רכב': car_bag_of_words,
-    u'סלולר': cellular_bag_of_words,
-    u'נדלן': nadlan_bag_of_words
+    u'רכב': car_text_analysis,
+    u'סלולר': cellular_text_analysis,
+    u'נדלן': nadlan_text_analysis
 }
 
 
@@ -31,7 +31,7 @@ def analyse_database_post(database_post, category):
 def get_specs_from_post(database_post, category):
     message = database_post.get_message()
     # TODO: insert self-re as first option
-    return bag_of_words_analysis.analyse(message, bag_of_words_files[category])
+    return group_criteria_analysis.analyse(message, bag_of_words_files[category])
 
 
 def should_be_ignore(post, category):
