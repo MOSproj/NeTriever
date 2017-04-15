@@ -7,21 +7,28 @@ import re
 def analyse(text, bag_of_words):
     specs = dict()
     split_message = text.split()
+
     for key, value in bag_of_words.items():
-        if 'before' in value:
-            spec_val = extract_word_indicator(split_message, value['before'], 'before')
-            if spec_val is not None:
-                specs[key] = spec_val
-        if 'after' in value:
-            spec_val = extract_word_indicator(split_message, value['after'], 'after')
-            if spec_val is not None:
-                specs[key] = spec_val
-        if 'regex' in value:
+        spec_val = None
+        if spec_val is None and 'regex' in value:
             for regex in value['regex']:
                 results = re.findall(regex, text)
                 if len(results) > 0:
-                    specs[key] = results[0]
+                    spec_val = results[0]
                     break
+        if spec_val is None and 'before' in value:
+            spec_val = extract_word_indicator(split_message, value['before'], 'before')
+        if spec_val is None and 'after' in value:
+            spec_val = extract_word_indicator(split_message, value['after'], 'after')
+
+        if spec_val is not None:
+            if 'type' in value:
+                if value['type'] == 'int':
+                    spec_val = re.sub("\D", "", spec_val)
+
+            if len(spec_val) > 0:
+                specs[key] = spec_val
+
     return specs
 
 

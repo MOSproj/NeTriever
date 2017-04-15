@@ -5,7 +5,8 @@
             scope: {
                 info: '='
             },
-            templateUrl:'/js/directives/postTemplateDrv.html'
+            templateUrl:'/js/directives/postTemplateDrv.html',
+            replace: true
         };
     }]);
 })();

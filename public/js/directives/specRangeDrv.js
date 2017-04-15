@@ -5,7 +5,8 @@
             scope: {
                 info: '='
             },
-            templateUrl:'js/directives/specRangeDrv.html'
+            templateUrl:'js/directives/specRangeDrv.html',
+            replace: true
         };
     });
 })();
