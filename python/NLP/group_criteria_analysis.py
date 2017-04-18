@@ -21,7 +21,6 @@ def analyse(text, bag_of_words):
         if spec_val is None and 'after' in value:
             spec_val = extract_word_indicator(split_message, value['after'], 'after')
 
-
         if spec_val is not None:
             if 'type' in value:
                 if value['type'] == 'int':
@@ -29,7 +28,6 @@ def analyse(text, bag_of_words):
 
             if len(spec_val) > 0:
                 specs[key] = spec_val
-
 
     return specs
 
