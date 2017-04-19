@@ -7,8 +7,7 @@
         var self = this;
 
         self.isActive = function (viewLocation) {
-            var lastIndexOfSlash = $location.path().lastIndexOf("/");
-            return viewLocation === $location.path().substring(0,lastIndexOfSlash + 1);
+            return viewLocation === $location.path();
         };
 
         categoriesSrv.getCategories().then(function (response) {

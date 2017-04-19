@@ -8,7 +8,7 @@
         .when("/", {
             templateUrl : "/views/home.html"
         })
-        .when("/category/:category/page/:page", {
+        .when("/category/:category", {
             controller: 'postsCtrl',
             controllerAs:"category",
             templateUrl : "/views/category.html"

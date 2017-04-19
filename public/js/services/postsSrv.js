@@ -5,8 +5,10 @@
 
     function postsSrv($http, $log){
         return {
-            getPosts : function(category, page){
-                return $http.get('/api/category/' + category + '/page/' + page);
+            getPosts : function(category, reqParams){
+                return $http.get('/api/category/' + category, {
+                    params: reqParams
+                });
             }
         };
     }
