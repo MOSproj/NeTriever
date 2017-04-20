@@ -25,13 +25,13 @@
     <post-template ng-repeat="post in category.posts" post-object="post"></post-template>
 
     <div class="container pagination-div">
-        <a class="btn btn-default" ng-disabled="category.pageNum === 1" ng-href="/category/{{ category.categoryName }}/page/{{category.pageNum - 1}}">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <a class="btn btn-default" ng-disabled="category.pagination.backButtonDisabled()" ng-click="category.pagination.back()">
+            <span class="glyphicon glyphicon-chevron-right"></span>
             הקודם
         </a>
-        <a class="btn btn-default" ng-disabled="category.posts.length != category.postsPerPage" ng-href="/category/{{ category.categoryName }}/page/{{category.pageNum + 1}}">
+        <a class="btn btn-default" ng-disabled="category.pagination.forwardButtonDisabled()" ng-click="category.pagination.forward()">
             הבא
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
     </div>
 </div>

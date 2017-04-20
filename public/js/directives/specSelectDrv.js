@@ -4,10 +4,10 @@
             restrict: 'E',
             templateUrl:'/js/directives/specSelectDrv.html',
             replace: true,
+            scope: {
+            },
             link: function($scope, $el) {
                 $('.selectpicker').selectpicker();
-            },
-            scope: {
             }
         };
     });
