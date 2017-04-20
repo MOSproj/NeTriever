@@ -1,12 +1,12 @@
 <div class="container white-container post">
     <div class="row">
         <div class="col-sm-7">
-            <div class="price h3">{{ info.price | currency : '₪' : 0}}</div>
+            <div class="price h3">{{ postObject.price | currency : '₪' : 0}}</div>
             <p class="h3">כותרת</p>
             <p class=""><span class="glyphicon glyphicon-map-marker"></span> מיקום</p>
-            <p class=""><span class="glyphicon glyphicon-calendar"></span> {{ info.created_time | calculatedDate }}</p>
+            <p class=""><span class="glyphicon glyphicon-calendar"></span> {{ postObject.created_time | calculatedDate }}</p>
             <table class="table borderless">
-                <tr ng-repeat="(key, data) in info.specs">
+                <tr ng-repeat="(key, data) in postObject.specs">
                     <td class="col-xs-4">{{ key }}</td>
                     <td class="col-xs-8">{{ data }}</td>
                 </tr>
@@ -23,23 +23,23 @@
             </p>
         </div>
         <div class="col-sm-5 hidden-xs">
-            <div id="{{ info.id + '_carousel' }}" class="carousel slide" data-interval="false" ng-if="info.hasOwnProperty('images')">
+            <div id="{{ postObject.id + '_carousel' }}" class="carousel slide" data-interval="false" ng-if="postObject.hasOwnProperty('images')">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                    <li data-target="{{ '#' + info.id + '_carousel' }}" data-slide-to="{{ $index }}" ng-class="{ active:!$index }" ng-repeat="image in info.images"></li>
+                    <li data-target="{{ '#' + postObject.id + '_carousel' }}" data-slide-to="{{ $index }}" ng-class="{ active:!$index }" ng-repeat="image in postObject.images"></li>
                 </ol>
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
-                    <div class="item img-responsive" ng-class="{ active:!$index }" ng-repeat="image in info.images">
+                    <div class="item img-responsive" ng-class="{ active:!$index }" ng-repeat="image in postObject.images">
                         <img class="img-responsive img-scaled" ng-src="{{ image.src }}">
                     </div>
                 </div>
                 <!-- Left and right controls -->
-                <a class="left carousel-control" ng-href="{{ '#' + info.id + '_carousel' }}" role="button" data-slide="prev">
+                <a class="left carousel-control" ng-href="{{ '#' + postObject.id + '_carousel' }}" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="right carousel-control" ng-href="{{ '#' + info.id + '_carousel' }}"  role="button" data-slide="next">
+                <a class="right carousel-control" ng-href="{{ '#' + postObject.id + '_carousel' }}"  role="button" data-slide="next">
                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
@@ -48,19 +48,19 @@
     </div>
     <div class="row" ng-if="showHide">
         <div class="col-sm-12">
-            <blockquote>{{ info.message}}</blockquote>
+            <blockquote>{{ postObject.message}}</blockquote>
             <div class="row user">
                 <div class="col-xs-4 user-img">
-                    <img class="img-circle center-block" ng-src="http://graph.facebook.com/{{ info.from.id }}/picture?type=large" />
+                    <img class="img-circle center-block" ng-src="http://graph.facebook.com/{{ postObject.from.id }}/picture?type=large" />
                 </div>
                 <div class="col-xs-8">
                     <p class="phone"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                        <a ng-href="https://www.facebook.com/{{ info.from.id }}"> {{ info.from.name }}</a>
+                        <a ng-href="https://www.facebook.com/{{ postObject.from.id }}"> {{ postObject.from.name }}</a>
                     </p>
-                    <p class="phone"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> {{ info.phone | tel }}</p>
+                    <p class="phone"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> {{ postObject.phone | tel }}</p>
                 </div>
             </div>
-            <a ng-href="https://www.facebook.com/{{ info.id }}"><button class="btn btn-default to-post">למודעה</button></a>
+            <a ng-href="https://www.facebook.com/{{ postObject.id }}"><button class="btn btn-default to-post">למודעה</button></a>
         </div>
     </div>
 </div>

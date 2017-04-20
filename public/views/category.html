@@ -22,7 +22,7 @@
     </div>
 
 
-    <post-template ng-repeat="post in category.posts" info="post"></post-template>
+    <post-template ng-repeat="post in category.posts" post-object="post"></post-template>
 
     <div class="container pagination-div">
         <a class="btn btn-default" ng-disabled="category.pageNum === 1" ng-href="/category/{{ category.categoryName }}/page/{{category.pageNum - 1}}">
