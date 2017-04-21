@@ -34,7 +34,7 @@ def get_specs_from_post(database_post, category):
     return group_criteria_analysis.analyse(message, bag_of_words_files[category])
 
 def should_be_ignore(post, category):
-    words = ['מחפש', 'מחפשת', 'מחפשים', 'להחליף', 'החלפה', 'מתעניין', 'מתעניינת', 'מעוניין', 'מעוניינת']
+    words = ['מחפש', 'מחפשת', 'מחפשים', 'להחליף', 'החלפה', 'מתעניין', 'מתעניינת', 'מעוניין', 'למישהו', 'מעוניינת']
     post_message = post.get_message()
     for word in words:
         if to_unicode(word) in post_message:

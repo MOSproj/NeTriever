@@ -1,0 +1,50 @@
+{"Apple - אייפון iPhone":
+            ["7","7 Plus","SE","6S","6S Plus","6 Plus","6","5S","5C"," 5","4S","4","3GS","3G","2G"],
+"Asus":
+            ["Zenfone","Zenfone 2"],
+"Blackberry":
+             [],
+"Doogee":
+             [],
+"Gini":
+             [],
+"Google":
+            ["Pixel","Pixel XL"],
+"Gsmart":
+             [],
+"HTC":
+            ["10","Desire","One (M7) 2013"," One (M8) 2014","One (M9) 2015 ","One X","Sensation"],
+
+"Huawei":
+            ["P10","P10 Plus","P9","P9 Plus","P9 Lite","P8","P8 Lite","Mate S","Mate 7","Mate 8","Mate 9","Ascend G7","Ascend G620S","Nexus 6P"],
+"Lenovo":
+            [],
+"LG":
+            ["G6","G5","G4","G3","G2","v10","v20","Nexus 4 ","Nexus 5 ","Nexus 5X","G Flex","Optimus"],
+"Meizu":
+            ["M1","M2","M3","M3s","M1 Note","M2 Note","M3 Note","MX3","MX4","MX5"," MX6","MX4 Pro"],
+"More Fine":
+            ["CR-Z","FR-V","S 2000","TYPE R","אודסיי","אינסייט","אקורד","ג'אז","ג'אז הייבריד","לג'נד","סטרים","סיוויק (עד 2006)","סיוויק האצ'בק החדשה","סיוויק היבריד","סיוויק סדאן החדשה","סיוויק סטיישן","סיוויק קופה / הצ'בק","פרלוד","שאטל"],
+"Motorola":
+            ["Moto G","Nexus 6","Moto X","Defy","Razr"],
+"Nokia":
+            ["Lumia"],
+"OnePlus":
+            ["One","Two","3","3T","X"],
+"Samsung":
+            ["Galaxy S8","Galaxy S8 Plus"," Galaxy S7","Galaxy S7 Edge","Galaxy S6 Edge","Galaxy S6 Edge Plus","Galaxy S6","Galaxy S5","Galaxy S4"," Galaxy S3","Galaxy S2","Galaxy S1","Galaxy Note 4","Galaxy Note 7","Galaxy Note 5","Galaxy Note 3"," Galaxy Note 2","Galaxy Note 1","Galaxy S5 Mini","Galaxy S4 Mini","Galaxy S3 Mini","Galaxy S2 Mini","Galaxy A3","Galaxy A5","Galaxy A7","Galaxy Alpha","Galaxy S5770 Mini","Galaxy Ace","Galaxy JG90","Nexus"],
+"SK":
+            [],
+"Sony":
+            ["Xperia"],
+"TELIT":
+            [],
+"Ulefone":
+            [],
+"ViewSonic":
+            [],
+"Xiaomi":
+            ["Mi 4","Mi 4c","Mi 4i","Mi 4s","Mi 5","Mi 5S","Redmi Pro","Redmi 2","Redmi 3","Redmi 4x","Redmi Note 2","Redmi Note 3","Redmi Note 4","Mi Max"],
+"ZTE":
+            []
+}
