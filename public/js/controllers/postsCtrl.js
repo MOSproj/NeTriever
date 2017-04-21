@@ -21,7 +21,7 @@
                 return !reqParams.hasOwnProperty('page') || reqParams['page'] === "1";
             },
             forwardButtonDisabled: function () {
-                return self.posts.length !== self.postsPerPage;
+                return self.posts !== undefined && self.posts.length !== self.postsPerPage;
             },
             back: function () {
                 if (!self.pagination.backButtonDisabled()) {

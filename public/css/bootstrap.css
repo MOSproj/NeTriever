@@ -7037,6 +7037,9 @@ h3 {
   position: relative;
   color: #5cb85c;
 }
+.post .title {
+  margin-top: 0;
+}
 .post table {
   margin-bottom: 10px;
 }

@@ -1,9 +1,9 @@
 <div class="container white-container post">
     <div class="row">
         <div class="col-sm-7">
-            <div class="price h3">{{ postObject.price | currency : '₪' : 0}}</div>
-            <p class="h4">{{ postObject.title }}</p>
-            <p class=""><span class="glyphicon glyphicon-map-marker"></span> {{ postObject.location }}</p>
+            <div class="price h3" ng-if="postObject.hasOwnProperty('price')">{{ postObject.price | currency : '₪' : 0}}</div>
+            <p class="h4 title" ng-if="postObject.hasOwnProperty('title')">{{ postObject.title }}</p>
+            <p class="" ng-if="postObject.hasOwnProperty('location')"><span class="glyphicon glyphicon-map-marker"></span> {{ postObject.location }}</p>
             <p class=""><span class="glyphicon glyphicon-calendar"></span> {{ postObject.created_time | calculatedDate }}</p>
             <table class="table borderless">
                 <tr ng-repeat="(key, data) in postObject.specs">

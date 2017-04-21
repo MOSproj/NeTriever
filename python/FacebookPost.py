@@ -39,8 +39,7 @@ class FacebookPost:
     def get_message(self):
         if 'message' in self.post:
             return self.post['message']
-        else:
-            raise Exception('There is no message.')
+        raise Exception('There is no message.')
 
     def get_title(self):
         if 'message' in self.post:
@@ -48,15 +47,13 @@ class FacebookPost:
                 title = self.post['message'].split('\n', 1)[0]
                 if 1 < len(title) < 66:
                     return title
-        else:
-            raise Exception('There is no title.')
+        raise Exception('There is no title.')
 
     def get_location(self):
         if 'message' in self.post:
             if 'sale_post_id' in self.post['permalink_url']:
                     return (self.post['message'].split('\n')[1]).split("-")[1]
-        else:
-            raise Exception('There is no location.')
+        raise Exception('There is no location.')
 
     def get_images(self):
         if 'attachments' in self.post:
@@ -68,8 +65,7 @@ class FacebookPost:
                 for data in data_at_place_0['subattachments']['data']:
                     answer.append(data['media']['image'])
             return answer
-        else:
-            raise Exception('There is no images.')
+        raise Exception('There is no images.')
 
     def should_be_ignore(self):
         return ('is_expired' in self.post and self.post['is_expired']) or ('is_hidden' in self.post and self.post['is_hidden']) or 'message' not in self.post
