@@ -42,6 +42,22 @@ class FacebookPost:
         else:
             raise Exception('There is no message.')
 
+    def get_title(self):
+        if 'message' in self.post:
+            if 'sale_post_id' in self.post['permalink_url']:
+                title = self.post['message'].split('\n', 1)[0]
+                if 1 < len(title) < 66:
+                    return title
+        else:
+            raise Exception('There is no title.')
+
+    def get_location(self):
+        if 'message' in self.post:
+            if 'sale_post_id' in self.post['permalink_url']:
+                    return (self.post['message'].split('\n')[1]).split("-")[1]
+        else:
+            raise Exception('There is no location.')
+
     def get_images(self):
         if 'attachments' in self.post:
             answer = []

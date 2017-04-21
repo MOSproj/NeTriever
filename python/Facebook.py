@@ -11,7 +11,7 @@ class Facebook:
     def get_feed(self, group_id):
         group_id = str(group_id)
         feed = self.graph.get_object(id=group_id, fields='feed{\
-            id,from,message,link,updated_time,created_time,attachments{\
+            id,from,message,permalink_url,updated_time,created_time,attachments{\
                 media,subattachments\
             },is_expired,is_hidden\
         }')

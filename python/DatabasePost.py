@@ -122,6 +122,12 @@ class DatabasePost:
             print e
             pass
         try:
+            answer['title'] = facebook_post.get_title()
+            answer['location'] = facebook_post.get_location()
+        except Exception, e:
+            print e
+            pass
+        try:
             answer['images'] = facebook_post.get_images()
         except Exception, e:
             print e
