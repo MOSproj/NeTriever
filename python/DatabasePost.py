@@ -83,10 +83,7 @@ class DatabasePost:
         self.post['price'] = price
 
     def set_ignore(self):
-        self.post = {
-            'id': self.post['id'],
-            'ignore': True
-        }
+        self.post = DatabasePost.create_ignored_json(self.post['id'])
 
     def set_specs(self, specs):
         self.post['specs'] = specs
@@ -99,10 +96,7 @@ class DatabasePost:
             raise Exception('Unsupported parameter type.')
 
         if facebook_post.should_be_ignore():
-            return {
-                'id': facebook_post.get_id(),
-                'ignore': True
-            }
+            return DatabasePost.create_ignored_json(facebook_post.get_id())
 
         answer = {
             'id': facebook_post.get_id(),
@@ -142,3 +136,11 @@ class DatabasePost:
     @staticmethod
     def convert_to_database_post(post):
         return DatabasePost(DatabasePost.convert_to_dict(post))
+
+    @staticmethod
+    def create_ignored_json(post_id):
+        return {
+            'id': post_id,
+            'ignore': True,
+            'last_updated': datetime.utcnow()
+        }
