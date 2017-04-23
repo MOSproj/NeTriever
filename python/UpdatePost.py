@@ -34,8 +34,11 @@ def updatepost():
                     else:
                         print "post " + str(db_post.get_id()) + " has no updates"
                 except Exception, e:
-                    db.delete_post(db_post.get_id())
-                    print "post " + str(db_post.get_id()) + " is deleted"
+                    if u'Unsupported get request. Object with ID' in e.args:
+                        db.delete_post(db_post.get_id())
+                        print "post " + str(db_post.get_id()) + " is deleted"
+                    else:
+                        print e
 
         print "need some sleep"
         time.sleep(5*60)
