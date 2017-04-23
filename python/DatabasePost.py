@@ -123,6 +123,10 @@ class DatabasePost:
             pass
         try:
             answer['title'] = facebook_post.get_title()
+        except Exception, e:
+            print e
+            pass
+        try:
             answer['location'] = facebook_post.get_location()
         except Exception, e:
             print e

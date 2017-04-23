@@ -47,6 +47,7 @@ class FacebookPost:
                 title = self.post['message'].split('\n', 1)[0]
                 if 1 < len(title) < 66:
                     return title
+                raise Exception('Title is too long.')
         raise Exception('There is no title.')
 
     def get_location(self):

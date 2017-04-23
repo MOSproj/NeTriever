@@ -7000,17 +7000,41 @@ select.selectpicker {
   width: 100%;
   float: none;
 }
-nav .row {
-  margin-right: 0;
-  margin-left: 0;
+nav {
+  /*.row {
+        margin-right: 0;
+        margin-left: 0;
+    }*/
 }
-.navbar {
+nav.navbar {
   border: inherit;
 }
-.navbar-options-max {
+nav .navbar-brand {
+  padding: 0;
+  height: 80px;
+}
+nav .navbar-brand > img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+nav .navbar-brand > span {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: block;
+}
+nav .navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 15px;
+}
+nav .navbar-options-max {
   display: none;
 }
 @media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .navbar-options-mini {
     display: none;
   }

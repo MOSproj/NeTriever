@@ -1,12 +1,16 @@
-#Workspace
+# Workspace
 .idea
 The-Project-0.1.iml
 node_modules
 npm-debug.log
 
-#LESS compiled files
+# LESS compiled files
 less/*.css
 less/mixins/*.css
+
+# PSD files
+PSDs/
+*.psd
 
 # config files
 config*.ini
