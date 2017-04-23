@@ -7,7 +7,7 @@ from Facebook import Facebook
 from FacebookPost import FacebookPost
 from NLP import nlp
 import time
-import sys
+import datetime
 
 
 def updatepost():
@@ -21,7 +21,11 @@ def updatepost():
         for post in posts:
             db_post = DatabasePost(post)
             if db_post.is_ignored():
-                print "post " + str(db_post.get_id()) + " is ignored"
+                if (db_post.get_last_updated() - datetime.datetime.now()).days < -30:
+                    db.delete_post(db_post.get_id())
+                    print "post " + str(db_post.get_id()) + " is deleted - is ignore for a month"
+                else:
+                    print "post " + str(db_post.get_id()) + " is ignored"
                 pass
             else:
                 try:
@@ -34,7 +38,7 @@ def updatepost():
                     else:
                         print "post " + str(db_post.get_id()) + " has no updates"
                 except Exception, e:
-                    if u'Unsupported get request. Object with ID' in e.args:
+                    if u'Unsupported get request. Object with ID' in e.args[0]:
                         db.delete_post(db_post.get_id())
                         print "post " + str(db_post.get_id()) + " is deleted"
                     else:

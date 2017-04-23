@@ -55,6 +55,9 @@ class DatabasePost:
         else:
             raise Exception('post is ignore and dosen\'t have updated_time')
 
+    def get_last_updated(self):
+        return self.post['last_updated']
+
     def get_message(self):
         if not self.is_ignored():
             if 'message' in self.post:

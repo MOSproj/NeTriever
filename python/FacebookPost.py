@@ -36,6 +36,9 @@ class FacebookPost:
     def get_updated_time(self):
         return datetime.strptime(self.post['updated_time'], FacebookPost.facebook_strptime)
 
+    def get_last_updated(self):
+        return datetime.strptime(self.post['last_updated'], FacebookPost.facebook_strptime)
+
     def get_message(self):
         if 'message' in self.post:
             return self.post['message']
