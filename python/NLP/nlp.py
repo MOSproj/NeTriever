@@ -15,7 +15,7 @@ bag_of_words_files = {
 
 
 def analyse_database_post(database_post, category):
-    if should_be_ignore(database_post, category):
+    if should_be_ignore(database_post):
         database_post.set_ignore()
     else:
         specs = get_specs_from_post(database_post, category)
@@ -33,8 +33,10 @@ def get_specs_from_post(database_post, category):
     # TODO: insert self-re as first option
     return group_criteria_analysis.analyse(message, bag_of_words_files[category])
 
-def should_be_ignore(post, category):
-    words = ['מחפש', 'מחפשת', 'מחפשים', 'להחליף', 'החלפה', 'מתעניין', 'מתעניינת', 'מעוניין', 'למישהו', 'מעוניינת']
+
+def should_be_ignore(post):
+    words = ['מחפש', 'מחפשת', 'מחפשים', 'להחליף', 'החלפה', 'מתעניין', 'מתעניינת', 'מעוניין', 'למישהו', 'מעוניינת',
+             'שתפו', 'לשתף']
     post_message = post.get_message()
     for word in words:
         if to_unicode(word) in post_message:
