@@ -7,10 +7,10 @@
         var self = this;
         var reqParams = $location.search();
 
-        self.categoryName = $routeParams['category'];
+        self.categoryId = $routeParams['categoryId'];
         self.postsPerPage = 50;
 
-        postsSrv.getPosts(self.categoryName, reqParams).then(function (response) {
+        postsSrv.getPosts(self.categoryId, reqParams).then(function (response) {
             $log.debug(response.data);
 
             self.posts = response.data;

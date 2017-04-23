@@ -15,3 +15,10 @@ def to_unicode(word):
         return unicode(word, "utf-8")
     else:
         return word
+
+
+def to_int(text):
+    results = re.findall("\d+(?:,?-?\d{3})*", text)
+    if len(results) > 0:
+        return results[0].replace(",", "")
+    return None

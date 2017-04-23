@@ -14,5 +14,10 @@
             $log.debug(response.data);
             self.categories = response.data;
         });
+
+        categoriesSrv.getCategoriesNames().then(function (response) {
+            $log.debug(response.data);
+            self.categoriesNames = response.data;
+        });
     }
 })();

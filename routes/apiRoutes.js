@@ -20,6 +20,17 @@ db.on('connect', function () {
     console.log('database connected')
 });
 
+var getGroupsByCategoryId = function (categoryId, res) {
+    db.groups.find({'category_id': categoryId}, function (err, docs) {
+        res(docs);
+    });
+};
+
+var getCategories = function (res) {
+    db.categories.find({}, function (err, docs) {
+        res(docs);
+    });
+};
 
 var getCategoriesName =  function (res) {
     db.categories.find({}, {"name":1,_id:0}, function (err, docs) {
@@ -27,19 +38,7 @@ var getCategoriesName =  function (res) {
     });
 };
 
-var getCategoryByName = function (categoryName, res) {
-    db.categories.findOne({'name': categoryName}, function (err, docs) {
-        res(docs);
-    });
-};
-
-var getGroupsByCategory = function (category, res) {
-    db.groups.find({'category.$id': category._id}, function (err, docs) {
-        res(docs);
-    });
-};
-
-var getPostsByGroups = function (groups, pageNum, res) {
+var getPosts = function (groups, pageNum, res) {
     var then = new Date();
     var groupsIds = [];
     groups.forEach(function(group) {
@@ -55,26 +54,30 @@ var getPostsByGroups = function (groups, pageNum, res) {
         });
 };
 
+router.get('/categories', function (req, res) {
+    getCategories(function (categories) {
+        res.json(categories);
+    });
+});
+
 router.get('/categories-names', function (req, res) {
     getCategoriesName(function (categoriesName) {
         res.json(categoriesName);
     });
 });
 
-router.get('/category/:category', function (req, res) {
-    const categoryName = req.params['category'];
-    console.log(categoryName + " category");
+router.get('/category/:categoryId', function (req, res) {
+    console.log(req.params['categoryId']);
+    const categoryId = parseInt(req.params['categoryId']);
+    console.log(categoryId + " category");
 
     var pageNum = 1;
     if (req.query.hasOwnProperty('page'))
         pageNum = req.query['page'];
 
-
-    getCategoryByName(categoryName, function (category) {
-        getGroupsByCategory(category, function (groups) {
-            getPostsByGroups(groups, pageNum, function (posts) {
-                res.json(posts);
-            });
+    getGroupsByCategoryId(categoryId, function (groups) {
+        getPosts(groups, pageNum, function (posts) {
+            res.json(posts);
         });
     });
 });
