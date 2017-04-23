@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from . import find_word_index, to_unicode
-import ast
 import re
 
 
 def analyse(text, bag_of_words):
     specs = dict()
+    text = text.replace(', ', ' ').replace('. ', ' ').replace(': ', ' ').replace('; ', ' ').replace(u'״', u'"')
     split_message = text.split()
 
     for key, value in bag_of_words.items():
@@ -53,8 +53,19 @@ def extract_word_indicator(split_message, indicators_to_extract, state, value_ty
     return None
 
 def to_int(text):
-    results = re.findall("\d+(?:,\d{3})*", text)
+    results = re.findall("\d+(?:,?-?\d{3})*", text)
     if len(results) > 0:
         return results[0].replace(",", "")
     return None
+
+if __name__ == '__main__':
+    text = u''''
+    יד שניה (01)
+215,000 ק״מ עם מנוע חזק ובריא!
+טסט לשנה שלמה,4 צמיגים חדשים,אחרי טיפול גדול במוסך מורשה של הונדה
+ללא תאונות כלל, לא עבר מעולם תיקון צבע ,הרכב פיקס נוסע חזק וחסכוני מאוד!
+050-6666727
+    '''
+    from car_text_analysis import data as car_text_analysis
+    print analyse(text, car_text_analysis)
 
