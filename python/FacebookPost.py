@@ -43,7 +43,7 @@ class FacebookPost:
 
     def get_title(self):
         if 'message' in self.post:
-            if 'sale_post_id' in self.post['permalink_url']:
+            if self.is_sale_post():
                 title = self.post['message'].split('\n', 1)[0]
                 if 1 < len(title) < 66:
                     return title
@@ -52,8 +52,9 @@ class FacebookPost:
 
     def get_location(self):
         if 'message' in self.post:
-            if 'sale_post_id' in self.post['permalink_url']:
-                    return (self.post['message'].split('\n')[1]).split("-")[1]
+            if self.is_sale_post():
+                location_and_price = self.post['message'].split('\n')[1]
+                return location_and_price[location_and_price.index('-')+2:]
         raise Exception('There is no location.')
 
     def get_images(self):
@@ -68,6 +69,8 @@ class FacebookPost:
             return answer
         raise Exception('There is no images.')
 
+    def is_sale_post(self):
+        return 'sale_post_id' in self.post['permalink_url']
+
     def should_be_ignore(self):
         return ('is_expired' in self.post and self.post['is_expired']) or ('is_hidden' in self.post and self.post['is_hidden']) or 'message' not in self.post
-

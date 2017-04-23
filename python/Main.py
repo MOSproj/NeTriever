@@ -7,6 +7,7 @@ from DatabasePost import DatabasePost
 from FacebookPost import FacebookPost
 from NLP import nlp
 import time
+import sys
 
 
 def main():
@@ -45,6 +46,7 @@ def main():
                     db.update_post(post, True)
         except Exception, e:
             print "something went wrong:"
+            print sys.exc_info()[0]
             print e
             time.sleep(120)
             pass
