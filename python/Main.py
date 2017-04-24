@@ -25,8 +25,9 @@ def main():
                 posts_to_insert = []
                 for idx, post in enumerate(feed):
                     print idx
-                    post = DatabasePost(post)
+                    post = FacebookPost(post)
                     if not db.is_exists(post.get_id()):
+                        post = DatabasePost(post)
                         if not post.is_ignored():
                             nlp.analyse_database_post(post, db.get_category_name_by_id(group['category_id']))
                         posts_to_insert.append(post.get_post())

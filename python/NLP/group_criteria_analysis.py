@@ -1,13 +1,21 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from . import find_word_index, to_unicode, to_int
+from . import find_word_index, to_unicode, to_int, to_float
 import re
 
 
 def analyse(text, bag_of_words):
     specs = dict()
-    text = text.replace(', ', ' ').replace('. ', ' ').replace(': ', ' ').replace('; ', ' ').replace(u'״', '')\
+    text = text.replace(', ', ' ').replace('. ', ' ').replace(': ', ' ').replace('; ', ' ').replace(u'״', '') \
         .replace(u'"', '')
+    emoji_pattern = re.compile(
+        u"(\ud83d[\ude00-\ude4f])|"  # emoticons
+        u"(\ud83c[\udf00-\uffff])|"  # symbols & pictographs (1 of 2)
+        u"(\ud83d[\u0000-\uddff])|"  # symbols & pictographs (2 of 2)
+        u"(\ud83d[\ude80-\udeff])|"  # transport & map symbols
+        u"(\ud83c[\udde0-\uddff])"  # flags (iOS)
+        "+", flags=re.UNICODE)
+    text = re.sub(emoji_pattern, ' ', text)                  # no emoji
     split_message = text.split()
 
     for key, value in bag_of_words.items():
@@ -37,6 +45,10 @@ def extract_word_regex(text, regexs, value_type):
                     answer = to_int(results[0])
                     if answer is not None:
                         return answer
+                if value_type == 'float':
+                    answer = to_float(results[0])
+                    if answer is not None:
+                        return answer
             else:
                 return results[0]
     return None
@@ -56,6 +68,10 @@ def extract_word_indicator(split_message, indicators_to_extract, state, value_ty
                 if value_type is not None:
                     if value_type == 'int':
                         answer = to_int(answer)
+                        if answer is not None:
+                            return answer
+                    if value_type == 'float':
+                        answer = to_float(answer)
                         if answer is not None:
                             return answer
                 else:

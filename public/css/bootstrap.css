@@ -3384,6 +3384,63 @@ fieldset[disabled] .btn-danger.focus {
   color: #d9534f;
   background-color: #fff;
 }
+.btn-facebook {
+  color: #fff;
+  background-color: #4267b2;
+  border-color: #3b5c9f;
+}
+.btn-facebook:focus,
+.btn-facebook.focus {
+  color: #fff;
+  background-color: #34518d;
+  border-color: #192642;
+}
+.btn-facebook:hover {
+  color: #fff;
+  background-color: #34518d;
+  border-color: #2b4273;
+}
+.btn-facebook:active,
+.btn-facebook.active,
+.open > .dropdown-toggle.btn-facebook {
+  color: #fff;
+  background-color: #34518d;
+  border-color: #2b4273;
+}
+.btn-facebook:active:hover,
+.btn-facebook.active:hover,
+.open > .dropdown-toggle.btn-facebook:hover,
+.btn-facebook:active:focus,
+.btn-facebook.active:focus,
+.open > .dropdown-toggle.btn-facebook:focus,
+.btn-facebook:active.focus,
+.btn-facebook.active.focus,
+.open > .dropdown-toggle.btn-facebook.focus {
+  color: #fff;
+  background-color: #2b4273;
+  border-color: #192642;
+}
+.btn-facebook:active,
+.btn-facebook.active,
+.open > .dropdown-toggle.btn-facebook {
+  background-image: none;
+}
+.btn-facebook.disabled:hover,
+.btn-facebook[disabled]:hover,
+fieldset[disabled] .btn-facebook:hover,
+.btn-facebook.disabled:focus,
+.btn-facebook[disabled]:focus,
+fieldset[disabled] .btn-facebook:focus,
+.btn-facebook.disabled.focus,
+.btn-facebook[disabled].focus,
+fieldset[disabled] .btn-facebook.focus {
+  background-color: #4267b2;
+  border-color: #3b5c9f;
+}
+.btn-facebook .badge {
+  color: #4267b2;
+  background-color: #fff;
+}
 .btn-link {
   color: #337ab7;
   font-weight: normal;
