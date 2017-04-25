@@ -1,11 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from ConfigParser import SafeConfigParser
 import pymongo
 
 
 class Database:
 
-    def __init__(self, config):
+    def __init__(self):
+        config = SafeConfigParser()
+        config.read('./config.ini')
         username = config.get('db', 'username')
         password = config.get('db', 'password')
         db_path = config.get('db', 'dbPath')

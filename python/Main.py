@@ -6,6 +6,8 @@ from Facebook import Facebook
 from DatabasePost import DatabasePost
 from FacebookPost import FacebookPost
 from NLP import nlp
+from bcolors import bcolors
+
 import time
 import sys
 
@@ -14,8 +16,8 @@ def main():
     config = SafeConfigParser()
     config.read('./config.ini')
 
-    facebook = Facebook(config)
-    db = Database(config)
+    facebook = Facebook()
+    db = Database()
     groups = db.get_groups()
     while True:
         try:
@@ -35,15 +37,15 @@ def main():
                 if len(posts_to_insert) > 0:
                     db.insert_post(posts_to_insert)
         except Exception, e:
-            print "something went wrong:"
+            print bcolors.fail("something went wrong:")
             print sys.exc_info()[0]
             print e
             time.sleep(120)
             pass
 
-        print "need some sleep"
+        print bcolors.okeblue("need some sleep")
         time.sleep(30)
-        print "starting another loop"
+        print bcolors.okeblue("starting another loop")
 
 
 if __name__ == '__main__':

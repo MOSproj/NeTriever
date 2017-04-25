@@ -5,7 +5,7 @@
             templateUrl:'/js/directives/specSelectDrv.html',
             replace: true,
             scope: {
-                specObject: '=',
+                specObject: '='
             },
             link: function($scope, $el) {
                 $('.selectpicker').selectpicker();

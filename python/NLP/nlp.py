@@ -15,14 +15,17 @@ text_analysis_files = {
 
 
 def analyse_database_post(database_post, category_name):
-    specs = get_specs_from_post(database_post, category_name)
-    if 'טלפון' in specs:
-        database_post.set_phone(specs['טלפון'])
-        del specs['טלפון']
-    if 'מחיר' in specs:
-        database_post.set_price(specs['מחיר'])
-        del specs['מחיר']
-    database_post.set_specs(specs)
+    if should_be_ignore(database_post):
+        database_post.set_ignore()
+    else:
+        specs = get_specs_from_post(database_post, category_name)
+        if 'טלפון' in specs:
+            database_post.set_phone(specs['טלפון'])
+            del specs['טלפון']
+        if 'מחיר' in specs:
+            database_post.set_price(specs['מחיר'])
+            del specs['מחיר']
+        database_post.set_specs(specs)
 
 
 def get_specs_from_post(database_post, category_name):
