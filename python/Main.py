@@ -16,7 +16,7 @@ def main():
 
     facebook = Facebook(config)
     db = Database(config)
-    groups = list(db.get_groups())
+    groups = db.get_groups()
     while True:
         try:
             for group in groups:

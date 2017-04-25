@@ -16,13 +16,13 @@ class Database:
         return self.db
 
     def get_categories(self):
-        return self.db.categories.find()
+        return list(self.db.categories.find())
 
     def get_groups(self):
-        return self.db.groups.find()
+        return list(self.db.groups.find())
 
     def get_posts(self):
-        return self.db.posts.find()
+        return list(self.db.posts.find())
 
     def get_post(self, post_id):
         return self.db.posts.find_one({"id": post_id})

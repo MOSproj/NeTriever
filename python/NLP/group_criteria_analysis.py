@@ -1,21 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from . import find_word_index, to_unicode, to_int, to_float
+from str_functions import *
 import re
 
 
 def analyse(text, bag_of_words):
     specs = dict()
-    text = text.replace(', ', ' ').replace('. ', ' ').replace(': ', ' ').replace('; ', ' ').replace(u'״', '') \
-        .replace(u'"', '')
-    emoji_pattern = re.compile(
-        u"(\ud83d[\ude00-\ude4f])|"  # emoticons
-        u"(\ud83c[\udf00-\uffff])|"  # symbols & pictographs (1 of 2)
-        u"(\ud83d[\u0000-\uddff])|"  # symbols & pictographs (2 of 2)
-        u"(\ud83d[\ude80-\udeff])|"  # transport & map symbols
-        u"(\ud83c[\udde0-\uddff])"  # flags (iOS)
-        "+", flags=re.UNICODE)
-    text = re.sub(emoji_pattern, ' ', text)                  # no emoji
+    text = prepare_text_to_analyse(text)
     split_message = text.split()
 
     for key, value in bag_of_words.items():
@@ -79,3 +70,10 @@ def extract_word_indicator(split_message, indicators_to_extract, state, value_ty
                     return answer
             index += 1
     return None
+
+
+def prepare_text_to_analyse(text):
+    text = text.replace(', ', ' ').replace('. ', ' ').replace(': ', ' ').replace('; ', ' ').replace(u'״', '') \
+        .replace(u'"', '')
+    text = remove_emojis(text)
+    return text

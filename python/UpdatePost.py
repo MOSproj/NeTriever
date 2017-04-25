@@ -16,7 +16,7 @@ def updatepost():
 
     facebook = Facebook(config)
     db = Database(config)
-    posts = list(db.get_posts())
+    posts = db.get_posts()
     while True:
         for post in posts:
             db_post = DatabasePost(post)
