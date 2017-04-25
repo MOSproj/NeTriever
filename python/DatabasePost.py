@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from FacebookPost import FacebookPost
 from datetime import datetime
+from google_maps import get_location
 
 
 class DatabasePost:
@@ -124,7 +125,11 @@ class DatabasePost:
             print e
             pass
         try:
-            answer['location'] = facebook_post.get_location()
+            location = get_location(facebook_post.get_location())
+            if location is not None:
+                answer['location'] = location
+            else:
+                answer['location'] = facebook_post.get_location()
         except Exception, e:
             print e
             pass
