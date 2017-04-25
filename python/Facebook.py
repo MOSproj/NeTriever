@@ -1,11 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from ConfigParser import SafeConfigParser
 import facebook
 
 
 class Facebook:
 
-    def __init__(self, config):
+    def __init__(self):
+        config = SafeConfigParser()
+        config.read('./config.ini')
         access_token = config.get('facebook', 'access_token')
         self.graph = facebook.GraphAPI(access_token=access_token, version='2.2')
 
