@@ -10,6 +10,9 @@
             },
             getCategoriesNames : function(){
                 return $http.get('/api/categories-names');
+            },
+            getCategory : function(categoryId){
+                return $http.get('/api/category/' + categoryId);
             }
         };
     }

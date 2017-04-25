@@ -64,6 +64,7 @@ def extract_word_indicator(split_message, indicators_to_extract, state, value_ty
                     answer = split_message[index + 1]
                 elif state == 'after' and index - 1 >= 0:
                     answer = split_message[index - 1]
+
             if answer is not None:
                 if value_type is not None:
                     if value_type == 'int':

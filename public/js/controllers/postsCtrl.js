@@ -1,13 +1,21 @@
 (function(){
     "use strict";
 
-    angular.module('myApp').controller('postsCtrl', ["$scope", "$routeParams", "$location", "$log", "postsSrv", postsCtrl]);
+    angular.module('myApp').controller('postsCtrl', ["$scope", "$routeParams", "$location", "$log", "categoriesSrv", "postsSrv", postsCtrl]);
 
-    function postsCtrl ($scope, $routeParams, $location, $log, postsSrv) {
+    function postsCtrl ($scope, $routeParams, $location, $log, categoriesSrv, postsSrv) {
         var self = this;
         var reqParams = $location.search();
 
         self.categoryId = $routeParams['categoryId'];
+        categoriesSrv.getCategory(self.categoryId).then(function (response) {
+            $log.debug(response.data);
+
+            self.category = response.data;
+            self.categoryName = self.category['name'];
+            self.categoryspecs = self.category['specs'];
+        });
+
         self.postsPerPage = 50;
 
         postsSrv.getPosts(self.categoryId, reqParams).then(function (response) {

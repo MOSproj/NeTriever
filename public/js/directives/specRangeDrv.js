@@ -5,6 +5,7 @@
             templateUrl:'js/directives/specRangeDrv.html',
             replace: true,
             scope: {
+                specObject: '='
             }
         };
     });

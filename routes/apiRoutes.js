@@ -69,6 +69,15 @@ router.get('/categories-names', function (req, res) {
 router.get('/category/:categoryId', function (req, res) {
     console.log(req.params['categoryId']);
     const categoryId = parseInt(req.params['categoryId']);
+
+    db.categories.findOne({'id': categoryId}, function (err, docs) {
+        res.json(docs);
+    });
+});
+
+router.get('/posts/:categoryId', function (req, res) {
+    console.log(req.params['categoryId']);
+    const categoryId = parseInt(req.params['categoryId']);
     console.log(categoryId + " category");
 
     var pageNum = 1;

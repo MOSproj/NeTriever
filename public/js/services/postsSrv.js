@@ -6,7 +6,7 @@
     function postsSrv($http, $log){
         return {
             getPosts : function(categoryId, reqParams){
-                return $http.get('/api/category/' + categoryId, {
+                return $http.get('/api/posts/' + categoryId, {
                     params: reqParams
                 });
             }
