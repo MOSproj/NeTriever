@@ -1,10 +1,9 @@
 <div>
     <p>
-        <strong>{{specObject.key}}</strong>
+        <strong>{{ specKey }}</strong>
     </p>
-    <select  class="selectpicker" multiple>
-        <option>אחד</option>
-        <option>שתים</option>
-        <option>שלוש</option>
+    <select class="selectpicker" multiple>
+        <option>check</option>
+        <option ng-repeat="val in specVal">{{ val }}</option>
     </select>
 </div>

@@ -12,8 +12,6 @@
             $log.debug(response.data);
 
             self.category = response.data;
-            self.categoryName = self.category['name'];
-            self.categoryspecs = self.category['specs'];
         });
 
         self.postsPerPage = 50;
@@ -47,5 +45,9 @@
                 }
             }
         };
+
+        self.isString = function(item) {
+            return angular.isString(item);
+        }
     }
 })();
