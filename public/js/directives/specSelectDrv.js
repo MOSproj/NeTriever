@@ -5,10 +5,13 @@
             templateUrl:'/js/directives/specSelectDrv.html',
             replace: true,
             scope: {
-                specObject: '='
+                specKey: '=',
+                specVal: '='
             },
             link: function($scope, $el) {
-                $('.selectpicker').selectpicker();
+                $scope.$watch("specVal",function(newValue,oldValue) {
+                    $('.selectpicker').selectpicker();
+                });
             }
         };
     });
