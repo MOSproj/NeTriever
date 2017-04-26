@@ -12,6 +12,27 @@
             $log.debug(response.data);
 
             self.category = response.data;
+
+            self.category['specRange'] = {};
+            self.category['specselect'] = {};
+            angular.forEach(self.category['specs'], function(specValues, speckey) {
+                if (angular.isArray(specValues)) {
+                    var data = [];
+                    specValues.forEach(function (value, i){
+                        data.push({
+                            'id': i,
+                            'label': value
+                        });
+                    });
+                    self.category['specselect'][speckey] = {
+                        'data': data,
+                        'selected': []
+                    };
+                } else
+                    self.category['specRange'][speckey] = specValues;
+            });
+            $log.log(self.category['specRange']);
+            $log.log(self.category['specselect']);
         });
 
         self.postsPerPage = 50;
@@ -48,6 +69,6 @@
 
         self.isString = function(item) {
             return angular.isString(item);
-        }
+        };
     }
 })();

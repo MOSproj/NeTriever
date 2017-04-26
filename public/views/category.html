@@ -6,9 +6,9 @@
     </div>
     <div class="container white-container">
         <div class="row">
-            <div class="col-sm-3" ng-repeat="(key, val) in category.category['specs']">
-                <spec-select ng-if="!category.isString(val)" spec-key="key" spec-val="val"></spec-select>
-                <spec-range ng-if="category.isString(val)" spec-key="key" spec-val="val"></spec-range>
+            <div class="col-sm-3" ng-repeat="(key, val) in category.category['specselect']">
+                <spec-select spec-key="key" spec-val="val">
+                </spec-select>
             </div>
 
         </div>

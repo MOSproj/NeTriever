@@ -2,8 +2,6 @@
     <p>
         <strong>{{ specKey }}</strong>
     </p>
-    <select class="selectpicker" multiple>
-        <option>check</option>
-        <option ng-repeat="val in specVal">{{ val }}</option>
-    </select>
+    <div ng-dropdown-multiselect="" options="specVal['data']" selected-model="specVal['selected']"
+         extra-settings="{ scrollableHeight: '500px', scrollable: true, smartButtonMaxItems: 3 }"></div>
 </div>
