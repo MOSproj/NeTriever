@@ -15,7 +15,7 @@ def get_location(location):
         return cache[location]
     try:
         r = requests.get('https://maps.googleapis.com/maps/api/geocode/json?address="' + location + '"&language=iw'
-                        '&key=' + config.get('google maps', 'key'))
+                                                                                                    '&key=' + config.get('google maps', 'key'))
         json_r = r.json()
         formatted_address = json_r[u'results'][0][u'formatted_address'].split(', ')
         country = formatted_address[-1]
