@@ -51,6 +51,7 @@
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-segoe-ui: "Segoe UI", @font-family-sans-serif;
+@font-family-open-Sans: 'Open Sans Hebrew', @font-family-segoe-ui;
 @font-family-base: @font-family-segoe-ui;
 
 @font-size-base: 16px; //14px;
@@ -70,7 +71,7 @@
 @line-height-computed: floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
-@headings-font-family: 'Open Sans Hebrew', @font-family-segoe-ui;// inherit;
+@headings-font-family: @font-family-open-Sans;// inherit;
 @headings-font-weight: 500;
 @headings-line-height: 1.1;
 @headings-color: inherit;

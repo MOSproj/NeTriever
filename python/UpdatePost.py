@@ -14,8 +14,8 @@ def updatepost():
     config = SafeConfigParser()
     config.read('./config.ini')
 
-    facebook = Facebook(config)
-    db = Database(config)
+    facebook = Facebook()
+    db = Database()
     posts = db.get_posts()
     while True:
         for post in posts:
