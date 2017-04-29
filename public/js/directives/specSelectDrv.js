@@ -7,11 +7,6 @@
             scope: {
                 specKey: '=',
                 specVal: '='
-            },
-            link: function($scope, $el) {
-                $scope.$watch("specVal",function(newValue,oldValue) {
-                    $('.selectpicker').selectpicker();
-                });
             }
         };
     });

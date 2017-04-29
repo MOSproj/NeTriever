@@ -10,10 +10,10 @@
             return viewLocation === $location.path();
         };
 
-        categoriesSrv.getCategories().then(function (response) {
+        /*categoriesSrv.getCategories().then(function (response) {
             $log.debug(response.data);
             self.categories = response.data;
-        });
+        });*/
 
         categoriesSrv.getCategoriesNames().then(function (response) {
             $log.debug(response.data);

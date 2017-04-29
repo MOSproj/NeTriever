@@ -27,13 +27,15 @@ var getGroupsByCategoryId = function (categoryId, res) {
 };
 
 var getCategories = function (res) {
-    db.categories.find({}, function (err, docs) {
+    db.categories.find({})
+        .sort({'id': 1}, function (err, docs) {
         res(docs);
     });
 };
 
 var getCategoriesName =  function (res) {
-    db.categories.find({}, {"name":1,_id:0}, function (err, docs) {
+    db.categories.find({}, {'name':1, 'id':1})
+        .sort({'id': 1}, function (err, docs) {
         res(docs);
     });
 };
