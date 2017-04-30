@@ -24,8 +24,17 @@ class Database:
     def get_groups(self):
         return list(self.db.groups.find())
 
-    def get_posts(self):
+    def get_groups_by_category_id(self, id):
+        return list(self.db.groups.find({'category_id': id}))
+
+    def get_all_posts(self):
         return list(self.db.posts.find())
+
+    def get_ignored_posts(self):
+        return list(self.db.posts.find({'ignore': True}))
+
+    def get_posts(self):
+        return list(self.db.posts.find({'ignore': False}))
 
     def get_post(self, post_id):
         return self.db.posts.find_one({"id": post_id})
@@ -60,7 +69,7 @@ class Database:
 
     def update_database_post(self, database_post, update=False):
         try:
-            self.update_dict_post(database_post.get_post())
+            self.update_dict_post(database_post.get_post(), update)
         except pymongo.errors, e:
             print e
 

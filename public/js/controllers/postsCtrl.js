@@ -11,7 +11,6 @@
 
         postsSrv.getPosts(self.categoryId, reqParams).then(function (response) {
             $log.debug(response.data);
-
             self.posts = response.data;
         });
 

@@ -35,7 +35,8 @@
 
         self.specselectSettings = {
             scrollable: true,
-            smartButtonMaxItems: 3,
+            keyboardControls: true,
+            smartButtonMaxItems: 5,
             template: '{{ option }}',
             smartButtonTextConverter: function(skip, option) { return option; }
         }

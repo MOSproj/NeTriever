@@ -4,27 +4,30 @@
             {{posts.categoryName}}
         </h1>
     </div>
-    <div class="container white-container" ng-controller="searchCtrl as search">
-        <div class="row">
-            <div class="col-sm-3" ng-repeat="(key, val) in search.specselect">
-                <spec-select spec-key="key" spec-val="val" settings="search.specselectSettings"></spec-select>
+    <div class="container">
+        <div class="white-container" ng-controller="searchCtrl as search">
+            <div class="row">
+                <div class="col-sm-3" ng-repeat="(key, val) in search.specselect">
+                    <spec-select spec-key="key" spec-val="val" settings="search.specselectSettings"></spec-select>
+                </div>
+                <div class="col-sm-3" ng-repeat="(key, val) in search.specRange">
+                    <spec-range spec-key="key" spec-val="val"></spec-range>
+                </div>
             </div>
-            <div class="col-sm-3" ng-repeat="(key, val) in search.specRange">
-                <spec-range spec-key="key" spec-val="val"></spec-range>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-9">
-                <button type="button" class="btn btn-link">אפשרויות נוספות</button>
-            </div>
-            <div class="col-xs-3">
-                <button class="btn btn-default" style="float: left">חפש</button>
+            <div class="row">
+                <div class="col-xs-9">
+                    <button type="button" class="btn btn-link">אפשרויות נוספות</button>
+                </div>
+                <div class="col-xs-3">
+                    <button class="btn btn-default" style="float: left">חפש</button>
+                </div>
             </div>
         </div>
     </div>
 
-
-    <post-template ng-repeat="post in posts.posts" post-object="post"></post-template>
+    <div class="container">
+        <post-template ng-repeat="post in posts.posts" post-object="post"></post-template>
+    </div>
 
     <div class="container pagination-div">
         <a class="btn btn-default" ng-disabled="posts.pagination.backButtonDisabled()" ng-click="posts.pagination.back()">

@@ -17,7 +17,7 @@ db.on('error', function (err) {
     console.log('database error:', err)
 });
 db.on('connect', function () {
-    console.log('database connected')
+    console.log('database connected');
 });
 
 var getGroupsByCategoryId = function (categoryId, res) {
