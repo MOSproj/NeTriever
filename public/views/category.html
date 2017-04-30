@@ -1,13 +1,13 @@
 <div class="main">
     <div class="container">
         <h1 class="cat-title">
-            {{category.categoryName}}
+            {{posts.categoryName}}
         </h1>
     </div>
-    <div class="container white-container">
+    <div class="container white-container" ng-controller="searchCtrl as search">
         <div class="row">
-            <div class="col-sm-3" ng-repeat="(key, val) in category.category['specselect']">
-                <spec-select spec-key="key" spec-val="val"></spec-select>
+            <div class="col-sm-3" ng-repeat="(key, val) in search.category['specselect']">
+                <spec-select spec-key="key" spec-val="val" settings="search.specselectSettings"></spec-select>
             </div>
 
         </div>
@@ -22,14 +22,14 @@
     </div>
 
 
-    <post-template ng-repeat="post in category.posts" post-object="post"></post-template>
+    <post-template ng-repeat="post in posts.posts" post-object="post"></post-template>
 
     <div class="container pagination-div">
-        <a class="btn btn-default" ng-disabled="category.pagination.backButtonDisabled()" ng-click="category.pagination.back()">
+        <a class="btn btn-default" ng-disabled="posts.pagination.backButtonDisabled()" ng-click="posts.pagination.back()">
             <span class="glyphicon glyphicon-chevron-right"></span>
             הקודם
         </a>
-        <a class="btn btn-default" ng-disabled="category.pagination.forwardButtonDisabled()" ng-click="category.pagination.forward()">
+        <a class="btn btn-default" ng-disabled="posts.pagination.forwardButtonDisabled()" ng-click="posts.pagination.forward()">
             הבא
             <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
