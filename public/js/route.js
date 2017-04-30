@@ -10,7 +10,7 @@
         })
         .when("/category/:categoryId", {
             controller: 'postsCtrl',
-            controllerAs:"category",
+            controllerAs:"posts",
             templateUrl : "/views/category.html"
         })
         .otherwise({

@@ -45,22 +45,35 @@ class Database:
     def get_category_name_by_group_id(self, group_id):
         return self.get_category_name_by_id(self.get_category_id_by_group_id(group_id))
 
-    def insert_post(self, post):
+    def insert_database_posts(self, database_posts):
         try:
-            self.db.posts.insert(post)
+            dict_posts = [post.get_post() for post in database_posts]
+            self.insert_dict_posts(dict_posts)
         except pymongo.errors.DuplicateKeyError, e:
+            print e
+
+    def insert_dict_posts(self, dict_posts):
+        try:
+            self.db.posts.insert(dict_posts)
+        except pymongo.errors.DuplicateKeyError, e:
+            print e
+
+    def update_database_post(self, database_post, update=False):
+        try:
+            self.update_dict_post(database_post.get_post())
+        except pymongo.errors, e:
+            print e
+
+    def update_dict_post(self, dict_post, update=False):
+        try:
+            self.db.posts.update({'id': dict_post['id']}, dict_post, update)
+        except pymongo.errors, e:
             print e
 
     def delete_post(self, post_id):
         try:
             self.db.posts.delete_one({"id": post_id})
         except not pymongo.errors, e:
-            print e
-
-    def update_post(self, post, update=False):
-        try:
-            self.db.posts.update({'id': post['id']}, post, update)
-        except pymongo.errors, e:
             print e
 
     def set_ignore(self, post_id):
