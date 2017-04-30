@@ -6,10 +6,12 @@
     </div>
     <div class="container white-container" ng-controller="searchCtrl as search">
         <div class="row">
-            <div class="col-sm-3" ng-repeat="(key, val) in search.category['specselect']">
+            <div class="col-sm-3" ng-repeat="(key, val) in search.specselect">
                 <spec-select spec-key="key" spec-val="val" settings="search.specselectSettings"></spec-select>
             </div>
-
+            <div class="col-sm-3" ng-repeat="(key, val) in search.specRange">
+                <spec-range spec-key="key" spec-val="val"></spec-range>
+            </div>
         </div>
         <div class="row">
             <div class="col-xs-9">

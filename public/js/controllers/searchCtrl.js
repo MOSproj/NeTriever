@@ -13,19 +13,24 @@
 
             self.category = response.data;
 
-            self.category['specRange'] = {};
-            self.category['specselect'] = {};
+            self.specRange = {};
+            self.specselect = {};
             angular.forEach(self.category['specs'], function(specValues, speckey) {
                 if (angular.isArray(specValues)) {
-                    self.category['specselect'][speckey] = {
+                    self.specselect[speckey] = {
                         'data': specValues,
                         'selected': []
                     };
                 } else
-                    self.category['specRange'][speckey] = specValues;
+                    self.specRange[speckey] = {
+                        min: specValues.split("-")[0],
+                        max: specValues.split("-")[1],
+                        model_min: specValues.split("-")[0],
+                        model_max: specValues.split("-")[1]
+                    }
             });
-            $log.log(self.category['specRange']);
-            $log.log(self.category['specselect']);
+            $log.log(self.specRange);
+            $log.log(self.specselect);
         });
 
         self.specselectSettings = {
