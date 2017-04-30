@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import thread
-import time
 
 from Database import Database
 from InsertPosts import InsertPosts
 from UpdatePosts import UpdatePosts
 from DeleteIgnore import DeleteIgnore
+
 
 def main():
     insert_posts_interval = 0.5 * 60
@@ -29,6 +28,7 @@ def main():
     new_thread = DeleteIgnore(delete_ignore_interval)
     new_thread.start()
     threads.append(new_thread)
+
 
 if __name__ == '__main__':
     main()

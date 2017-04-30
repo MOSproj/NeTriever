@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+from search_data import cellular_company
 
 data = {
     'שם המכשיר': {
-        'before': ['דגם', 'מסוג'],
-
+        'find': cellular_company.data
     },
     'מחיר': {
         'before': ['מחיר', 'מבקש'],
