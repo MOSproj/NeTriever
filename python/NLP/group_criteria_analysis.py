@@ -21,10 +21,20 @@ def analyse(text, bag_of_words):
             spec_val = extract_word_indicator(split_message, value['before'], 'before', value_type)
         if spec_val is None and 'after' in value:
             spec_val = extract_word_indicator(split_message, value['after'], 'after', value_type)
+        if spec_val is None and 'find' in value:
+            spec_val = extract_word_find(text, value['find'])
         if spec_val is not None:
             specs[key] = spec_val
 
     return specs
+
+
+def extract_word_find(text, indicators):
+    for key, value in indicators.items():
+        for val in value:
+            if to_unicode(val) in to_unicode(text):
+                return key
+    return None
 
 
 def extract_word_regex(text, regexs, value_type):
