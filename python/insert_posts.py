@@ -32,10 +32,10 @@ def insert_posts():
                         post = DatabasePost(post)
                         if not post.is_ignored():
                             nlp.analyse_database_post(post, db.get_category_name_by_id(group['category_id']))
-                        posts_to_insert.append(post.get_post())
+                        posts_to_insert.append(post)
                 print "inserting posts"
                 if len(posts_to_insert) > 0:
-                    db.insert_post(posts_to_insert)
+                    db.insert_database_posts(posts_to_insert)
         except Exception, e:
             print bcolors.fail("something went wrong:")
             print sys.exc_info()[0]

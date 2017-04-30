@@ -25,7 +25,7 @@ def update_posts():
                     if fb_post.get_updated_time() > db_post.get_updated_time():
                         db_post = DatabasePost(fb_post)
                         nlp.analyse_database_post(db_post, db.get_category_name_by_group_id(db_post.get_group_id()))
-                        db.update_post(db_post.get_post(), True)
+                        db.update_post(db_post, True)
                         print "post " + str(db_post.get_id()) + " just updated"
                     else:
                         print "post " + str(db_post.get_id()) + " has no updates"

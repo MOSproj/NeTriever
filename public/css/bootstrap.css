@@ -6810,6 +6810,10 @@ nav .navbar-toggle {
 nav .navbar-options-max {
   display: none;
 }
+.dropdown-menu {
+  height: auto !important;
+  max-height: 500px !important;
+}
 @media (min-width: 768px) {
   .navbar-nav > li > a {
     padding-top: 30px;
@@ -6894,10 +6898,4 @@ h3 {
 }
 .pagination-div a {
   width: 150px;
-}
-.nav,
-.pagination,
-.carousel,
-.panel-title a {
-  cursor: pointer;
 }

@@ -6,7 +6,8 @@
             replace: true,
             scope: {
                 specKey: '=',
-                specVal: '='
+                specVal: '=',
+                settings: '='
             }
         };
     });
