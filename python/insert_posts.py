@@ -12,7 +12,7 @@ import time
 import sys
 
 
-def main():
+def insert_posts():
     config = SafeConfigParser()
     config.read('./config.ini')
 
@@ -49,4 +49,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    insert_posts()
