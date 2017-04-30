@@ -13,7 +13,6 @@ text_analysis_files = {
     u'נדלן': nadlan_text_analysis
 }
 
-
 def analyse_database_post(database_post, category_name):
     if should_be_ignore(database_post):
         database_post.set_ignore()
@@ -36,7 +35,7 @@ def get_specs_from_post(database_post, category_name):
 
 def should_be_ignore(post):
     words = ['מחפש', 'מחפשת', 'מחפשים', 'להחליף', 'החלפה', 'מתעניין', 'מתעניינת', 'מעוניין', 'למישהו', 'מעוניינת',
-             'שתפו', 'לשתף', 'מגוון']
+             'שתפו', 'לשתף', "ספינרים",'מגוון']
     post_message = post.get_message()
     for word in words:
         if to_unicode(word) in post_message:
