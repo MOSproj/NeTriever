@@ -3,7 +3,7 @@
 from search_data import cellular_company
 
 data = {
-    'שם המכשיר': {
+    'דגם ': {
         'find': cellular_company.data
     },
     'מחיר': {
