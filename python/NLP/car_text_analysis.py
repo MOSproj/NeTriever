@@ -3,10 +3,8 @@
 from search_data import car_company
 
 data = {
-    'דגם': {
+    'חברה': {
         'find': car_company.data
-#        'before': ['דגם', 'מסוג'],
-
     },
     'שנה': {
         'before': ['עלה לכביש', 'שנת', 'מודל'],
