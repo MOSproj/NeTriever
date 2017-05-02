@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from search_data import cellular_company
-from search_data import cellular_colur
+from search_data import cellular_color
 from search_data import cellular_memory
 
 data = {
@@ -24,7 +24,7 @@ data = {
         'type': 'int'
 },
     'צבע': {
-        'find': cellular_colur.data
+        'find': cellular_color.data
 
     },
     'טלפון': {
