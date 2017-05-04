@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from search_data import cellular_company
+from search_data import cellular_color
+from search_data import cellular_memory
 
 data = {
     'חברה': {
@@ -16,12 +18,14 @@ data = {
         'before':  ['לקחת', 'איסוף', 'נמצא'],
     },
     'זיכרון': {
+        'find': cellular_memory.data,
         'before': ['זיכרון', 'GB', 'gb', 'נפח'],
         'after': ['זיכרון', 'GB','gb', 'ג\'יגה'],
         'type': 'int'
-    },
+},
     'צבע': {
-        'before': ['צבע'],
+        'find': cellular_color.data
+
     },
     'טלפון': {
         'before': ['פרטים', 'לפרטים', 'בטלפון', 'נייד', 'נוספים', 'פלאפון', 'בנייד'],
