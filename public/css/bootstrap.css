@@ -6899,3 +6899,24 @@ h3 {
 .pagination-div a {
   width: 150px;
 }
+.slide-in {
+  /* The starting CSS styles for the enter animation */
+  /* now the element will fade out before it is removed from the DOM */
+}
+.slide-in.ng-enter {
+  transition: 0.25s ease-in all;
+  max-height: 0;
+  /* The finishing CSS styles for the enter animation */
+}
+.slide-in.ng-enter.ng-enter-active {
+  overflow: hidden;
+  max-height: 999px;
+}
+.slide-in.ng-leave {
+  transition: 0.25s ease-out all;
+  max-height: 999px;
+}
+.slide-in.ng-leave.ng-leave-active {
+  overflow: hidden;
+  max-height: 0;
+}

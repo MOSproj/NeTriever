@@ -1,5 +1,5 @@
 (function(){
     "use strict";
 
-    var myApp = angular.module('myApp', ['ngRoute', 'ui-rangeSlider', 'angularjs-dropdown-multiselect']);
+    var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate', 'ui-rangeSlider', 'angularjs-dropdown-multiselect']);
 })();
