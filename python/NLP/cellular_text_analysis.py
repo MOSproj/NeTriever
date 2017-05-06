@@ -2,27 +2,28 @@
 # -*- coding: utf-8 -*-
 from search_data import cellular_company
 from search_data import cellular_color
-from search_data import cellular_memory
 
 data = {
     'חברה': {
         'find': cellular_company.data
     },
+
     'מחיר': {
         'before': ['מחיר', 'מבקש'],
         'after': ['ש"ח', 'שח', '₪'],
         'regex': [ur'[\u20aa]\d+[\,\d{3}]*'],
         'type': 'int'
     },
+
     'אזור': {
         'before':  ['לקחת', 'איסוף', 'נמצא'],
     },
+
     'זיכרון': {
-        'find': cellular_memory.data,
         'before': ['זיכרון', 'GB', 'gb', 'נפח'],
         'after': ['זיכרון', 'GB','gb', 'ג\'יגה'],
         'type': 'int'
-},
+    },
     'צבע': {
         'find': cellular_color.data
 
