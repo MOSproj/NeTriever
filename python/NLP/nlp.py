@@ -6,12 +6,13 @@ from car_text_analysis import data as car_text_analysis
 from cellular_text_analysis import data as cellular_text_analysis
 from nadlan_text_analysis import data as nadlan_text_analysis
 
-
+min_specs = 3
 text_analysis_files = {
     u'רכב': car_text_analysis,
     u'סלולר': cellular_text_analysis,
     u'נדלן': nadlan_text_analysis
 }
+
 
 def analyse_database_post(database_post, category_name):
     if should_be_ignore(database_post):
@@ -24,7 +25,10 @@ def analyse_database_post(database_post, category_name):
         if 'מחיר' in specs:
             database_post.set_price(specs['מחיר'])
             del specs['מחיר']
-        database_post.set_specs(specs)
+        if len(specs) >= min_specs:
+            database_post.set_specs(specs)
+        else:
+            database_post.set_ignore()
 
 
 def get_specs_from_post(database_post, category_name):
@@ -35,7 +39,7 @@ def get_specs_from_post(database_post, category_name):
 
 def should_be_ignore(post):
     words = ['מחפש', 'מחפשת', 'מחפשים', 'להחליף', 'החלפה', 'מתעניין', 'מתעניינת', 'מעוניין', 'למישהו', 'מעוניינת',
-             'שתפו', 'לשתף', "ספינרים",'מגוון']
+             'שתפו', 'לשתף', "ספינרים", 'מגוון']
     post_message = post.get_message()
     for word in words:
         if to_unicode(word) in post_message:
