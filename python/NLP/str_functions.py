@@ -29,14 +29,14 @@ def to_unicode(word):
 def to_int(text):
     results = re.findall("\d+(?:,?-?\d{3})*", text)
     if len(results) > 0:
-        return results[0].replace(",", "").replace("-", "")
+        return int(results[0].replace(",", "").replace("-", ""))
     return None
 
 
 def to_float(text):
     results = re.findall("\d+(?:.\d+)*", text)
     if len(results) > 0:
-        return results[0].replace(",", "")
+        return float(results[0].replace(",", ""))
     return None
 
 

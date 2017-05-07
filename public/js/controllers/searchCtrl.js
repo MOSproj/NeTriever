@@ -10,6 +10,7 @@
 
         categoriesSrv.getCategory(self.categoryId).then(function (response) {
             $log.debug(response.data);
+            $log.log(reqParams);
 
             self.category = response.data;
 
@@ -26,18 +27,18 @@
                     }
                 } else {
                     self.specRange[speckey] = {
-                        min: specValues.split("-")[0],
-                        max: specValues.split("-")[1],
-                        model_min: specValues.split("-")[0],
-                        model_max: specValues.split("-")[1]
+                        min: null,
+                        max: null
                     };
                     if(speckey in reqParams){
-                        self.specRange[speckey]['model_min'] = parseInt(reqParams[speckey].split("-")[0]);
-                        self.specRange[speckey]['model_max'] = parseInt(reqParams[speckey].split("-")[1]);
+                        if(parseInt(reqParams[speckey].split(",")[0]) >= 0)
+                            self.specRange[speckey]['min'] = parseInt(reqParams[speckey].split(",")[0]);
+                        if(parseInt(reqParams[speckey].split(",")[1]) >= 0)
+                            self.specRange[speckey]['max'] = parseInt(reqParams[speckey].split(",")[1]);
                     }
                 }
-
             });
+            $log.log(self.specRange);
         });
 
         self.specselectSettings = {
@@ -51,23 +52,28 @@
         };
 
         self.search = function () {
+            console.log(self.specRange['מחיר']['min']);
             var specs = {};
             angular.forEach(self.specselect, function (val, key) {
-                if(val['selected'].length > 0){
-                    specs[key] = val['selected'];
-                }
-                if(key in reqParams && reqParams[key] !== val['selected']){
+                if(val['selected'].length > 0 || key in reqParams){
                     specs[key] = val['selected'];
                 }
             });
             angular.forEach(self.specRange, function (val, key) {
-                if(val['min'] !== val['model_min'] ||  val['max'] !== val['model_max']){
-                    specs[key] = val['model_min'] + '-' + val['model_max'];
-                }
-                if(key in reqParams &&
-                    (reqParams[key].split("-")[0] !== val['model_min'] ||
-                    reqParams[key].split("-")[1] !== val['model_max'])){
-                    specs[key] = val['model_min'] + '-' + val['model_max'];
+                if((angular.isNumber(val['min']) && val['min'] >= 0) ||
+                    (angular.isNumber(val['max']) && val['max'] >= 0)){
+                    specs[key] = '';
+                    if(angular.isNumber(val['min']) && val['min'] >= 0)
+                        specs[key] += val['min'];
+                    else
+                        specs[key] += '-1';
+                    specs[key] += ',';
+                    if(angular.isNumber(val['max']) && val['max'] >= 0)
+                        specs[key] += val['max'];
+                    else
+                        specs[key] += '-1';
+                } else if(key in reqParams) {
+                    delete reqParams[key];
                 }
             });
             angular.extend(reqParams, specs);

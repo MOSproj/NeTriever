@@ -11,8 +11,7 @@
                     <spec-select spec-key="key" spec-val="val" settings="search.specselectSettings"></spec-select>
                 </div>
                 <div class="col-sm-3" ng-repeat="(key, val) in search.specRange">
-                    <spec-range spec-key="key" spec-val-min="val['min']" spec-val-max="val['max']"
-                    spec-model-min="val['model_min']" spec-model-max="val['model_max']"></spec-range>
+                    <spec-range spec-key="key" spec-min="val['min']" spec-max="val['max']"></spec-range>
                 </div>
             </div>
             <div class="row">

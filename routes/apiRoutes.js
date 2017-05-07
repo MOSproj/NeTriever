@@ -29,15 +29,15 @@ var getGroupsByCategoryId = function (categoryId, res) {
 var getCategories = function (res) {
     db.categories.find({})
         .sort({'id': 1}, function (err, docs) {
-        res(docs);
-    });
+            res(docs);
+        });
 };
 
 var getCategoriesName =  function (res) {
     db.categories.find({}, {'name':1, 'id':1})
         .sort({'id': 1}, function (err, docs) {
-        res(docs);
-    });
+            res(docs);
+        });
 };
 
 var getPosts = function (groups, queryData, pageNum, res) {
@@ -66,9 +66,12 @@ var createMongoDbReq = function (queryData) {
     var answer = [];
 
     if (queryData.hasOwnProperty('מחיר')) {
-        answer.push({'price': { '$gt': queryData['מחיר'].split("-")[0],
-                                '$lt': queryData['מחיר'].split("-")[1]}
-        });
+        var price = {};
+        if (parseInt(queryData['מחיר'].split(",")[0]) >= 0)
+            price['$gt'] = parseInt(queryData['מחיר'].split(",")[0]) - 1;
+        if (parseInt(queryData['מחיר'].split(",")[1]) >= 0)
+            price['$lt'] = parseInt(queryData['מחיר'].split(",")[1]) + 1;
+        answer.push({'price': price});
         delete queryData['מחיר'];
     }
     if (queryData.hasOwnProperty('מיקום')) {
@@ -77,17 +80,17 @@ var createMongoDbReq = function (queryData) {
     }
 
     Object.keys(queryData).forEach(function(key) {
-        if (Array.isArray(queryData[key])){
-            var toInsert = {};
-            toInsert['specs.' + key] = {'$in': queryData[key]};
-            answer.push(toInsert);
+        var toInsert = {};
+        if (queryData[key].includes(',')){
+            toInsert['specs.' + key] = {};
+            if (parseInt(queryData[key].split(",")[0]) >= 0)
+                toInsert['specs.' + key]['$gt'] = parseInt(queryData[key].split(",")[0]) - 1;
+            if (parseInt(queryData[key].split(",")[1]) >= 0)
+                toInsert['specs.' + key]['$lt'] = parseInt(queryData[key].split(",")[1]) + 1;
         } else {
-            //TODO: 1 choice
-            var toInsert = {};
-            toInsert['specs.' + key] = {    '$gt': queryData[key].split("-")[0],
-                                            '$lt': queryData[key].split("-")[1]};
-            answer.push(toInsert);
+            toInsert['specs.' + key] = {'$in': [].concat(queryData[key])};
         }
+        answer.push(toInsert);
     });
     return answer;
 };
