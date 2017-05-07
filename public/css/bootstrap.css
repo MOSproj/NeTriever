@@ -6912,6 +6912,14 @@ h3 {
 .pagination-div a {
   width: 150px;
 }
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .slide-in {
   /* The starting CSS styles for the enter animation */
   /* now the element will fade out before it is removed from the DOM */

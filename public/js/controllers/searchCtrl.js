@@ -32,8 +32,8 @@
                         model_max: specValues.split("-")[1]
                     };
                     if(speckey in reqParams){
-                        self.specRange[speckey]['model_min'] = reqParams[speckey].split("-")[0];
-                        self.specRange[speckey]['model_max'] = reqParams[speckey].split("-")[1];
+                        self.specRange[speckey]['model_min'] = parseInt(reqParams[speckey].split("-")[0]);
+                        self.specRange[speckey]['model_max'] = parseInt(reqParams[speckey].split("-")[1]);
                     }
                 }
 
@@ -42,6 +42,8 @@
 
         self.specselectSettings = {
             scrollable: true,
+            showCheckAll: false,
+            showUncheckAll: false,
             keyboardControls: true,
             smartButtonMaxItems: 5,
             template: '{{ option }}',

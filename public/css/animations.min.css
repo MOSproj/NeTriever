@@ -1,0 +1,1 @@
+.slide-in.ng-enter{transition:.25s ease-in all;max-height:0}.slide-in.ng-enter.ng-enter-active{overflow:hidden;max-height:999px}.slide-in.ng-leave{transition:.25s ease-out all;max-height:999px}.slide-in.ng-leave.ng-leave-active{overflow:hidden;max-height:0}

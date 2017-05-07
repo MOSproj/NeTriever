@@ -11,7 +11,10 @@
     "express": "^4.14.0",
     "mongojs": "^2.4.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "less": "^2.7.2",
+    "yuicompressor": "^2.4.8"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
