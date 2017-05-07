@@ -5,13 +5,14 @@
         </h1>
     </div>
     <div class="container">
-        <div class="white-container" ng-controller="searchCtrl as search">
+        <div class="white-container"  id="search" ng-controller="searchCtrl as search">
             <div class="row">
                 <div class="col-sm-3" ng-repeat="(key, val) in search.specselect">
                     <spec-select spec-key="key" spec-val="val" settings="search.specselectSettings"></spec-select>
                 </div>
                 <div class="col-sm-3" ng-repeat="(key, val) in search.specRange">
-                    <spec-range spec-key="key" spec-val="val"></spec-range>
+                    <spec-range spec-key="key" spec-val-min="val['min']" spec-val-max="val['max']"
+                    spec-model-min="val['model_min']" spec-model-max="val['model_max']"></spec-range>
                 </div>
             </div>
             <div class="row">
@@ -19,7 +20,7 @@
                     <button type="button" class="btn btn-link">אפשרויות נוספות</button>
                 </div>
                 <div class="col-xs-3">
-                    <button class="btn btn-default" style="float: left">חפש</button>
+                    <button class="btn btn-default" style="float: left" ng-click="search.search()">חפש</button>
                 </div>
             </div>
         </div>

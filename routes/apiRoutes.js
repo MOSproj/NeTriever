@@ -40,13 +40,19 @@ var getCategoriesName =  function (res) {
     });
 };
 
-var getPosts = function (groups, pageNum, res) {
+var getPosts = function (groups, queryData, pageNum, res) {
     var then = new Date();
     var groupsIds = [];
+
     groups.forEach(function(group) {
         groupsIds.push(group.id);
     });
-    db.posts.find({'group_id': {'$in': groupsIds}})
+
+    var mongoDbReq = createMongoDbReq(queryData);
+    mongoDbReq.push({'group_id': {'$in': groupsIds}});
+    console.log(JSON.stringify({'$and': mongoDbReq}));
+
+    db.posts.find({'$and': mongoDbReq})
         .sort({'updated_time': -1})
         .skip(postsPerPage*(pageNum-1))
         .limit(postsPerPage, function (err, docs) {
@@ -54,6 +60,36 @@ var getPosts = function (groups, pageNum, res) {
             console.log((new Date).toISOString());
             res(docs);
         });
+};
+
+var createMongoDbReq = function (queryData) {
+    var answer = [];
+
+    if (queryData.hasOwnProperty('מחיר')) {
+        answer.push({'price': { '$gt': queryData['מחיר'].split("-")[0],
+                                '$lt': queryData['מחיר'].split("-")[1]}
+        });
+        delete queryData['מחיר'];
+    }
+    if (queryData.hasOwnProperty('מיקום')) {
+        answer.push({'location': {'$in': queryData['מיקום']}});
+        delete queryData['מיקום'];
+    }
+
+    Object.keys(queryData).forEach(function(key) {
+        if (Array.isArray(queryData[key])){
+            var toInsert = {};
+            toInsert['specs.' + key] = {'$in': queryData[key]};
+            answer.push(toInsert);
+        } else {
+            //TODO: 1 choice
+            var toInsert = {};
+            toInsert['specs.' + key] = {    '$gt': queryData[key].split("-")[0],
+                                            '$lt': queryData[key].split("-")[1]};
+            answer.push(toInsert);
+        }
+    });
+    return answer;
 };
 
 router.get('/categories', function (req, res) {
@@ -81,13 +117,16 @@ router.get('/posts/:categoryId', function (req, res) {
     console.log(req.params['categoryId']);
     const categoryId = parseInt(req.params['categoryId']);
     console.log(categoryId + " category");
+    var queryData = req.query;
 
     var pageNum = 1;
-    if (req.query.hasOwnProperty('page'))
-        pageNum = req.query['page'];
+    if (queryData.hasOwnProperty('page')) {
+        pageNum = queryData['page'];
+        delete queryData['page'];
+    }
 
     getGroupsByCategoryId(categoryId, function (groups) {
-        getPosts(groups, pageNum, function (posts) {
+        getPosts(groups, queryData, pageNum, function (posts) {
             res.json(posts);
         });
     });

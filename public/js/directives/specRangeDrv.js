@@ -6,7 +6,10 @@
             replace: true,
             scope: {
                 specKey: '=',
-                specVal: '='
+                specValMin: '=',
+                specValMax: '=',
+                specModelMin: '=',
+                specModelMax: '='
             }
         };
     });

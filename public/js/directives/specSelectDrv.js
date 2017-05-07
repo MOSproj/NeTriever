@@ -5,6 +5,7 @@
             templateUrl:'/js/directives/specSelectDrv.html',
             replace: true,
             scope: {
+                // TODO: change that
                 specKey: '=',
                 specVal: '=',
                 settings: '='

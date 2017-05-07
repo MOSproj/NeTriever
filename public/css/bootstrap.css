@@ -6840,6 +6840,19 @@ h3 {
   padding-top: 12px;
   margin-bottom: 22px;
 }
+#search .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+#search .col-xs-1 {
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-top: 4px;
+}
+#search .col-xs-5 {
+  padding-left: 2px;
+  padding-right: 2px;
+}
 .post .price {
   float: left;
   position: relative;

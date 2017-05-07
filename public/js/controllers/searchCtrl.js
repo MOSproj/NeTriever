@@ -21,16 +21,23 @@
                         'data': specValues,
                         'selected': []
                     };
-                } else
+                    if(speckey in reqParams){
+                        self.specselect[speckey]['selected'] = reqParams[speckey];
+                    }
+                } else {
                     self.specRange[speckey] = {
                         min: specValues.split("-")[0],
                         max: specValues.split("-")[1],
                         model_min: specValues.split("-")[0],
                         model_max: specValues.split("-")[1]
+                    };
+                    if(speckey in reqParams){
+                        self.specRange[speckey]['model_min'] = reqParams[speckey].split("-")[0];
+                        self.specRange[speckey]['model_max'] = reqParams[speckey].split("-")[1];
                     }
+                }
+
             });
-            $log.log(self.specRange);
-            $log.log(self.specselect);
         });
 
         self.specselectSettings = {
@@ -39,6 +46,30 @@
             smartButtonMaxItems: 5,
             template: '{{ option }}',
             smartButtonTextConverter: function(skip, option) { return option; }
-        }
+        };
+
+        self.search = function () {
+            var specs = {};
+            angular.forEach(self.specselect, function (val, key) {
+                if(val['selected'].length > 0){
+                    specs[key] = val['selected'];
+                }
+                if(key in reqParams && reqParams[key] !== val['selected']){
+                    specs[key] = val['selected'];
+                }
+            });
+            angular.forEach(self.specRange, function (val, key) {
+                if(val['min'] !== val['model_min'] ||  val['max'] !== val['model_max']){
+                    specs[key] = val['model_min'] + '-' + val['model_max'];
+                }
+                if(key in reqParams &&
+                    (reqParams[key].split("-")[0] !== val['model_min'] ||
+                    reqParams[key].split("-")[1] !== val['model_max'])){
+                    specs[key] = val['model_min'] + '-' + val['model_max'];
+                }
+            });
+            angular.extend(reqParams, specs);
+            $location.path($location.path()).search(reqParams);
+        };
     }
 })();

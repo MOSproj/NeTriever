@@ -2,6 +2,18 @@
     <p>
         <strong>{{specKey}}</strong>
     </p>
-    <div range-slider min="specVal.min" max="specVal.max" model-min="specVal.model_min"
-         model-max="specVal.model_max" show-values="true"></div>
+    <div class="row">
+        <div class="col-xs-1">
+            מ
+        </div>
+        <div class="col-xs-5">
+            <input type="text" class="form-control" ng-model="specModelMin">
+        </div>
+        <div class="col-xs-1">
+            עד
+        </div>
+        <div class="col-xs-5">
+            <input type="text" class="form-control" ng-model="specModelMax">
+        </div>
+    </div>
 </div>
