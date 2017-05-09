@@ -81,6 +81,6 @@ def extract_word_indicator(split_message, indicators_to_extract, state, value_ty
 
 def prepare_text_to_analyse(text):
     text = text.replace(', ', ' ').replace('. ', ' ').replace(': ', ' ').replace('; ', ' ').replace(u'״', '') \
-        .replace(u'"', '')
+        .replace(u'"', '').lower()
     text = remove_emojis(text)
     return text
