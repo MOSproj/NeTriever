@@ -33,6 +33,13 @@ def to_int(text):
     return None
 
 
+def to_digits(text):
+    results = re.findall("\d+(?:,?-?\d*)*", text)
+    if len(results) > 0:
+        return results[0].replace(",", "").replace("-", "")
+    return None
+
+
 def to_float(text):
     results = re.findall("\d+(?:.\d+)*", text)
     if len(results) > 0:

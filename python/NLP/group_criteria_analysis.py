@@ -41,17 +41,15 @@ def extract_word_regex(text, regexs, value_type):
     for regex in regexs:
         results = re.findall(regex, text)
         if len(results) > 0:
+            answer = results[0]
             if value_type is not None:
                 if value_type == 'int':
-                    answer = to_int(results[0])
-                    if answer is not None:
-                        return answer
-                if value_type == 'float':
-                    answer = to_float(results[0])
-                    if answer is not None:
-                        return answer
-            else:
-                return results[0]
+                    answer = to_int(answer)
+                elif value_type == 'digits':
+                    answer = to_digits(answer)
+                elif value_type == 'float':
+                    answer = to_float(answer)
+            return answer
     return None
 
 
@@ -66,18 +64,17 @@ def extract_word_indicator(split_message, indicators_to_extract, state, value_ty
                 elif state == 'after' and index - 1 >= 0:
                     answer = split_message[index - 1]
 
+            if answer is not None and value_type is not None:
+                if value_type == 'int':
+                    answer = to_int(answer)
+                elif value_type == 'digits':
+                    answer = to_digits(answer)
+                elif value_type == 'float':
+                    answer = to_float(answer)
+
             if answer is not None:
-                if value_type is not None:
-                    if value_type == 'int':
-                        answer = to_int(answer)
-                        if answer is not None:
-                            return answer
-                    if value_type == 'float':
-                        answer = to_float(answer)
-                        if answer is not None:
-                            return answer
-                else:
-                    return answer
+                return answer
+
             index += 1
     return None
 

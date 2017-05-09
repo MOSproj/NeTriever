@@ -4,7 +4,7 @@
 
 data = {
     'iPhone': ['iPhone', 'אייפון', 'איפון'],
-    'אסוס': ['אסוס', 'Asus'],
+    'Asus': ['אסוס', 'Asus'],
     'Doogee': ['Doogee'],
     'Gini': ['Gini'],
     'Blackberry': ['Blackberry', 'בלקבארי'],
@@ -14,12 +14,12 @@ data = {
     'HTC': ['HTC', 'איץ טי סי'],
     'Huawei': ['Huawei', 'ואווי'],
     'Lenovo': ['לנובו', 'Lenovo'],
-    'LG': ['lg', 'LG' , 'אל גי'],
+    'LG': ['lg', 'LG', 'אל גי', 'אלג\'י'],
     'Meizu': ['Meizu', ' מייזו'],
     'Motorola': ['Motorola', 'מוטורולה'],
     'Nokia': ['Nokia', 'נוקיה'],
     'OnePlus': ['וואן פלוס', 'OnePlus'],
-    'Samsung': ['סמסונג', 'Samsung', 'גלקסי'],
+    'Samsung': ['סמסונג', 'Samsung', 'גלקסי', 'galaxy'],
     'TELIT': ['TELIT'],
     'Ulefone': ['Ulefone'],
     'Sony': ['Sony', 'סוני'],
