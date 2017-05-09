@@ -35,12 +35,12 @@
                 </div>
                 <div class="col-xs-8">
                     <p class="phone"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                        <a ng-href="https://www.facebook.com/{{ postObject.from.id }}"> {{ postObject.from.name }}</a>
+                        <a ng-href="https://www.facebook.com/{{ postObject.from.id }}" target="_blank"> {{ postObject.from.name }}</a>
                     </p>
-                    <p class="phone"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> {{ postObject.phone | tel }}</p>
+                    <p class="phone" ng-if="postObject.hasOwnProperty('phone')"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> {{ postObject.phone | tel }}</p>
                 </div>
             </div>
-            <a ng-href="https://www.facebook.com/{{ postObject.id }}"><button class="btn btn-facebook to-post">למודעה</button></a>
+            <a ng-href="https://www.facebook.com/{{ postObject.id }}" target="_blank"><button class="btn btn-facebook to-post">למודעה</button></a>
         </div>
     </div>
 </div>

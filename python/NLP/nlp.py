@@ -6,7 +6,7 @@ from car_text_analysis import data as car_text_analysis
 from cellular_text_analysis import data as cellular_text_analysis
 from nadlan_text_analysis import data as nadlan_text_analysis
 
-min_specs = 3
+min_specs = 2
 text_analysis_files = {
     u'רכב': car_text_analysis,
     u'סלולר': cellular_text_analysis,
