@@ -6778,6 +6778,13 @@ button.close {
     display: none !important;
   }
 }
+html {
+  position: relative;
+}
+html,
+body {
+  min-height: 100%;
+}
 nav.navbar {
   border: inherit;
 }
@@ -6917,6 +6924,10 @@ h3 {
 footer {
   margin-top: 30px;
   color: #f0f0f0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 footer .footer1 {
   background: #313131;
@@ -6932,6 +6943,49 @@ footer .footer2 ul {
 }
 footer .footer2 ul {
   text-align: left;
+}
+.loading {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+}
+.loading span {
+  -webkit-animation: loading 1s infinite alternate;
+  background: #333;
+  border-radius: 10px;
+  display: inline-block;
+  height: 10px;
+  margin: 60px auto;
+  width: 10px;
+}
+.loading span:nth-of-type(2) {
+  -webkit-animation-delay: 0.2s;
+  background: #444;
+}
+.loading span:nth-of-type(3) {
+  -webkit-animation-delay: 0.4s;
+  background: #555;
+}
+.loading span:nth-of-type(4) {
+  -webkit-animation-delay: 0.6s;
+  background: #666;
+}
+.loading span:nth-of-type(5) {
+  -webkit-animation-delay: 0.8s;
+  background: #777;
+}
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: translatey(0);
+    height: 10px;
+    width: 10px;
+  }
+  100% {
+    -webkit-transform: translatey(-40px);
+    height: 20px;
+    width: 20px;
+  }
 }
 .slide-in {
   /* The starting CSS styles for the enter animation */
