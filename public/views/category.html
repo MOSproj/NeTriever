@@ -5,7 +5,7 @@
         </h1>
     </div>
     <div class="container">
-        <div class="white-container"  id="search" ng-controller="searchCtrl as search">
+        <div class="white-container" id="search" ng-controller="searchCtrl as search">
             <div class="row">
                 <div class="col-sm-3" ng-repeat="(key, val) in search.specselect">
                     <spec-select spec-key="key" spec-val="val" settings="search.specselectSettings"></spec-select>
@@ -15,10 +15,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-9">
-                    <button type="button" class="btn btn-link">אפשרויות נוספות</button>
-                </div>
-                <div class="col-xs-3">
+                <div class="col-xs-12">
                     <button class="btn btn-default" style="float: left" ng-click="search.search()">חפש</button>
                 </div>
             </div>

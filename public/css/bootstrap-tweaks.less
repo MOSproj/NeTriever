@@ -2,10 +2,6 @@ nav {
     &.navbar {
         border: inherit;
     }
-    /*.row {
-        margin-right: 0;
-        margin-left: 0;
-    }*/
     .navbar-brand {
         padding: 0;
         height: 80px;
@@ -77,6 +73,15 @@ nav {
         padding-left: 2px;
         padding-right: 2px;
     }
+    input[type="number"]{
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        -moz-appearance: textfield;
+    }
 }
 
 .post{
@@ -146,12 +151,25 @@ nav {
     }
 }
 
-input[type="number"]{
-    &::-webkit-outer-spin-button,
-    &::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
+footer{
+    margin-top: 30px;
+    color: @color-3;
+
+    .footer1 {
+        background: @color-5;
+        padding: 100px;
     }
 
-    -moz-appearance: textfield;
+    .footer2{
+        background: @color-6;
+        p, ul{
+            padding:10px 0;
+            margin-bottom:0;
+        }
+        ul{
+            text-align: left;
+        }
+    }
 }
+
+

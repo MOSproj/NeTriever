@@ -96,20 +96,23 @@ var createMongoDbReq = function (queryData) {
 };
 
 router.get('/categories', function (req, res) {
+    console.log('/categories');
     getCategories(function (categories) {
         res.json(categories);
     });
 });
 
 router.get('/categories-names', function (req, res) {
+    console.log('/categories-names');
+
     getCategoriesName(function (categoriesName) {
         res.json(categoriesName);
     });
 });
 
 router.get('/category/:categoryId', function (req, res) {
-    console.log(req.params['categoryId']);
     const categoryId = parseInt(req.params['categoryId']);
+    console.log('/category/' + categoryId);
 
     db.categories.findOne({'id': categoryId}, function (err, docs) {
         res.json(docs);
@@ -117,9 +120,8 @@ router.get('/category/:categoryId', function (req, res) {
 });
 
 router.get('/posts/:categoryId', function (req, res) {
-    console.log(req.params['categoryId']);
     const categoryId = parseInt(req.params['categoryId']);
-    console.log(categoryId + " category");
+    console.log("/posts/" + categoryId);
     var queryData = req.query;
 
     var pageNum = 1;

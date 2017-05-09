@@ -6778,12 +6778,6 @@ button.close {
     display: none !important;
   }
 }
-nav {
-  /*.row {
-        margin-right: 0;
-        margin-left: 0;
-    }*/
-}
 nav.navbar {
   border: inherit;
 }
@@ -6853,6 +6847,14 @@ h3 {
   padding-left: 2px;
   padding-right: 2px;
 }
+#search input[type="number"] {
+  -moz-appearance: textfield;
+}
+#search input[type="number"]::-webkit-outer-spin-button,
+#search input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .post .price {
   float: left;
   position: relative;
@@ -6912,13 +6914,24 @@ h3 {
 .pagination-div a {
   width: 150px;
 }
-input[type="number"] {
-  -moz-appearance: textfield;
+footer {
+  margin-top: 30px;
+  color: #f0f0f0;
 }
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+footer .footer1 {
+  background: #313131;
+  padding: 100px;
+}
+footer .footer2 {
+  background: #252525;
+}
+footer .footer2 p,
+footer .footer2 ul {
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+footer .footer2 ul {
+  text-align: left;
 }
 .slide-in {
   /* The starting CSS styles for the enter animation */
