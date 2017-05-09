@@ -32,7 +32,6 @@
                     if (!reqParams.hasOwnProperty('page'))
                         reqParams['page'] = 1;
                     reqParams['page'] = reqParams['page'] + 1;
-
                     $location.path($location.path()).search(reqParams);
                 }
             }

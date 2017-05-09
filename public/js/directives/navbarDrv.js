@@ -5,6 +5,7 @@
             templateUrl:'/js/directives/navbarDrv.html',
             replace: true,
             scope: {
+                categories: '='
             }
         };
     });

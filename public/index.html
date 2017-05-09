@@ -22,12 +22,14 @@
 
     <base href="/">
 </head>
-<body>
-    <navbar></navbar>
+<body ng-controller="categoriesCtrl as categories">
+    <navbar categories="categories"></navbar>
 
     <div ng-view></div>
     
-    
+    <footer-drv categories="categories"></footer-drv>
+
+
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
     <script src="/scripts/angular-route/angular-route.js"></script>
@@ -49,10 +51,12 @@
 
     <!-- Directives -->
     <script src="/js/directives/navbarDrv.min.js"></script>
+    <script src="/js/directives/footerDrv.min.js"></script>
     <script src="/js/directives/specSelectDrv.min.js"></script>
     <script src="/js/directives/specRangeDrv.min.js"></script>
     <script src="/js/directives/postTemplateDrv.min.js"></script>
     <script src="/js/directives/carouselDrv.min.js"></script>
+    <script src="/js/directives/loadingDrv.min.js"></script>
 
     <!-- Filters -->
     <script src="/js/filters/tel.min.js"></script>

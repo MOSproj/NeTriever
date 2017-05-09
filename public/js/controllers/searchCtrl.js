@@ -10,7 +10,7 @@
 
         categoriesSrv.getCategory(self.categoryId).then(function (response) {
             $log.debug(response.data);
-            $log.log(reqParams);
+            $log.debug(reqParams);
 
             self.category = response.data;
 
@@ -38,10 +38,10 @@
                     }
                 }
             });
-            $log.log(self.specRange);
         });
 
         self.specselectSettings = {
+            enableSearch: true,
             scrollable: true,
             showCheckAll: false,
             showUncheckAll: false,
@@ -52,7 +52,6 @@
         };
 
         self.search = function () {
-            console.log(self.specRange['מחיר']['min']);
             var specs = {};
             angular.forEach(self.specselect, function (val, key) {
                 if(val['selected'].length > 0 || key in reqParams){
