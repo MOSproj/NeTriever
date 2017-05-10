@@ -56,8 +56,8 @@ var getPosts = function (groups, queryData, pageNum, res) {
         .sort({'updated_time': -1})
         .skip(postsPerPage*(pageNum-1))
         .limit(postsPerPage, function (err, docs) {
-            console.log(new Date() - then);
-            console.log((new Date).toISOString());
+            console.log('request took ' + (new Date() - then) + 'ms to answer on '
+                + (new Date).toISOString());
             res(docs);
         });
 };

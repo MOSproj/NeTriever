@@ -19,3 +19,19 @@
   overflow: hidden;
   max-height: 0;
 }
+.fade-in {
+  /* The starting CSS styles for the enter animation */
+}
+.fade-in.ng-enter {
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(-20px);
+  transition: 0.5s ease-in-out all;
+  /* The finishing CSS styles for the enter animation */
+}
+.fade-in.ng-enter.ng-enter-active {
+  overflow: hidden;
+  max-height: 9999px;
+  transform: translateY(0);
+  opacity: 1;
+}
