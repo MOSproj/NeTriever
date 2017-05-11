@@ -4,7 +4,7 @@
             {{posts.categoryName}}
         </h1>
     </div>
-    <div class="container fade-in" ng-if="posts.posts !== undefined">
+    <div class="container fade-in" ng-show="posts.posts !== undefined">
         <div class="white-container" id="search" ng-controller="searchCtrl as search">
             <div class="row">
                 <div class="col-sm-3" ng-repeat="(key, val) in search.specselect">
@@ -22,12 +22,13 @@
         </div>
     </div>
 
-    <loading ng-if="posts.posts === undefined"></loading>
-    <div class="container fade-in" ng-if="posts.posts !== undefined">
+    <loading class="fade-in" style="z-index: -1; position: absolute;" ng-show="posts.posts === undefined"></loading>
+
+    <div class="container fade-in" ng-show="posts.posts !== undefined">
         <post-template ng-repeat="post in posts.posts" post-object="post"></post-template>
     </div>
 
-    <div class="container pagination-div fade-in" ng-if="posts.posts !== undefined">
+    <div class="container pagination-div fade-in" ng-show="posts.posts !== undefined">
         <a class="btn btn-default" ng-disabled="posts.pagination.backButtonDisabled()" ng-click="posts.pagination.back()">
             <span class="glyphicon glyphicon-chevron-right"></span>
             הקודם

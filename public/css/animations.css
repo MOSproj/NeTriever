@@ -1,37 +1,36 @@
-.slide-in {
+.slide-in-out {
   /* The starting CSS styles for the enter animation */
   /* now the element will fade out before it is removed from the DOM */
 }
-.slide-in.ng-enter {
+.slide-in-out.ng-enter {
   transition: 0.25s ease-in all;
   max-height: 0;
   /* The finishing CSS styles for the enter animation */
 }
-.slide-in.ng-enter.ng-enter-active {
+.slide-in-out.ng-enter.ng-enter-active {
   overflow: hidden;
   max-height: 999px;
 }
-.slide-in.ng-leave {
+.slide-in-out.ng-leave {
   transition: 0.25s ease-out all;
   max-height: 999px;
 }
-.slide-in.ng-leave.ng-leave-active {
+.slide-in-out.ng-leave.ng-leave-active {
   overflow: hidden;
   max-height: 0;
 }
 .fade-in {
-  /* The starting CSS styles for the enter animation */
+  overflow: hidden;
+  max-height: 9999999px;
+  transform: translateY(0);
+  opacity: 1;
 }
-.fade-in.ng-enter {
+.fade-in.ng-hide {
   opacity: 0;
   max-height: 0;
   transform: translateY(-20px);
-  transition: 0.5s ease-in-out all;
-  /* The finishing CSS styles for the enter animation */
 }
-.fade-in.ng-enter.ng-enter-active {
-  overflow: hidden;
-  max-height: 9999px;
-  transform: translateY(0);
-  opacity: 1;
+.fade-in.ng-hide-add,
+.fade-in.ng-hide-remove {
+  transition: 1s ease-in-out all;
 }

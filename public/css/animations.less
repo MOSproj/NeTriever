@@ -1,4 +1,4 @@
-.slide-in{
+.slide-in-out{
   /* The starting CSS styles for the enter animation */
   &.ng-enter {
     transition: 0.25s ease-in all;
@@ -23,19 +23,19 @@
 }
 
 .fade-in{
-  /* The starting CSS styles for the enter animation */
-  &.ng-enter {
+  overflow: hidden;
+  max-height: 9999999px;
+  transform: translateY(0);
+  opacity: 1;
+
+  &.ng-hide {
     opacity: 0;
     max-height: 0;
     transform: translateY(-20px);
-    transition: 0.5s ease-in-out all;
+  }
 
-    /* The finishing CSS styles for the enter animation */
-    &.ng-enter-active {
-      overflow: hidden;
-      max-height: 9999px;
-      transform: translateY(0);
-      opacity: 1;
-    }
+  &.ng-hide-add,
+  &.ng-hide-remove {
+    transition: 1s ease-in-out all;
   }
 }
