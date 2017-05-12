@@ -23,15 +23,13 @@
 }
 
 .fade-in{
-  overflow: hidden;
-  max-height: 9999999px;
-  transform: translateY(0);
+  position: relative;
+  top: 0;
   opacity: 1;
 
   &.ng-hide {
+    top: -50px;
     opacity: 0;
-    max-height: 0;
-    transform: translateY(-20px);
   }
 
   &.ng-hide-add,
