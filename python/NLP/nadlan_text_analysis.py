@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from search_data import nadlan_types
 
 data = {
     'כתובת': {
@@ -9,9 +10,12 @@ data = {
         'after': ['מ"ר', 'מר', 'מטרים', 'מטר'],
         'type': 'int'
     },
+    'סוג': {
+        'find': nadlan_types.data
+    },
     'מס חדרים': {
         'after': ['חדרים', 'חד\''],
-        'type': 'int'
+        'type': 'float'
     },
     'מחיר': {
         'before': ['מחיר', 'מבקש'],

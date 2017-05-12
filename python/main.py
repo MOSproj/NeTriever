@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
 from Database import Database
 from InsertPosts import InsertPosts
 from UpdatePosts import UpdatePosts

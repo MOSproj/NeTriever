@@ -31,10 +31,10 @@
                         max: null
                     };
                     if(speckey in reqParams){
-                        if(parseInt(reqParams[speckey].split(",")[0]) >= 0)
-                            self.specRange[speckey]['min'] = parseInt(reqParams[speckey].split(",")[0]);
-                        if(parseInt(reqParams[speckey].split(",")[1]) >= 0)
-                            self.specRange[speckey]['max'] = parseInt(reqParams[speckey].split(",")[1]);
+                        if(parseFloat(reqParams[speckey].split(",")[0]) >= 0)
+                            self.specRange[speckey]['min'] = parseFloat(reqParams[speckey].split(",")[0]);
+                        if(parseFloat(reqParams[speckey].split(",")[1]) >= 0)
+                            self.specRange[speckey]['max'] = parseFloat(reqParams[speckey].split(",")[1]);
                     }
                 }
             });
