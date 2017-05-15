@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from search_data import nadlan_types
+from search_data import cities
 
 data = {
-    'כתובת': {
-        'before': ['ברחוב', 'ליד', 'בשכונת', 'במיקום', 'בשכונת', 'קרוב', 'בשכונה'],
+    'אזור': {
+        'find': cities.data
     },
     'גודל במ"ר': {
         'after': ['מ"ר', 'מר', 'מטרים', 'מטר'],
