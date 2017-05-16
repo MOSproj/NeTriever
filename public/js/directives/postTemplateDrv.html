@@ -40,7 +40,10 @@
                     <p class="phone" ng-if="postObject.hasOwnProperty('phone')"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> {{ postObject.phone | tel }}</p>
                 </div>
             </div>
-            <a ng-href="https://www.facebook.com/{{ postObject.id }}" target="_blank"><button class="btn btn-facebook to-post">למודעה</button></a>
+            <div class="left-buttons">
+                <button class="btn btn-love" ng-click="love({postToLove: postObject})" ng-class="postObject.love? 'btn-love-checked' : 'btn-love'"><span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span></button>
+                <a ng-href="https://www.facebook.com/{{ postObject.id }}" target="_blank"><button class="btn btn-facebook">למודעה</button></a>
+            </div>
         </div>
     </div>
 </div>

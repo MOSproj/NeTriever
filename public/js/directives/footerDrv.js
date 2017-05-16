@@ -8,7 +8,6 @@
                 categories: '='
             },
             link: function () {
-                console.log(angular.element('body')[0]);
                 angular.element('body')[0].style.paddingBottom = angular.element('footer')[0].offsetHeight + 30 + 'px';
             }
         };

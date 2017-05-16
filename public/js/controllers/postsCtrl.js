@@ -1,9 +1,10 @@
 (function(){
     "use strict";
 
-    angular.module('myApp').controller('postsCtrl', ["$scope", "$routeParams", "$location", "$log", "postsSrv", postsCtrl]);
+    angular.module('myApp').controller('postsCtrl', ["$scope", "$routeParams", "$location", "$log", "postsSrv",
+        "cookiesSrv", postsCtrl]);
 
-    function postsCtrl ($scope, $routeParams, $location, $log, postsSrv) {
+    function postsCtrl ($scope, $routeParams, $location, $log, postsSrv, cookiesSrv) {
         var self = this;
         self.postsPerPage = 50;
         var reqParams = $location.search();
@@ -12,7 +13,22 @@
         postsSrv.getPosts(self.categoryId, reqParams).then(function (response) {
             $log.debug(response.data);
             self.posts = response.data;
+
+            self.cookieObj = cookiesSrv.getLovedPosts();
+            angular.forEach(self.posts, (function (post) {
+                post['love'] = self.cookieObj.hasOwnProperty(post.id);
+            }));
         });
+
+        self.love = function(postToLove) {
+            postToLove.love = !postToLove.love;
+            if(postToLove.love){
+                cookiesSrv.addLovedPost(postToLove.id);
+            }
+            else {
+                cookiesSrv.removeLovedPost(postToLove.id)
+            }
+        };
 
         self.pagination = {
             backButtonDisabled: function () {

@@ -27,7 +27,7 @@
     <loading style="z-index: -1; position: absolute;" ng-show="posts.posts === undefined"></loading>
 
     <div class="container fade-in" ng-show="posts.posts !== undefined">
-        <post-template ng-repeat="post in posts.posts" post-object="post"></post-template>
+        <post-template ng-repeat="post in posts.posts" post-object="post" love="posts.love(postToLove)"></post-template>
     </div>
 
     <div class="container pagination-div fade-in" ng-show="posts.posts !== undefined">

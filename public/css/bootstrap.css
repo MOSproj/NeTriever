@@ -3441,6 +3441,120 @@ fieldset[disabled] .btn-facebook.focus {
   color: #4267b2;
   background-color: #fff;
 }
+.btn-love {
+  color: #f20000;
+  background-color: #fff;
+  border-color: #dc0000;
+}
+.btn-love:focus,
+.btn-love.focus {
+  color: #f20000;
+  background-color: #e6e6e6;
+  border-color: #5d0000;
+}
+.btn-love:hover {
+  color: #f20000;
+  background-color: #e6e6e6;
+  border-color: #9f0000;
+}
+.btn-love:active,
+.btn-love.active,
+.open > .dropdown-toggle.btn-love {
+  color: #f20000;
+  background-color: #e6e6e6;
+  border-color: #9f0000;
+}
+.btn-love:active:hover,
+.btn-love.active:hover,
+.open > .dropdown-toggle.btn-love:hover,
+.btn-love:active:focus,
+.btn-love.active:focus,
+.open > .dropdown-toggle.btn-love:focus,
+.btn-love:active.focus,
+.btn-love.active.focus,
+.open > .dropdown-toggle.btn-love.focus {
+  color: #f20000;
+  background-color: #d4d4d4;
+  border-color: #5d0000;
+}
+.btn-love:active,
+.btn-love.active,
+.open > .dropdown-toggle.btn-love {
+  background-image: none;
+}
+.btn-love.disabled:hover,
+.btn-love[disabled]:hover,
+fieldset[disabled] .btn-love:hover,
+.btn-love.disabled:focus,
+.btn-love[disabled]:focus,
+fieldset[disabled] .btn-love:focus,
+.btn-love.disabled.focus,
+.btn-love[disabled].focus,
+fieldset[disabled] .btn-love.focus {
+  background-color: #fff;
+  border-color: #dc0000;
+}
+.btn-love .badge {
+  color: #fff;
+  background-color: #f20000;
+}
+.btn-love-checked {
+  color: #fff;
+  background-color: #f20000;
+  border-color: #dc0000;
+}
+.btn-love-checked:focus,
+.btn-love-checked.focus {
+  color: #fff;
+  background-color: #bf0000;
+  border-color: #5d0000;
+}
+.btn-love-checked:hover {
+  color: #fff;
+  background-color: #bf0000;
+  border-color: #9f0000;
+}
+.btn-love-checked:active,
+.btn-love-checked.active,
+.open > .dropdown-toggle.btn-love-checked {
+  color: #fff;
+  background-color: #bf0000;
+  border-color: #9f0000;
+}
+.btn-love-checked:active:hover,
+.btn-love-checked.active:hover,
+.open > .dropdown-toggle.btn-love-checked:hover,
+.btn-love-checked:active:focus,
+.btn-love-checked.active:focus,
+.open > .dropdown-toggle.btn-love-checked:focus,
+.btn-love-checked:active.focus,
+.btn-love-checked.active.focus,
+.open > .dropdown-toggle.btn-love-checked.focus {
+  color: #fff;
+  background-color: #9b0000;
+  border-color: #5d0000;
+}
+.btn-love-checked:active,
+.btn-love-checked.active,
+.open > .dropdown-toggle.btn-love-checked {
+  background-image: none;
+}
+.btn-love-checked.disabled:hover,
+.btn-love-checked[disabled]:hover,
+fieldset[disabled] .btn-love-checked:hover,
+.btn-love-checked.disabled:focus,
+.btn-love-checked[disabled]:focus,
+fieldset[disabled] .btn-love-checked:focus,
+.btn-love-checked.disabled.focus,
+.btn-love-checked[disabled].focus,
+fieldset[disabled] .btn-love-checked.focus {
+  background-color: #f20000;
+  border-color: #dc0000;
+}
+.btn-love-checked .badge {
+  color: #f20000;
+  background-color: #fff;
+}
 .btn-link {
   color: #337ab7;
   font-weight: normal;
@@ -6892,7 +7006,7 @@ h3 {
   width: 100%;
   height: 100%;
 }
-.post button.to-post {
+.post .left-buttons {
   position: absolute;
   bottom: 0;
   left: 15px;

@@ -5,7 +5,8 @@
             templateUrl:'/js/directives/postTemplateDrv.html',
             replace: true,
             scope: {
-                postObject: '='
+                postObject: '=',
+                love: '&'
             }
         };
     }]);

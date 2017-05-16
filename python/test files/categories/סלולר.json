@@ -1,0 +1,47 @@
+{
+  "_id" : ObjectId("58cf9b7fb90cfc2174b2838c"),
+  "id" : 2,
+  "name" : "סלולר",
+  "specs" : {
+    "חברה" : [
+      "iPhone",
+      "Asus",
+      "Gini",
+      "Blackberry",
+      "Doogee",
+      "Google",
+      "Gsmart",
+      "HTC",
+      "Huawei",
+      "Lenovo",
+      "LG",
+      "Meizu",
+      "Motorola",
+      "Nokia",
+      "OnePlus",
+      "Samsung",
+      "TELIT",
+      "Ulefone",
+      "Sony",
+      "Xiaomi",
+      "ViewSonic",
+      "ZTE"
+    ],
+    "זיכרון" : [
+      "8",
+      "32",
+      "64",
+      "128",
+      "256"
+    ],
+    "צבע" : [
+      "שחור",
+      "זהב",
+      "כסף",
+      "לבן",
+      "ורוד",
+      "כחול"
+    ],
+    "מחיר" : "range"
+  }
+}
