@@ -115,7 +115,9 @@ router.get('/category/:categoryId', function (req, res) {
     console.log('/category/' + categoryId);
 
     db.categories.findOne({'id': categoryId}, function (err, docs) {
-        docs['specs']['מיקום'] = cities;
+        docs['specs'] = Object.assign({
+            'מיקום': cities
+        }, docs['specs']);
         res.json(docs);
     });
 });

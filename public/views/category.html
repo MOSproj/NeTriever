@@ -7,10 +7,12 @@
     <div class="container fade-in" ng-show="posts.posts !== undefined">
         <div class="white-container" id="search" ng-controller="searchCtrl as search">
             <div class="row">
-                <div class="col-sm-3" ng-repeat="(key, val) in search.specselect">
+                <div class="col-sm-3" ng-repeat="(key, val) in search.specselect"
+                     style="min-height: 71px; margin-bottom: 10px">
                     <spec-select spec-key="key" spec-val="val" settings="search.specselectSettings"></spec-select>
                 </div>
-                <div class="col-sm-3" ng-repeat="(key, val) in search.specRange">
+                <div class="col-sm-3" ng-repeat="(key, val) in search.specRange"
+                     style="min-height: 71px; margin-bottom: 10px">
                     <spec-range spec-key="key" spec-min="val['min']" spec-max="val['max']"></spec-range>
                 </div>
             </div>
