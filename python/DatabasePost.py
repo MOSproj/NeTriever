@@ -80,6 +80,9 @@ class DatabasePost:
     def is_ignored(self):
         return self.post['ignore']
 
+    def has_location(self):
+        'location' in self.post
+
     def set_phone(self, number):
         self.post['phone'] = number
 
