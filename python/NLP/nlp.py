@@ -28,6 +28,10 @@ def analyse_database_post(database_post, category_name):
         if 'מיקום' in specs and not database_post.has_location():
             database_post.set_location(specs['מיקום'])
             del specs['מיקום']
+        if 'ק"מ' in specs:
+            km = specs['ק"מ']
+            if len(str(km)) <= 3:
+                specs['ק"מ'] = km*1000
         if len(specs) >= min_specs:
             database_post.set_specs(specs)
         else:

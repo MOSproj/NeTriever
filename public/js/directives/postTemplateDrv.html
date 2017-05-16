@@ -8,7 +8,7 @@
             <table class="table borderless">
                 <tr ng-repeat="(key, data) in postObject.specs">
                     <td class="col-xs-4">{{ key }}</td>
-                    <td class="col-xs-8">{{ data }}</td>
+                    <td class="col-xs-8">{{ data | isNumber}}</td>
                 </tr>
             </table>
             <p>
