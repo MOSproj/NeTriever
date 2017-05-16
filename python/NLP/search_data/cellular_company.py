@@ -5,7 +5,6 @@
 data = {
     'iPhone': ['iPhone', 'אייפון', 'איפון'],
     'Asus': ['אסוס', 'Asus'],
-    'Doogee': ['Doogee'],
     'Gini': ['Gini'],
     'Blackberry': ['Blackberry', 'בלקבארי'],
     'Doogee': ['Doogee'],

@@ -86,6 +86,9 @@ class DatabasePost:
     def set_price(self, price):
         self.post['price'] = price
 
+    def set_location(self, location):
+        self.post['location'] = location
+
     def set_ignore(self):
         self.post = DatabasePost.create_ignored_json(self.post['id'])
 

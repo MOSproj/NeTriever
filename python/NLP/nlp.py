@@ -25,6 +25,9 @@ def analyse_database_post(database_post, category_name):
         if 'מחיר' in specs:
             database_post.set_price(specs['מחיר'])
             del specs['מחיר']
+        if 'מיקום' in specs and not database_post.has_location():
+            database_post.set_location(specs['מיקום'])
+            del specs['מיקום']
         if len(specs) >= min_specs:
             database_post.set_specs(specs)
         else:

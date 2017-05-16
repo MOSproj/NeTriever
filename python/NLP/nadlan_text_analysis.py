@@ -4,7 +4,7 @@ from search_data import nadlan_types
 from search_data import cities
 
 data = {
-    'אזור': {
+    'מיקום': {
         'find': cities.data
     },
     'גודל במ"ר': {
