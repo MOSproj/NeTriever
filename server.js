@@ -32,3 +32,4 @@ app.use(function(req, res) { //put this at end
 });
 
 app.listen(3000);
+console.log('Up: http://localhost:3000');

@@ -17,7 +17,7 @@
             addLovedPost: function(postId){
                 var cookieObj = $cookies.getObject('lovedPosts');
                 if(!cookieObj.hasOwnProperty(postId)) {
-                    cookieObj[postId] = "love";
+                    cookieObj[postId] = postId;
                     $cookies.putObject('lovedPosts', cookieObj);
                 }
                 return cookieObj;

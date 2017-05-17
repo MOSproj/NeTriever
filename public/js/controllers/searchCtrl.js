@@ -9,8 +9,8 @@
         self.categoryId = $routeParams['categoryId'];
 
         categoriesSrv.getCategory(self.categoryId).then(function (response) {
-            $log.debug(response.data);
-            $log.debug(reqParams);
+            console.log(response.data);
+            console.log(reqParams);
 
             self.category = response.data;
 

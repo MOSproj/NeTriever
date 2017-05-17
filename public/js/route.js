@@ -14,9 +14,9 @@
                 templateUrl : "/views/category.html"
             })
             .when("/מועדפים", {
-                controller: 'likesCtrl',
-                controllerAs:"likes",
-                templateUrl : "/views/likes.html"
+                controller: 'lovesCtrl',
+                controllerAs:"loves",
+                templateUrl : "/views/loves.html"
             })
             .when("/404", {
                 templateUrl : "/views/404.html"

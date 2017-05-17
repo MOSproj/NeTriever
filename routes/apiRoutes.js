@@ -141,7 +141,9 @@ router.get('/posts/:categoryId', function (req, res) {
 });
 
 router.get('/postsids/:postsIds', function (req, res) {
-    const postsIds = parseInt(req.params['postsIds']);
+    const postsIds = req.params['postsIds'].split(',').map(function(item) {
+        return parseInt(item, 10);
+    });
     console.log("/postsids/" + postsIds);
 
     db.posts.find({'id': {'$in': [].concat(postsIds)}}, function (err, docs) {

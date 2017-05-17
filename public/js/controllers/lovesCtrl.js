@@ -1,14 +1,15 @@
 (function(){
     "use strict";
 
-    angular.module('myApp').controller('likesCtrl', ["$scope", "$routeParams", "$location", "$log", "postsSrv",
-        "cookiesSrv", likesCtrl]);
+    angular.module('myApp').controller('lovesCtrl', ["$scope", "$routeParams", "$location", "$log", "postsSrv",
+        "cookiesSrv", lovesCtrl]);
 
-    function likesCtrl ($scope, $routeParams, $location, $log, postsSrv, cookiesSrv) {
+    function lovesCtrl ($scope, $routeParams, $location, $log, postsSrv, cookiesSrv) {
         var self = this;
         var reqParams = $location.search();
 
         self.cookieObj = cookiesSrv.getLovedPosts();
+        console.log(self.cookieObj);
         self.lovePostsIds = [];
         angular.forEach(self.cookieObj, function (key, val) {
             self.lovePostsIds.push(key);
