@@ -140,6 +140,15 @@ router.get('/posts/:categoryId', function (req, res) {
     });
 });
 
+router.get('/postsids/:postsIds', function (req, res) {
+    const postsIds = parseInt(req.params['postsIds']);
+    console.log("/postsids/" + postsIds);
+
+    db.posts.find({'id': {'$in': [].concat(postsIds)}}, function (err, docs) {
+        res.json(docs);
+    });
+});
+
 module.exports = router;
 
 var cities = [

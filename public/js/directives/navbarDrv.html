@@ -25,6 +25,8 @@
                         ng-repeat="category in categories.categoriesNames"><a ng-href="/category/{{ category.id }}">
                         {{ category.name }}
                     </a></li>
+                    <li ng-class="{ active: categories.isActive('/מועדפים')}" class="hidden-xs">
+                        <a href="/מועדפים">מועדפים</a></li>
                 </ul>
 
             </div>

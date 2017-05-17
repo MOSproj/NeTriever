@@ -13,6 +13,11 @@
                 controllerAs:"posts",
                 templateUrl : "/views/category.html"
             })
+            .when("/מועדפים", {
+                controller: 'likesCtrl',
+                controllerAs:"likes",
+                templateUrl : "/views/likes.html"
+            })
             .when("/404", {
                 templateUrl : "/views/404.html"
             })

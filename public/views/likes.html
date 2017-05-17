@@ -1,0 +1,7 @@
+<div class="main">
+        <loading style="z-index: -1; position: absolute;" ng-show="likes.posts === undefined"></loading>
+
+        <div class="container fade-in" ng-show="likes.posts !== undefined">
+            <post-template ng-repeat="post in likes.posts" post-object="post" love="likes.love(postToLove)"></post-template>
+        </div>
+</div>

@@ -10,11 +10,11 @@
         var reqParams = $location.search();
         self.categoryId = $routeParams['categoryId'];
 
-        postsSrv.getPosts(self.categoryId, reqParams).then(function (response) {
-            $log.debug(response.data);
+        self.cookieObj = cookiesSrv.getLovedPosts();
+        postsSrv.getPostsByCategory(self.categoryId, reqParams).then(function (response) {
+            console.log(response.data);
             self.posts = response.data;
 
-            self.cookieObj = cookiesSrv.getLovedPosts();
             angular.forEach(self.posts, (function (post) {
                 post['love'] = self.cookieObj.hasOwnProperty(post.id);
             }));
