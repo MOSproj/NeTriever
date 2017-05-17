@@ -22,6 +22,8 @@ db.on('connect', function () {
 
 var getGroupsByCategoryId = function (categoryId, res) {
     db.groups.find({'category_id': categoryId}, function (err, docs) {
+        if(docs === undefined || docs === null)
+            return;
         res(docs);
     });
 };
@@ -36,6 +38,8 @@ var getCategories = function (res) {
 var getCategoriesName =  function (res) {
     db.categories.find({}, {'name':1, 'id':1})
         .sort({'id': 1}, function (err, docs) {
+            if(docs === undefined || docs === null)
+                return;
             res(docs);
         });
 };
@@ -56,6 +60,8 @@ var getPosts = function (groups, queryData, pageNum, res) {
         .sort({'updated_time': -1})
         .skip(postsPerPage*(pageNum-1))
         .limit(postsPerPage, function (err, docs) {
+            if(docs === undefined || docs === null)
+                return;
             console.log('request took ' + (new Date() - then) + 'ms to answer on '
                 + (new Date).toISOString());
             res(docs);
@@ -115,6 +121,8 @@ router.get('/category/:categoryId', function (req, res) {
     console.log('/category/' + categoryId);
 
     db.categories.findOne({'id': categoryId}, function (err, docs) {
+        if(docs === undefined || docs === null)
+            return;
         docs['specs'] = Object.assign({
             'מיקום': cities
         }, docs['specs']);
@@ -147,6 +155,8 @@ router.get('/postsids/:postsIds', function (req, res) {
     console.log("/postsids/" + postsIds);
 
     db.posts.find({'id': {'$in': [].concat(postsIds)}}, function (err, docs) {
+        if(docs === undefined || docs === null)
+            return;
         res.json(docs);
     });
 });
