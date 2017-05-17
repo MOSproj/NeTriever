@@ -9,4 +9,4 @@ run ` npm install ` to install node requirements.
 
 ###  Run server ###
 
-run ` node server.js ` to run the site on port 3000.
+run ` node server.js node server.js ` to run the site on port 3000.
