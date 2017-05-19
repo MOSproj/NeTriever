@@ -13,26 +13,16 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li ng-class="{ active: categories.isActive('/')}" class="hidden-xs"><a href="/">בית</a></li>
-                    <li ng-class="{ active: categories.isActive('/')}" class="visible-xs"
-                        data-toggle="collapse" data-target=".navbar-collapse"><a href="/">בית</a></li>
-                    <li ng-class="{ active: categories.isActive('/category/{{ category.id }}')}" class="hidden-xs"
-                        ng-repeat="category in categories.categoriesNames"><a ng-href="/category/{{ category.id }}">
-                        {{ category.name }}
-                    </a></li>
+                    <li ng-class="{ active: categories.isActive('/')}"><a href="/">בית</a></li>
                     <li ng-class="{ active: categories.isActive('/category/{{ category.id }}')}"
-                        class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse"
                         ng-repeat="category in categories.categoriesNames"><a ng-href="/category/{{ category.id }}">
                         {{ category.name }}
                     </a></li>
-                    <li ng-class="{ active: categories.isActive('/מועדפים')}" class="hidden-xs">
+                    <li ng-class="{ active: categories.isActive('/מועדפים')}">
                         <a href="/מועדפים">מועדפים</a></li>
-                    <li ng-class="{ active: categories.isActive('/מועדפים')}" class="visible-xs"
-                        data-toggle="collapse" data-target=".navbar-collapse"><a href="/מועדפים">מועדפים</a></li>
                 </ul>
-
             </div>
         </div>
     </nav>
-    <div style="height: 100px"></div>
+    <div class="navbar-space"></div>
 </div>

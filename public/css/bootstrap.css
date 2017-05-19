@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6899,6 +6900,11 @@ html,
 body {
   min-height: 100%;
 }
+nav {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 100;
+}
 nav.navbar {
   border: inherit;
 }
@@ -6925,6 +6931,9 @@ nav .navbar-toggle {
 nav .navbar-options-max {
   display: none;
 }
+.navbar-space {
+  padding: 50px 0;
+}
 .dropdown-menu {
   height: auto !important;
   max-height: 500px !important;
@@ -6939,6 +6948,14 @@ nav .navbar-options-max {
   }
   .navbar-options-max {
     display: inherit;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-fixed-top {
+    position: inherit;
+  }
+  .navbar-space {
+    padding: 0;
   }
 }
 .h1,
@@ -7040,26 +7057,43 @@ h3 {
 }
 footer {
   margin-top: 30px;
-  color: #f0f0f0;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-}
-footer .footer1 {
+  color: #e3e3e3;
   background: #313131;
-  padding: 100px;
+  padding: 20px;
 }
-footer .footer2 {
-  background: #20638f;
+footer ul,
+footer p {
+  margin: 20px 0;
 }
-footer .footer2 p,
-footer .footer2 ul {
-  padding: 10px 0;
-  margin-bottom: 0;
+footer hr {
+  border-color: #e3e3e3;
 }
-footer .footer2 ul {
-  text-align: left;
+footer .footer-social .social-icon {
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  background-color: blue;
+  color: #fff;
+  text-align: center;
+  margin-right: 10px;
+  padding-top: 7px;
+  border-radius: 50%;
+}
+footer .footer-social .linked-in {
+  background-color: #007bb6;
+}
+footer .footer-social .facebook {
+  background-color: #3b5998;
+}
+footer .footer-social .twitter {
+  background-color: #1da1f2;
+}
+footer .footer-social .google {
+  background-color: #f63e28;
 }
 .loading {
   margin: auto;

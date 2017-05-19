@@ -154,7 +154,8 @@ router.get('/postsids/:postsIds', function (req, res) {
     });
     console.log("/postsids/" + postsIds);
 
-    db.posts.find({'id': {'$in': [].concat(postsIds)}}, function (err, docs) {
+    db.posts.find({'id': {'$in': [].concat(postsIds)}, 'ignore': false})
+        .sort({'updated_time': -1}, function (err, docs) {
         if(docs === undefined || docs === null)
             return;
         res.json(docs);

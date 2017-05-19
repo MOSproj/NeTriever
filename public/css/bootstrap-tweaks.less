@@ -6,6 +6,9 @@ html, body{
 }
 
 nav {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 100;
     &.navbar {
         border: inherit;
     }
@@ -35,6 +38,9 @@ nav {
         display: none;
     }
 }
+.navbar-space{
+    padding: 50px 0;
+}
 
 .dropdown-menu{
     height: auto !important;
@@ -51,6 +57,14 @@ nav {
     }
     .navbar-options-max {
         display: inherit;
+    }
+}
+@media (max-width: 767px){
+    .navbar-fixed-top{
+        position: inherit;
+    }
+    .navbar-space{
+        padding: 0;
     }
 }
 
@@ -160,27 +174,50 @@ nav {
     }
 }
 
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
 footer{
     margin-top: 30px;
-    color: @color-3;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
 
-    .footer1 {
-        background: @color-5;
-        padding: 100px;
+    color: @color-4;
+    background: @color-5;
+    padding: 20px;
+
+    ul, p{
+        margin: 20px 0;
     }
 
-    .footer2{
-        background: @navbar-inverse-link-active-bg;
-        p, ul{
-            padding:10px 0;
-            margin-bottom:0;
+    hr{
+        border-color: @color-4;
+    }
+
+    .footer-social{
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            font-size: 15px;
+            background-color: blue;
+            color: #fff;
+            text-align: center;
+            margin-right: 10px;
+            padding-top: 7px;
+            border-radius: 50%;
         }
-        ul{
-            text-align: left;
+        .linked-in{
+            background-color:#007bb6;
+        }
+        .facebook{
+            background-color:#3b5998;
+        }
+        .twitter{
+            background-color:#1da1f2;
+        }
+        .google{
+            background-color:#f63e28;
         }
     }
 }
