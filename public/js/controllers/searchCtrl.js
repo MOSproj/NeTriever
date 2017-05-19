@@ -23,7 +23,7 @@
                         'selected': []
                     };
                     if(speckey in reqParams){
-                        self.specselect[speckey]['selected'] = reqParams[speckey];
+                        self.specselect[speckey]['selected'] = [].concat(reqParams[speckey]);
                     }
                 } else {
                     self.specRange[speckey] = {

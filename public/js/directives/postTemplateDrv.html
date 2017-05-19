@@ -11,25 +11,25 @@
                     <td class="col-xs-8">{{ data | isNumber}}</td>
                 </tr>
             </table>
+            <div class="row user">
+                <div class="col-xs-4 user-img">
+                    <img class="img-circle center-block" ng-src="http://graph.facebook.com/{{ postObject.from.id }}/picture?type=large" />
+                </div>
+                <div class="col-xs-8">
+                    <p class="phone"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        <a ng-href="https://www.facebook.com/{{ postObject.from.id }}" target="_blank"> {{ postObject.from.name }}</a>
+                    </p>
+                    <p class="phone" ng-if="postObject.hasOwnProperty('phone')"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> {{ postObject.phone | tel }}</p>
+                </div>
+            </div>
         </div>
         <div class="col-sm-5 hidden-xs">
             <carousel post-object="postObject"></carousel>
         </div>
     </div>
-    <div class="row user">
-        <div class="col-xs-4 user-img">
-            <img class="img-circle center-block" ng-src="http://graph.facebook.com/{{ postObject.from.id }}/picture?type=large" />
-        </div>
-        <div class="col-xs-8">
-            <p class="phone"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                <a ng-href="https://www.facebook.com/{{ postObject.from.id }}" target="_blank"> {{ postObject.from.name }}</a>
-            </p>
-            <p class="phone" ng-if="postObject.hasOwnProperty('phone')"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> {{ postObject.phone | tel }}</p>
-        </div>
-        <div class="left-buttons">
-            <button class="btn btn-love" ng-click="love({postToLove: postObject})" ng-class="postObject.love? 'btn-love-checked' : 'btn-love'"><span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span></button>
-            <a ng-href="https://www.facebook.com/{{ postObject.id }}" target="_blank"><button class="btn btn-facebook">למודעה</button></a>
-        </div>
+    <div class="left-buttons">
+        <button class="btn btn-love" ng-click="love({postToLove: postObject})" ng-class="postObject.love? 'btn-love-checked' : 'btn-love'"><span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span></button>
+        <a ng-href="https://www.facebook.com/{{ postObject.id }}" target="_blank"><button class="btn btn-facebook">למודעה</button></a>
     </div>
     <p>
         <button type="button" class="btn btn-link" ng-click="showHide = !showHide" ng-show="!showHide">
