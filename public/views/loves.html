@@ -2,6 +2,6 @@
         <loading style="z-index: -1; position: absolute;" ng-show="loves.posts === undefined"></loading>
 
         <div class="container fade-in" ng-show="loves.posts !== undefined">
-            <post-template ng-repeat="post in loves.posts" post-object="post" love="loves.love(postToLove)"></post-template>
+            <post-template ng-repeat="post in loves.posts " post-object="post" love="loves.love(postToLove)"></post-template>
         </div>
 </div>

@@ -7,25 +7,26 @@
         return {
             getLovedPosts: function(){
                 var cookieObj = $cookies.getObject('lovedPosts');
-                if(cookieObj !== undefined)
+                if(cookieObj !== undefined && angular.isArray(cookieObj))
                     return cookieObj;
                 else {
-                    $cookies.putObject('lovedPosts', {});
-                    return $cookies.getObject('lovedPosts');
+                    $cookies.putObject('lovedPosts', []);
+                    return [];
                 }
             },
             addLovedPost: function(postId){
                 var cookieObj = $cookies.getObject('lovedPosts');
-                if(!cookieObj.hasOwnProperty(postId)) {
-                    cookieObj[postId] = postId;
+                if(cookieObj.indexOf(postId) === -1) {
+                    cookieObj.push(postId);
                     $cookies.putObject('lovedPosts', cookieObj);
                 }
                 return cookieObj;
             },
             removeLovedPost: function(postId){
                 var cookieObj = $cookies.getObject('lovedPosts');
-                if(cookieObj.hasOwnProperty(postId)) {
-                    delete cookieObj[postId];
+                var index = cookieObj.indexOf(postId);
+                if(index !== -1) {
+                    cookieObj.splice(index, 1);
                     $cookies.putObject('lovedPosts', cookieObj);
                 }
                 return cookieObj;
