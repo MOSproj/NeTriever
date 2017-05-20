@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from search_data import car_company
+from search_data import car_yad
 
 data = {
     'חברה': {
@@ -14,6 +15,7 @@ data = {
     'יד': {
         'before': ['יד', 'ידיים'],
         'after': ['ידיים'],
+        'find': car_yad.data,
         'type': 'int'
     },
     'מחיר': {
