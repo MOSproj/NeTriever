@@ -7010,13 +7010,6 @@ h3 {
 .post table.borderless tr:first-child td {
   border: none;
 }
-.post blockquote {
-  font-size: inherit;
-  white-space: pre-wrap;
-}
-.post p:last-child {
-  margin-bottom: 0;
-}
 .post .user .user-img {
   height: 55px;
   width: 70px;
@@ -7030,6 +7023,16 @@ h3 {
   position: absolute;
   bottom: 15px;
   left: 15px;
+  z-index: 100 !important;
+}
+.post blockquote {
+  font-size: inherit;
+  white-space: pre-wrap;
+  z-index: 1 !important;
+  margin: 0;
+}
+.post p:last-child {
+  margin-bottom: 0;
 }
 .post .carousel img {
   height: 230px;

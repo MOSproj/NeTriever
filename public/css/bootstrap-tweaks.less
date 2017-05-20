@@ -121,13 +121,6 @@ nav {
             border: none;
         }
     }
-    blockquote{
-        font-size: inherit;
-        white-space: pre-wrap;
-    }
-    p:last-child {
-        margin-bottom: 0;
-    }
     .user{
         .user-img{
             height: 55px;
@@ -138,12 +131,21 @@ nav {
                 height: 100%;
             }
         }
-
     }
     .left-buttons{
         position: absolute;
         bottom: 15px;
         left: 15px;
+        z-index: 100 !important;
+    }
+    blockquote{
+        font-size: inherit;
+        white-space: pre-wrap;
+        z-index: 1 !important;
+        margin: 0;
+    }
+    p:last-child {
+        margin-bottom: 0;
     }
 
     .carousel {
