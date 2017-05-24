@@ -6900,6 +6900,14 @@ html,
 body {
   min-height: 100%;
 }
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
 nav {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -6957,14 +6965,6 @@ nav .navbar-options-max {
   .navbar-space {
     padding: 0;
   }
-}
-.h1,
-.h2,
-.h3,
-h1,
-h2,
-h3 {
-  margin-top: 0;
 }
 .white-container {
   background: #fcfcfc;
@@ -7058,6 +7058,12 @@ h3 {
 .pagination-div a {
   width: 150px;
 }
+.home .section {
+  margin: 10px 0;
+}
+.home .section .page-header {
+  border-color: #313131;
+}
 footer {
   margin-top: 30px;
   position: absolute;
@@ -7066,16 +7072,21 @@ footer {
   right: 0;
   color: #e3e3e3;
   background: #313131;
-  padding: 20px;
+  padding: 30px 0;
 }
-footer ul,
-footer p {
-  margin: 20px 0;
+footer ul a:link,
+footer ul a:visited,
+footer ul a:hover,
+footer ul a a:active {
+  color: #f0f0f0;
 }
-footer hr {
-  border-color: #e3e3e3;
+footer ul.footer-social {
+  list-style-type: none;
 }
-footer .footer-social .social-icon {
+footer ul.footer-social li {
+  margin-bottom: 10px;
+}
+footer ul.footer-social .social-icon {
   width: 30px;
   height: 30px;
   font-size: 15px;
@@ -7086,16 +7097,10 @@ footer .footer-social .social-icon {
   padding-top: 7px;
   border-radius: 50%;
 }
-footer .footer-social .linked-in {
-  background-color: #007bb6;
-}
-footer .footer-social .facebook {
+footer ul.footer-social .facebook {
   background-color: #3b5998;
 }
-footer .footer-social .twitter {
-  background-color: #1da1f2;
-}
-footer .footer-social .google {
+footer ul.footer-social .google {
   background-color: #f63e28;
 }
 .loading {

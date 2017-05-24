@@ -1,45 +1,33 @@
 <footer>
-    <div class="container ">
-        <div class="row">
-            <div class="col-xs-12">
-                <ul class="list-inline text-center">
-                    <li>
-                        בית
-                    </li>
-                    <li ng-repeat="category in categories.categoriesNames">
-                        {{ category.name }}
-                    </li>
-                    <li>
-                        מועדפים
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <ul class="footer-social list-inline text-center">
-                    <li><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <p class="text-center">
-                    טקסט
-                </p>
-            </div>
-        </div>
-        <hr />
-    </div>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                <p class="text-center">
-                    קריידיט
-                </p>
+            <div class="col-sm-4">
+                <p>NeTriever - פלטפורמה לחיפוש מוצרים מיד שניה מתחומים שונים מקבוצות מכירה, השכרה ומסירה שונות בפייסבוק.</p>
+            </div>
+            <div class="col-sm-4">
+                <ul class="">
+                    <li>
+                        <a href="/">בית</a>
+                    </li>
+                    <li ng-repeat="category in categories.categoriesNames">
+                        <a ng-href="/category/{{ category.id }}">
+                            {{ category.name }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/מועדפים">מועדפים</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <ul class="footer-social">
+                    <li><a href="https://www.facebook.com/NeTriever">
+                        <i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i> facebook.com/NeTriever
+                    </a></li>
+                    <li><a href="mailto:netriever@gmail.com">
+                        <i class="fa fa-envelope-o social-icon google" aria-hidden="true"></i> netriever@gmail.com
+                    </a></li>
+                </ul>
             </div>
         </div>
     </div>

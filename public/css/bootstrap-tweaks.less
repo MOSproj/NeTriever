@@ -4,6 +4,10 @@ html{
 html, body{
     min-height: 100%;
 }
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0;
+    //margin-bottom: 0;
+}
 
 nav {
     -webkit-backface-visibility: hidden;
@@ -66,11 +70,6 @@ nav {
     .navbar-space{
         padding: 0;
     }
-}
-
-.h1, .h2, .h3, h1, h2, h3 {
-    margin-top: 0;
-    //margin-bottom: 0;
 }
 
 .white-container{
@@ -177,6 +176,19 @@ nav {
     }
 }
 
+.home{
+    .section{
+        margin: 10px 0;
+
+        .page-header{
+            border-color: @color-5;
+        }
+        .text{
+            //white-space: pre-wrap;
+        }
+    }
+}
+
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 footer{
@@ -188,17 +200,18 @@ footer{
 
     color: @color-4;
     background: @color-5;
-    padding: 20px;
+    padding: 30px 0;
 
-    ul, p{
-        margin: 20px 0;
+    ul a{
+        &:link, &:visited, &:hover, a:active{
+            color: @color-3;
+        }
     }
-
-    hr{
-        border-color: @color-4;
-    }
-
-    .footer-social{
+    ul.footer-social {
+        list-style-type: none;
+        li{
+            margin-bottom: 10px;
+        }
         .social-icon {
             width: 30px;
             height: 30px;
@@ -210,17 +223,11 @@ footer{
             padding-top: 7px;
             border-radius: 50%;
         }
-        .linked-in{
-            background-color:#007bb6;
+        .facebook {
+            background-color: #3b5998;
         }
-        .facebook{
-            background-color:#3b5998;
-        }
-        .twitter{
-            background-color:#1da1f2;
-        }
-        .google{
-            background-color:#f63e28;
+        .google {
+            background-color: #f63e28;
         }
     }
 }

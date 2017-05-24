@@ -32,5 +32,5 @@ app.use(function(req, res) { //put this at end
     res.redirect('/404');
 });
 
-app.listen(3000);
-console.log('Up: http://localhost:3000');
+app.listen(80);
+console.log('Up: http://localhost:80');
