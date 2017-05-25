@@ -7078,10 +7078,12 @@ footer ul a:link,
 footer ul a:visited,
 footer ul a:hover,
 footer ul a a:active {
-  color: #f0f0f0;
+  color: #e3e3e3;
 }
 footer ul.footer-social {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 footer ul.footer-social li {
   margin-bottom: 10px;

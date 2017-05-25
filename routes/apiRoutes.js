@@ -87,7 +87,10 @@ var createMongoDbReq = function (queryData) {
 
     Object.keys(queryData).forEach(function(key) {
         var toInsert = {};
-        if (queryData[key].includes(',')){
+        if(Array.isArray(queryData[key])){
+            toInsert['specs.' + key] = {'$in': [].concat(queryData[key])};
+        }
+        else if (queryData[key].includes(',')){
             toInsert['specs.' + key] = {};
             if (parseFloat(queryData[key].split(",")[0]) >= 0)
                 toInsert['specs.' + key]['$gt'] = parseFloat(queryData[key].split(",")[0]) - 0.1;
