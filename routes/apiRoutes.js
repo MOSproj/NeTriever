@@ -56,10 +56,20 @@ var getPosts = function (groups, queryData, pageNum, res) {
     mongoDbReq.push({'group_id': {'$in': groupsIds}});
     console.log(JSON.stringify({'$and': mongoDbReq}));
 
-    db.posts.find({'$and': mongoDbReq})
-        .sort({'updated_time': -1})
-        .skip(postsPerPage*(pageNum-1))
-        .limit(postsPerPage, function (err, docs) {
+    db.posts.aggregate([
+        {
+            $match: {'$and': mongoDbReq}
+        },
+        {
+            $sort: {'updated_time': -1}
+        },
+        {
+            $skip: postsPerPage*(pageNum-1)
+        },
+        {
+            $limit: postsPerPage
+        }
+    ], function (err, docs) {
             if(docs === undefined || docs === null)
                 return;
             console.log('request took ' + (new Date() - then) + 'ms to answer on '
