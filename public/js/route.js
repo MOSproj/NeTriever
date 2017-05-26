@@ -6,6 +6,8 @@
     function routing($routeProvider, $locationProvider) {
         $routeProvider
             .when("/", {
+                controller: 'homeCtrl',
+                controllerAs:"home",
                 templateUrl : "/views/home.html"
             })
             .when("/category/:categoryId", {

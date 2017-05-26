@@ -6939,9 +6939,6 @@ nav .navbar-toggle {
 nav .navbar-options-max {
   display: none;
 }
-.navbar-space {
-  padding: 50px 0;
-}
 .dropdown-menu {
   height: auto !important;
   max-height: 500px !important;
@@ -6965,6 +6962,10 @@ nav .navbar-options-max {
   .navbar-space {
     padding: 0;
   }
+}
+.navbar-placeholder {
+  height: 80px;
+  margin-bottom: 20px;
 }
 .white-container {
   background: #fcfcfc;
@@ -7059,13 +7060,13 @@ nav .navbar-options-max {
   width: 150px;
 }
 .home .section {
-  margin: 10px 0;
+  margin: 16px 0;
 }
 .home .section .page-header {
   border-color: #313131;
 }
 footer {
-  margin-top: 30px;
+  margin-top: 20px;
   position: absolute;
   bottom: 0;
   left: 0;
