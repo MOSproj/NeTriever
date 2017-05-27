@@ -29,15 +29,15 @@
             </p>
             <div class="row">
                 <repeat ng-repeat="dev in home.devs">
-                    <div class="col-sm-1 col-xs-2"></div>
-                    <div class="col-sm-2 col-xs-8 text-center">
+                    <div class="col-sm-1 hidden-xs-down"></div>
+                    <div class="col-sm-2 col-sm-offset-0 col-xs-8 col-xs-offset-2 text-center">
                         <img class="img-circle img-responsive center-block" ng-src="/img/{{ dev.img }}">
                         <p class="h4">{{ dev.name }}</p>
                         <p><a href="https://www.linkedin.com/in/{{ dev.linkedin }}">LinkedIn</a> |
                             <a href="https://www.facebook.com/{{ dev.facebook }}">Facebook</a>
                         </p>
                     </div>
-                    <div class="col-sm-1 col-xs-2"></div>
+                    <div class="col-sm-1 hidden-xs-down"></div>
                 </repeat>
             </div>
         </div>

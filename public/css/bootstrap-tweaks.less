@@ -60,24 +60,25 @@ nav {
         display: inherit;
     }
 }
-@media (max-width: 767px){
-    .navbar-fixed-top{
-        position: inherit;
-    }
-    .navbar-space{
-        padding: 0;
-    }
-}
 
 .navbar-placeholder{
     height: 80px;
     margin-bottom: 20px;
 }
 
+@media (max-width: 767px){
+    .navbar-fixed-top{
+        position: inherit;
+    }
+    .navbar-placeholder{
+        height: 0;
+        margin-bottom: 0;
+    }
+}
+
 .white-container{
     background: @color-2;
     padding: @padding-base-horizontal @modal-inner-padding;
-    padding-top: @padding-base-horizontal;
     margin-bottom: @line-height-computed;
 }
 

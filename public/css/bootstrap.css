@@ -6955,22 +6955,22 @@ nav .navbar-options-max {
     display: inherit;
   }
 }
-@media (max-width: 767px) {
-  .navbar-fixed-top {
-    position: inherit;
-  }
-  .navbar-space {
-    padding: 0;
-  }
-}
 .navbar-placeholder {
   height: 80px;
   margin-bottom: 20px;
 }
+@media (max-width: 767px) {
+  .navbar-fixed-top {
+    position: inherit;
+  }
+  .navbar-placeholder {
+    height: 0;
+    margin-bottom: 0;
+  }
+}
 .white-container {
   background: #fcfcfc;
   padding: 12px 15px;
-  padding-top: 12px;
   margin-bottom: 22px;
 }
 #search .row {
