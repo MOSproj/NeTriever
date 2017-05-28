@@ -39,7 +39,7 @@
             },
             back: function () {
                 if (!self.pagination.backButtonDisabled()) {
-                    reqParams['page'] = reqParams['page'] - 1;
+                    reqParams['page'] = parseInt(reqParams['page']) - 1;
                     $location.path($location.path()).search(reqParams);
                 }
             },
@@ -47,7 +47,7 @@
                 if (!self.pagination.forwardButtonDisabled()) {
                     if (!reqParams.hasOwnProperty('page'))
                         reqParams['page'] = 1;
-                    reqParams['page'] = reqParams['page'] + 1;
+                    reqParams['page'] = parseInt(reqParams['page']) + 1;
                     $location.path($location.path()).search(reqParams);
                 }
             }

@@ -1,0 +1,63 @@
+<div class="main about">
+    <div class="container">
+        <div class="section white-container">
+            <p class="h3">
+                מאיפה הסיפור שלנו מתחיל?
+            </p>
+            <p class="text">
+                למי מאתנו לא יצא לחפש מוצר כלשהו בקבוצות בפייסבוק?
+                <br />
+                אם זה הסטודנטים בבאר שבע שמחפשים דירות, או כאלה שמחפשים רכבים, או סתם מישהו שהטלפון שלו החליט לבגוד בו וזה לא זמן להוציא אלפי שקלים על מכשיר חדש.
+            </p>
+            <p class="text">
+                בקיץ  2016 הרנו מגאן של אחת ממפתחות המערכת החליטה שלא בא לה יותר לנסוע, מכאן מתחיל החיפוש בכל מקום אפשרי אחר הרכב שיתאים לכל הדרישות.
+                <br />
+                זו הייתה נקודה בזמן שהבנו כי מערכת כמו NeTriever תוכל לעזור לכל כך הרבה אנשים.
+                <br />
+                החלטנו לנצל את כוחו המסחרי של הפייסבוק ולהביא לכם את NeTriever - פלטפורמה לחיפוש מוצרים מיד שניה מתחומים שונים שמאפשרת חיפוש של מגוון מוצרים עם אפשרות סינון לפי העדפות ספציפיות מקבוצות מכירה, השכרה ומסירה שונות במגוון תחומים בפייסבוק.
+            </p>
+            <p class="text">
+                האתר הינו רספונסיבי וניתן לשימוש מכל מכשיר.
+            </p>
+        </div>
+        <div class="section white-container">
+            <p class="h3">
+                קצת על המפתחים
+            </p>
+            <p class="text">
+                אוהד כהן, מירית לסרי וסיוון כהן, שלושתנו סטודנטים בשנה האחרונה לתואר ראשון במדעי המחשב במכללת ספיר שבדרום.
+            </p>
+            <div class="row">
+                <repeat ng-repeat="dev in about.devs">
+                    <div class="col-sm-1 hidden-xs-down"></div>
+                    <div class="col-sm-2 col-sm-offset-0 col-xs-8 col-xs-offset-2 text-center">
+                        <img class="img-circle img-responsive center-block" ng-src="/img/{{ dev.img }}">
+                        <p class="h4">{{ dev.name }}</p>
+                        <p><a href="https://www.linkedin.com/in/{{ dev.linkedin }}">LinkedIn</a> |
+                            <a href="https://www.facebook.com/{{ dev.facebook }}">Facebook</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-1 hidden-xs-down"></div>
+                </repeat>
+            </div>
+        </div>
+        <div class="section white-container">
+            <p class="h3">
+                תודות
+            </p>
+            <p class="text">
+                מתן שאטי – על הזמינות לשאלות שלנו
+                <br />
+                לירון אברהם – על מציאת שם למערכת
+                <br />
+                לידן חיפי – על הזמינות, התיעצות והצעת הרעיון
+                <br />
+                סהר חשאי
+                (<a href="http://www.homie.co.il/">Homie</a>)
+                – על העזרה עם הצעד הראשון בדרך לבניית אלגוריתם ניתוח הטקסט
+                <br />
+                עמי האופטמן - על ההנחייה לאורך הפרויקט
+            </p>
+        </div>
+    </div>
+</div>

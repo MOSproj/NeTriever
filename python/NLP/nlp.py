@@ -35,7 +35,7 @@ def analyse_database_post(database_post, category_name):
             database_post.set_location(specs['מיקום'])
             del specs['מיקום']
 
-        fix_functions[category_name](specs)
+        specs = fix_functions[category_name](specs)
 
         if len(specs) >= min_specs:
             database_post.set_specs(specs)

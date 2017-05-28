@@ -34,13 +34,13 @@ data = {
     },
     'טלפון': {
         'before': ['פרטים', 'לפרטים', 'בטלפון', 'נייד', 'נוספים', 'פלאפון', 'בנייד'],
-        'value_check': [r'\d{3}-?\d{3}-?\d{4}'],
-        'regex': [r'\d{3}-?\d{3}-?\d{4}'],
+        'value_check': [r'05\d-?\d-?\d-?\d-?\d-?\d-?\d-?\d'],
+        'regex': [r'05\d-?\d-?\d-?\d-?\d-?\d-?\d-?\d'],
         'type': 'digits'
     }
 }
 
 
 def fix(specs):
-    pass
+    return specs
 
