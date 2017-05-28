@@ -1,9 +1,9 @@
 (function(){
     "use strict";
 
-    angular.module('myApp').controller('homeCtrl', ["$scope", homeCtrl]);
+    angular.module('myApp').controller('aboutCtrl', ["$scope", aboutCtrl]);
 
-    function homeCtrl ($scope) {
+    function aboutCtrl ($scope) {
         var self = this;
 
         self.devs = [

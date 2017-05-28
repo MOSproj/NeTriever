@@ -20,6 +20,11 @@
                 controllerAs:"loves",
                 templateUrl : "/views/loves.html"
             })
+            .when("/עלינו", {
+                controller: 'aboutCtrl',
+                controllerAs:"about",
+                templateUrl : "/views/about.html"
+            })
             .when("/404", {
                 templateUrl : "/views/404.html"
             })

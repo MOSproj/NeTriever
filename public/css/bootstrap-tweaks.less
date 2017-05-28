@@ -179,19 +179,6 @@ nav {
     }
 }
 
-.home{
-    .section{
-        margin: 16px 0;
-
-        .page-header{
-            border-color: @color-5;
-        }
-        .text{
-            //white-space: pre-wrap;
-        }
-    }
-}
-
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 footer{
@@ -235,52 +222,5 @@ footer{
         .google {
             background-color: #f63e28;
         }
-    }
-}
-
-.loading {
-    margin: auto;
-    text-align: center;
-    width: 100%;
-    height: 100px;
-
-    span {
-        -webkit-animation: loading 1s infinite alternate;
-        background: #333;
-        border-radius: 10px;
-        display: inline-block;
-        height: 10px;
-        margin: 60px auto;
-        width: 10px;
-
-        &:nth-of-type(2) {
-            -webkit-animation-delay: 0.2s;
-            background: #444;
-        }
-        &:nth-of-type(3) {
-            -webkit-animation-delay: 0.4s;
-            background: #555;
-        }
-        &:nth-of-type(4) {
-            -webkit-animation-delay: 0.6s;
-            background: #666;
-        }
-        &:nth-of-type(5) {
-            -webkit-animation-delay: 0.8s;
-            background: #777;
-        }
-    }
-}
-
-@-webkit-keyframes loading {
-    0% {
-        -webkit-transform: translatey(0);
-        height: 10px;
-        width: 10px;
-    }
-    100% {
-        -webkit-transform: translatey(-40px);
-        height: 20px;
-        width: 20px;
     }
 }
