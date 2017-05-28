@@ -9,7 +9,7 @@ data = {
     },
     'שנה': {
         'before': ['עלה לכביש', 'שנת', 'מודל', 'שנה:', 'מודל:'],
-        'regex': [r'19[7-9]\d', r'20[0-1]\d'],
+        'regex': [r'\D19[7-9]\d\D', r'\D20[0-1]\d\D'],
         'type': 'int'
     },
     'יד': {
@@ -40,5 +40,18 @@ data = {
         'regex': [r'\d{3}-?\d{3}-?\d{4}'],
         'type': 'digits'
     }
-
 }
+
+
+def fix(specs):
+    if 'ק"מ' in specs:
+        km = specs['ק"מ']
+        if km < 1000:
+            specs['ק"מ'] = km*1000
+    if 'נפח מנוע' in specs:
+        ec = specs['נפח מנוע']
+        if ec < 1000:
+            specs['נפח מנוע'] = ec*1000
+        if ec == 2000:
+            if 'שנה' in specs and specs['שנה'] == 2000:
+                del specs['שנה']

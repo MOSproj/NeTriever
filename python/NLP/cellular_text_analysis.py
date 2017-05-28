@@ -31,3 +31,7 @@ data = {
         'type': 'digits'
     }
 }
+
+
+def fix(specs):
+    pass
