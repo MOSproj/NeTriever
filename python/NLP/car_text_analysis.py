@@ -44,6 +44,12 @@ data = {
 
 
 def fix(specs):
+    if 'שנה' in specs:
+        year = specs['שנה']
+        if 70 <= year <= 99:
+            specs['שנה'] = 1900 + year
+        elif 01 <= year <= 19:
+            specs['שנה'] = 2000 + year
     if 'ק"מ' in specs:
         km = specs['ק"מ']
         if km < 1000:
@@ -55,3 +61,4 @@ def fix(specs):
         if ec == 2000:
             if 'שנה' in specs and specs['שנה'] == 2000:
                 del specs['שנה']
+
