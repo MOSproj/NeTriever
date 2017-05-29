@@ -7100,6 +7100,10 @@ footer ul.footer-social .facebook {
 footer ul.footer-social .google {
   background-color: #f63e28;
 }
+.about .section,
+.home .section {
+  margin: 16px 0;
+}
 .slide-in-out {
   /* The starting CSS styles for the enter animation */
   /* now the element will fade out before it is removed from the DOM */
@@ -7164,12 +7168,6 @@ footer ul.footer-social .google {
 .loading span:nth-of-type(5) {
   -webkit-animation-delay: 0.8s;
   background: #777;
-}
-.about .section {
-  margin: 16px 0;
-}
-.about .section .page-header {
-  border-color: #313131;
 }
 @-webkit-keyframes loading {
   0% {
