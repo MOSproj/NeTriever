@@ -7053,6 +7053,10 @@ nav .navbar-options-max {
 .post .carousel:hover > .carousel-control:hover {
   opacity: 1;
 }
+.no-results {
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
 .pagination-div {
   text-align: center;
 }
