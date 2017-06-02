@@ -12,7 +12,7 @@
 
         self.lovePostsIds = cookiesSrv.getLovedPosts();
         postsSrv.getPostsByCategory(self.categoryId, reqParams).then(function (response) {
-            console.log(response.data);
+            //console.log(response.data);
             self.posts = response.data;
 
             angular.forEach(self.posts, (function (post) {

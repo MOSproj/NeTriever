@@ -16,7 +16,7 @@
          });*/
 
         categoriesSrv.getCategoriesNames().then(function (response) {
-            console.log(response.data);
+            //console.log(response.data);
             self.categoriesNames = response.data;
         });
     }

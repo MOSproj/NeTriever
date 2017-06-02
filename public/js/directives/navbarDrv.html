@@ -13,7 +13,7 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li ng-class="{ active: categories.isActive('/')}"><a href="/">דף בית</a></li>
+                    <!-- <li ng-class="{ active: categories.isActive('/')}"><a href="/">דף בית</a></li> -->
                     <li ng-class="{ active: categories.isActive('/category/{{ category.id }}')}"
                         ng-repeat="category in categories.categoriesNames"><a ng-href="/category/{{ category.id }}">
                         {{ category.name }}
