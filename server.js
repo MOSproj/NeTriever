@@ -7,6 +7,13 @@ var apiRoutes = require('./routes/apiRoutes');
 var app = express();
 app.set('view engine', 'html');
 
+app.use(function (req, res, next) {
+    if (req.url.match(/^\/(css|js|img|font)\/.+/)) {
+        res.setHeader('Cache-Control', 'public, max-age=3600');
+    }
+    next();
+});
+
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use('/scripts', express.static(__dirname + '/node_modules/'));
