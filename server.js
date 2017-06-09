@@ -8,8 +8,8 @@ var app = express();
 app.set('view engine', 'html');
 
 app.use(function (req, res, next) {
-    if (req.url.match(/^\/(css|js|img|font)\/.+/)) {
-        res.setHeader('Cache-Control', 'public, max-age=3600');
+    if (req.url.match(/^\/(scripts|css|js|img|fonts|views)\/.+/)) {
+        res.setHeader('Cache-Control', 'public, max-age=86400');
     }
     next();
 });
