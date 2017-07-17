@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import threading
 import time
-import datetime
+from datetime import datetime
 
 from Database import Database
 from Facebook import Facebook
@@ -31,7 +31,7 @@ class DeleteIgnore(threading.Thread):
         posts = self.db.get_ignored_posts()
         for post in posts:
             db_post = DatabasePost(post)
-            if (db_post.get_last_updated() - datetime.datetime.now()).days < - self.days_to_delete_interval:
+            if (db_post.get_last_updated() - datetime.now()).days < - self.days_to_delete_interval:
                 self.db.delete_post(db_post.get_id())
                 print "post " + str(db_post.get_id()) + " is deleted - is ignore interval"
             else:

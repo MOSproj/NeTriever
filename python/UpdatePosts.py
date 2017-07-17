@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import threading
 import time
+from datetime import datetime
 
 from Database import Database
 from Facebook import Facebook
@@ -19,6 +20,8 @@ class UpdatePosts(threading.Thread):
         self.db = Database()
         self.facebook = Facebook()
 
+        self.days_to_delete_interval = 10
+
     def run(self):
         while True:
             self.update_posts()
@@ -31,6 +34,8 @@ class UpdatePosts(threading.Thread):
         for post in posts:
             db_post = DatabasePost(post)
             try:
+                if (db_post.get_last_updated() - datetime.now()).days < - self.days_to_delete_interval:
+                    self.db.delete_post(db_post.get_id())
                 fb_post = FacebookPost(self.facebook.get_post(db_post.get_id()))
                 if fb_post.get_updated_time() > db_post.get_updated_time():
                     db_post = DatabasePost(fb_post)
